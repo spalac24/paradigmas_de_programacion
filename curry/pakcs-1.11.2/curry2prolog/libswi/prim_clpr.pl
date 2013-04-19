@@ -1,0 +1,20 @@
+:-style_check(-singleton).
+:-use_module('../basics').
+:-use_module(library(clpr)).
+prim_CLPR_plus(_G438,_G439,_G440):-{_G440=_G439+_G438}.
+prim_CLPR_minus(_G0,_G1,_G2):-{_G2=_G1-_G0}.
+prim_CLPR_times(_G31,_G32,_G33):-{_G33=_G32*_G31}.
+prim_CLPR_div(_G68,_G69,_G70):-{_G70=_G69/_G68}.
+prim_CLPR_le(_G105,_G106,'Prelude.success'):-{_G106<_G105}.
+prim_CLPR_ge(_G139,_G140,'Prelude.success'):-{_G140>_G139}.
+prim_CLPR_leq(_G173,_G174,'Prelude.success'):-{_G174=<_G173}.
+prim_CLPR_geq(_G207,_G208,'Prelude.success'):-{_G208>=_G207}.
+prim_CLPR_i2f(_G241,_G242):-_G242 is _G241*1.0.
+prim_minimumFor(_G399,_G400,_G401,_G402,_G403):-freeze(_G402,blocked_prim_minimumFor(_G399,_G400,_G401,_G402,_G403)).
+blocked_prim_minimumFor(_G438,_G439,_G440,_G441,_G442):-waitUntilGround('Prelude.(,)'(_G438,_G439),_G441,_G449),exec_minimum(_G438,_G439,_G440,_G449,_G442).
+exec_minimum(_G119,_G120,_G121,_G122,_G123):-freeze(_G122,blocked_exec_minimum(_G119,_G120,_G121,_G122,_G123)).
+blocked_exec_minimum(_G158,_G159,_G160,_G161,_G162):-prim_apply(_G158,_G160,'Prelude.success',_G161,_G168),prim_apply(_G159,_G160,_G172,_G168,_G174),minimize(_G172),_G174=_G162.
+prim_maximumFor(_G348,_G349,_G350,_G351,_G352):-freeze(_G351,blocked_prim_maximumFor(_G348,_G349,_G350,_G351,_G352)).
+blocked_prim_maximumFor(_G387,_G388,_G389,_G390,_G391):-waitUntilGround('Prelude.(,)'(_G387,_G388),_G390,_G398),exec_maximum(_G387,_G388,_G389,_G398,_G391).
+exec_maximum(_G112,_G113,_G114,_G115,_G116):-freeze(_G115,blocked_exec_maximum(_G112,_G113,_G114,_G115,_G116)).
+blocked_exec_maximum(_G151,_G152,_G153,_G154,_G155):-prim_apply(_G151,_G153,'Prelude.success',_G154,_G161),prim_apply(_G152,_G153,_G165,_G161,_G167),maximize(_G165),_G167=_G155.

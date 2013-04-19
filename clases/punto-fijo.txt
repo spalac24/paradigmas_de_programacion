@@ -1,0 +1,18 @@
+T0 = {}
+Tn = T(Tn-1)
+
+T(I) = {A in Bp / A :- B1, B2.. Bn  and {B1..Bn} subset I}
+
+
+Punto fijo es el x tal que T(x) = x
+OJO: Puede estar en el infinito (primer cardinal, Aleph 0)
+
+::
+even(0)
+even(s(s(X))) :- even(X)
+
+T0 = {}
+T1 = T({}) = {even(0)}
+T2 = T({even(0)}) = {even(0), even(s(s(0))}
+...
+punto fijo en omega (aleph 0)

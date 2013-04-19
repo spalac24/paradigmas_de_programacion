@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>
+Markdown Syntax
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+</head>
+
+<body bgcolor="#ffffff">
+
+<h1>
+Markdown Syntax
+</h1>
+
+<p>
+This document describes the syntax of texts containing
+markdown elements. The markdown syntax is intended to simplify
+the writing of texts whose source is readable and can be easily formatted,
+e.g., as part of a web document.
+It is a subset of the
+<a href="http://en.wikipedia.org/wiki/Markdown">original markdown syntax</a>
+(basically, only internal links and pictures are missing)
+supported by the
+<a href="http://curry-language.org/">Curry</a>
+library
+<a href="http://www.informatik.uni-kiel.de/~pakcs/lib/CDOC/Markdown.html">Markdown</a>.
+</p>
+
+<h2>
+Paragraphs and Basic Formatting
+</h2>
+
+<p>
+Paragraphs are separated by at least one line which is empty
+or does contain only blanks.
+</p>
+
+<p>
+Inside a paragraph, one can <em>emphasize</em>
+text or
+also <strong>strongly emphasize</strong>
+text. This is done by wrapping it
+with one or two _ or * characters:
+</p>
+<pre>_emphasize_
+*emphasize*
+__strong__
+**strong**</pre>
+<p>
+Furthermore, one can also mark <code>program code</code>
+text by
+backtick quotes (<code>\`</code>):
+</p>
+<pre>The function `fib` computes Fibonacci numbers.</pre>
+<p>
+Web links can be put in angle brackets, like in the
+link <a href="http://www.google.com"><code>http://www.google.com</code></a>:
+</p>
+<pre>&lt;http://www.google.com&gt;</pre>
+<p>
+Currently, only links starting with 'http' are recognized
+(so that one can also use HTML markup).
+If one wants to put a link under a text,
+one can put the text in square brackets directly followed by the
+link in round brackets, as in
+<a href="http://www.google.com">Google</a>:
+</p>
+<pre>[Google](http://www.google.com)</pre>
+<p>
+If one wants to put a character that has a specific meaning
+in the syntax of Markdown,
+like * or _, in the output document, it should be escaped with a
+backslash, i.e., a backslash followed by a special character in the
+source text is translated into the given character
+(this also holds for program code, see below).
+For instance, the input text
+</p>
+<pre>\_word\_</pre>
+<p>
+produces the output "_word_".
+The following backslash escapes are recognized:
+</p>
+<pre>\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash symbol
++   plus symbol
+-   minus symbol (dash)
+.   dot
+    blank
+!   exclamation mark</pre>
+<h2>
+Lists and Block Formatting
+</h2>
+
+<p>
+An <strong>unordered list</strong>
+(i.e., without numbering)
+is introduced by putting a star in front of the list elements
+(where the star can be preceded by blanks). The individual
+list elements must contain the same indentation, as in
+</p>
+<pre>* First list element
+  with two lines
+
+* Next list element.
+
+  It contains two paragraphs.
+
+* Final list element.</pre>
+<p>
+This is formatted as follows:    
+</p>
+
+<ul>
+
+<li>
+First list element
+with two lines
+</li>
+
+<li>
+Next list element.
+<br/>
+It contains two paragraphs.
+</li>
+
+<li>
+Final list element.
+</li>
+
+</ul>
+
+<p>
+Instead of a star, one can also put dashes or plus to mark
+unordered list items. Furthermore, one could nest lists.
+Thus, the input text
+</p>
+<pre>- Color:
+  + Yellow
+  + Read
+  + Blue
+- BW:
+  + Black
+  + White</pre>
+<p>
+is formatted as
+</p>
+
+<ul>
+
+<li>
+Color:
+<br/>
+
+<ul>
+
+<li>
+Yellow
+</li>
+
+<li>
+Read
+</li>
+
+<li>
+Blue
+</li>
+
+</ul>
+
+</li>
+
+<li>
+BW:
+<br/>
+
+<ul>
+
+<li>
+Black
+</li>
+
+<li>
+White
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<p>
+Similarly, <strong>ordered lists</strong>
+(i.e., with numbering each item)
+are introduced by a number followed by a dot and at least one blank.
+All following lines belonging to the same numbered item
+must have the same indent as the first line.
+The actual value of the number is not important. Thus, the input
+</p>
+<pre>1. First element
+
+99. Second
+    element</pre>
+<p>
+is formatted as
+</p>
+
+<ol>
+
+<li>
+First element
+</li>
+
+<li>
+Second
+element
+</li>
+
+</ol>
+
+<p>
+A quotation block is marked by putting a right angle followed
+by a blank in front of each line:
+</p>
+<pre>&gt; This is
+&gt; a quotation.</pre>
+<p>
+It will be formatted as a quote element:
+</p>
+<blockquote>
+<p>
+This is
+a quotation.
+</p>
+</blockquote>
+<p>
+A block containing <strong>program code</strong>
+starts with a blank line and is
+marked by intending each input line by <em>at least four spaces</em>
+where
+all following lines must have at least the same indentation as the
+first non-blank character of the first line:
+</p>
+<pre>    f x y = let z = (x,y)
+             in (z,z)</pre>
+<p>
+The indentation is removed in the output:
+</p>
+<pre>f x y = let z = (x,y)
+         in (z,z)</pre>
+<p>
+The visually structure a document, one can also put a line
+containing only blanks and at least three dashes (stars would also work)
+in the source text:
+</p>
+<pre>-------------------------------------------------</pre>
+<p>
+This is formatted as a horizontal line:
+</p>
+
+<hr/>
+
+<h2>
+Headers
+</h2>
+
+<p>
+The are two forms to mark headers.
+In the first form, one can "underline" the main header
+in the source text by equal signs
+and the second-level header by dashes:
+</p>
+<pre>First-level header
+==================</pre><pre>Second-level header
+-------------------</pre>
+<p>
+Alternatively (and for more levels), one can prefix the
+header line by up to six hash characters, where the number of
+characters corresponds to the header level (where level 1 is the
+main header):
+</p>
+<pre># Main header
+
+## Level 2 header
+
+### Level 3
+
+#### Level 4
+
+##### Level 5
+
+###### Level 6
+</pre>
+<hr/>
+
+</body>
+
+</html>

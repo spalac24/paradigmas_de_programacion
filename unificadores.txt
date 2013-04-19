@@ -1,0 +1,28 @@
+Reglas:
+
+1) f(s1..sn) = f(t1..tn) == se reemplaza por ==> s1=t1..sn=tn
+2) f(s1..sn) = g(t1..tm), n m >= 0, f \= g ==> FALLO
+3) X = X ==> se ignora
+4) t = X, t ∉ Var == se reemplaza por ==> X = t
+5)  X = t, X \= t
+    si X ocurre en t ==> FALLO
+    si no 	     ==> aplicar {X/t} a las demas condiciones
+
+NOTA: \= no representa no unificabilidad, sino diferente (sintacticamente).
+
+
+p(X,X) = p(f(A), f(B))
+{X = f(A), X = f(B)}
+ ^^
+{X = f(A), f(A) = f(B)}
+{X = f(A), f(A) = f(B)}
+{X = f(A), A = B}
+{X = f(B), A = B} 
+
+P(X,f(Y)) = P(Z,X)
+
+X = Z, f(Y) = X
+X = Z, f(Y) = Z
+X = Z, Z = f(Y)
+X = f(Y), Z = f(Y)
+

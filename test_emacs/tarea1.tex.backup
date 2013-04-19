@@ -1,0 +1,120 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish[{babel}
+\usepackage[margin=2.5cm, left=3cm]{geometry}
+
+%opening
+\title{Tarea1}
+\author{Santiago Palacio}
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+ \item \textbf{Ejemplos de que es un paradigma}
+ \begin{itemize}
+  \item La fisica clasica es un paradigma, ya que tiene métodos definidos,
+puede criticarse a si misma, evoluciona, tiene teorías y conceptos propios de
+ella, tiene ejemplares de cómo resolver problemas, y muchas otras propiedades
+que caracterizan un paradigma.
+
+  \item Paradigmas de programacion, justifican su nombre dado que tienen los
+elementos característicos, historia, teorías y conceptos propios, maneras
+clásicas de resolver problemas, relaciones, comunidades, y sobre todo, una gran
+evolución dada por revoluciones.
+
+ \end{itemize}
+
+ \item \textbf{¿Qué no es un paradigma?}\\
+ La religión, por ejemplo, no es un paradigma. Ya que a pesar de que tiene
+teorías, relaciones, historia\ldots no tiene otras características
+fundamentales, tales como métodos, ejemplares de problemas, en si misma no se
+puede criticar (no pueden haber revoluciones), y la evolución de ella es poca o
+nula.
+
+ Un lenguaje de programación, aislado, tampoco puede verse como un Paradigma,
+ya que es algo muy concreto, y simplemente es parte de un paradigma que le
+engloba.
+
+ De aquí, podemos ver que un paradigma no es simplemente una lógica dominante,
+sino que tiene muchos componentes que le hacen ir más allá de eso.
+
+ \item \textbf{Ejemplos de una comunidad Científica}
+ \begin{itemize}
+  \item Físicos o químicos que, de acuerdo a su época, siguen ideales en los
+que toda su comunidad se enfoca. La gran mayoría se enfocan siempre en un solo
+paradigma.
+
+  \item Infromáticos, que desde su relativamente reciente surgimiento, han
+pasado por múltiples paradigmas. Actualmente alguien que se considere competente
+debe
+adaptar múltiples paradigmas y usarlos convenientemente.
+ \end{itemize}
+ 
+ \item \textbf{¿Qué podemos explorar sobre el tema?}\\
+ Otro pensador, Paul Feyerabend, entra en varios desacuerdos con Kuhn. Primero,
+en el concepto del desarrollo científico, Feyerabend afirma que no hay 2 
+momentos separados de ciencia, normal y pre-paradigmática, sino que los 2
+estilos de ciencia conviven siempre simultaneamente. Otro aspecto importante,
+es que Feyerabend critica fuertemente el concepto de ciencia normal, ya que
+para él esto no es ciencia. Feyerabend dice que la ciencia debe evitar siempre
+ser dogmática, el fundamento de la ciencia es crear teorías falsibles y
+verificarlas, pero en cuanto se introduce algún ``dogma'', que no es
+verificado, entonces se deja de hacer ciencia. 
+
+Feyerabend también habla acerca de los cambios de paradigma, y agrega respecto a
+lo que dice Kuhn que el
+paradigma actual tiene mucha influencia en el paradigma que vendrá, ya que este
+nuevo, si bien modifica muchas cosas, usualmente debe concordar con mucho de lo
+que el anterior paradigma decía. Esto se puede ver por ejemplo en la física,
+donde cada nuevo paradigma, en vez de ser una reforma completa a lo que antes
+se pensaba, es usualmente una reforma, una mejora.
+
+Popper, por otro lado, afirma que los paradigmas deben surgir de una manera 
+diferente. Partir de los problemas, postular soluciones tentativas y tratar de 
+falsearlas.
+Además, de estas soluciones tentativas pueden surgir más preguntas que lleven 
+a la creación de nuevos paradigmas.
+Esto es, los paradigmas surgen no de los individuos, sino de los problemas.
+
+
+ \item \textbf{¿Qué tiene que ver este tema con nuestra profesión?}\\
+ Como ingenieros de sistemas, a diario nos vemos expuestos a múltiples
+paradigmas de los que disponemos para resolver distintos tipos de problemas. Es
+nuestra responsabilidad tomar conciencia de ellos, saber qué son, por qué
+existen, no simplemente conocerlos superficialmente. Es ahí donde el estudio de
+los paradigmas en general se hace relevante.
+ 
+
+\end{itemize}
+
+\textbf{Bibliografia}
+\begin{itemize}
+  \item Textos Presentados en clase
+    \begin{itemize}
+      \item La estructura de las revoluciones científicas, Thomas Kuhn
+      \item The paradigms of programming Robert Floyd
+      \item La tensión entre ortodoxia y heterodoxia en la creación
+científica Antanas Mockus
+    \end{itemize}
+    
+  \item Consulta Externa
+  \begin{itemize}
+   \item Los condicionamientos sociales en los paradigmas científicos: Popper y
+Kuhn
+W.R. Daros
+http://redalyc.uaemex.mx/pdf/877/87701805.pdf
+
+\item Popper, Khun, Lakatos y Feyerabend Amigos inseparables
+
+http://christiandoyle.files.wordpress.com/2008/03/ensayo2.pdf
+  \end{itemize}
+
+\end{itemize}
+
+\end{document}
+
+
+
+

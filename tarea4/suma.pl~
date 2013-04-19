@@ -1,0 +1,19 @@
+nat(0).
+nat(s(X)) :- ent(X).
+
+suma_n(X,0,X).
+suma(X,s(Y),s(Z)) :- suma(X,Y,Z).
+
+mult_n(_,0,0).
+mult_n(X,s(Y),Z) :- mult(X,Y,K), suma(K,X,Z).
+
+potencia_n(_,0,s(0)).
+potencia_n(X,s(Y),Z) :- potencia(X,Y,K), mult(X,K,Z).
+
+factorial_n(0,s(0)).
+factorial_n(s(X),Z) :- factorial(X,K),mult(K,s(X),Z).
+
+ent((X,Y)) :- nat(X).nat(Y).
+
+suma_z((X,Y),(A,B),(C,D)) :- suma(X,A,C), suma(Y,B,D). 
+

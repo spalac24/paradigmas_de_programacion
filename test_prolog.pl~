@@ -1,0 +1,2 @@
+suma(X,0,X).
+suma(X,Y,Z) :- suma(X,Y-1,Z-1)

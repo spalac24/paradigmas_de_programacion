@@ -1,0 +1,7 @@
+~p(f(X1)) v s(Y1) , ~s(X2) v r(X2,b) , p(X3) v s(X3) , ~r(X4,Y4) // Y1/X2 (1 -> 2)
+~p(f(X2)) v s(X2) , ~s(X2) v r(X2,b) , p(X3) v s(X3) , ~r(X4,Y4) // ..
+~p(f(X2)) v r(X2,b) , p(X3) v s(X3) , ~r(X4,Y4) // X2/f(X1)
+~p(f(X)) v r(X,b) , p(f(X)) v s(f(X)) , ~r(X,Y)
+r(X,b) v s(f(X)) , ~r(X,Y) // Y/b
+
+---

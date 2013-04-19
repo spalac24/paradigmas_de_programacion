@@ -1,0 +1,6 @@
+p(X,X) = p(f(A), f(B))
+{X = f(A), X = f(B)}
+ ^^
+{X = f(A), f(A) = f(B)}
+{X = f(A), f(A) = f(B)}
+{X = f(A), f(A) = f(B), A = B}

@@ -1,0 +1,10 @@
+:-module(prim_socket,[prim_listenOn/2,prim_listenOnFresh/1,prim_socketAccept/2,prim_waitForSocketAccept/3,prim_sClose/2,prim_connectToSocket/3]).
+:-style_check(-singleton).
+:-use_module('../prologbasics').
+:-use_module('../basics').
+prim_listenOn(_G1,_G2):-listenOnNewSocket(_G1,_G5,_G2).
+prim_listenOnFresh('Prelude.(,)'(_G29,_G30)):-listenOnNewSocket(_G29,_G35,_G30).
+prim_socketAccept(_G63,'Prelude.(,)'(_G60,'$stream'('$inoutstream'(_G55,_G56)))):-socketAccept(_G63,_G67,_G55,_G56),atom2String(_G67,_G60),!.
+prim_waitForSocketAccept(_G101,_G102,_G103):-waitForSocketClientStream(_G101,_G102,_G107,_G108,_G109)->atom2String(_G107,_G112),_G103='Prelude.Just'('Prelude.(,)'(_G112,'$stream'('$inoutstream'(_G108,_G109))));_G103='Prelude.Nothing'.
+prim_sClose(_G164,'Prelude.()'):-socketClose(_G164).
+prim_connectToSocket(_G195,_G196,'$stream'('$inoutstream'(_G190,_G191))):-string2Atom(_G195,_G200),!,connect2socket(_G200,_G196,_G190,_G191).

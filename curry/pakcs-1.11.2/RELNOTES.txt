@@ -1,0 +1,57 @@
+PAKCS: Release Notes
+====================
+
+Release notes for PAKCS Version 1.11.2 (March 21, 2013, under development)
+-----------------------------------------------------------------------------
+
+Changes to version 1.11.1:
+* Saved states, i.e., executables for a main program `prog`
+  are now stored in the file `prog` (instead of `prog.state`
+  as in previous releases).
+* CASS tool (Curry Analysis Server System) added and integrated
+  into currydoc.
+* Interactive command ":analyze" removed and ":usedimports" added.
+  The removed features to analyze a program are available via the
+  Curry Browser.
+
+
+Release notes for PAKCS Version 1.11.1 (February 13, 2013)
+----------------------------------------------------------
+
+Changes to version 1.11.0:
+* The front end accepts typed expressions of the form "Expr :: TypeExpr".
+  However, such type annotations are currently ignored by the compiler
+  since the target language Prolog is untyped.
+* Parser strategy for combinations of functional and non-linear patterns
+  improved. Parser also accepts as-patterns inside functional patterns.
+* Library `Directory`: Operation `copyFile` added.
+* Library `FlatCurry` extended to represent typed expressions
+  by a new constructor `Typed`.
+* Library `SetFunctions`: Operations `choose` and `select` added.
+* Bug fix in script `parsecurry`.
+
+
+Release notes for PAKCS Version 1.11.0 (December 18, 2012)
+---------------------------------------------------------
+
+Changes to version 1.10.1:
+* New front end version included that implements new features of Curry,
+  e.g., `fcase` expressions and non-linear patterns in left-hand sides
+  of program rules.
+* Syntax of records slightly changed to avoid problems
+  with guarded case branches (their syntax conflicted with old syntax
+  for selection of record fields):
+  - Field selection operator is "`:>`" (instead of "`->`" in old syntax).
+  - Record construction uses the operator "`:=`" for setting field values
+    similarly to record updates (instead of "`=`" in the old syntax).
+* Showing characters: `print '\''` fixed
+* Library `GUI`: types of various main operations (like `runInitGUI`,
+  `runInitGUIwithParams`) slightly changed (for compatibility with
+  KiCS2 version of the library). The old operations are still
+  available as `runInitGUI'` etc.
+* Library `Markdown`: title argument added to `markdownText2CompleteHTML`
+* Custimzation variables in `.pakcsrc` file extended.
+
+-------------------------------------------------------------------------
+
+[Release notes for older versions](http://www.informatik.uni-kiel.de/~pakcs/download/OLDRELNOTES.html)

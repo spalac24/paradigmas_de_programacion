@@ -1,0 +1,63 @@
+\beamer@endinputifotherversion {3.10pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\slideentry {1}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{4}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {1}{0}{5}{7/9}{}{0}}
+\headcommand {\beamer@framepages {7}{9}}
+\headcommand {\sectionentry {2}{Formal notation}{10}{Formal notation}{0}}
+\headcommand {\beamer@sectionpages {1}{9}}
+\headcommand {\beamer@subsectionpages {1}{9}}
+\headcommand {\slideentry {2}{0}{6}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{{{$\lambda $}-terms}{}}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {2}{1}{1}{11/13}{{{$\lambda $}-terms}{}}{0}}
+\headcommand {\beamer@framepages {11}{13}}
+\headcommand {\slideentry {2}{1}{2}{14/17}{{{$\lambda $}-terms}{}}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{18}{Informal Interpretation}}\headcommand {\beamer@subsectionpages {10}{17}}
+\headcommand {\slideentry {2}{2}{1}{18/20}{Informal Interpretation}{0}}
+\headcommand {\beamer@framepages {18}{20}}
+\headcommand {\sectionentry {3}{Operations}{21}{Operations}{0}}
+\headcommand {\beamer@sectionpages {1}{20}}
+\headcommand {\beamer@subsectionpages {1}{20}}
+\headcommand {\slideentry {3}{0}{2}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{22}{Substitution}}\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\slideentry {3}{1}{1}{22/23}{Substitution}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\slideentry {3}{1}{2}{24/30}{Substitution}{0}}
+\headcommand {\beamer@framepages {24}{30}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{31}{$\alpha $-conversion{}}}\headcommand {\beamer@subsectionpages {21}{30}}
+\headcommand {\slideentry {3}{2}{1}{31/31}{$\alpha $-conversion{}}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{32}{{$\beta $-reduction}s{}}}\headcommand {\beamer@subsectionpages {21}{31}}
+\headcommand {\slideentry {3}{3}{1}{32/32}{{$\beta $-reduction}s{}}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {3}{3}{1}{32/33}{{$\beta $-reduction}s{}}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\slideentry {3}{3}{2}{34/37}{{$\beta $-reduction}s{}}{0}}
+\headcommand {\beamer@framepages {34}{37}}
+\headcommand {\slideentry {3}{3}{3}{38/38}{{$\beta $-reduction}s{}}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {3}{3}{4}{39/39}{{$\beta $-reduction}s{}}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\sectionentry {4}{Bibliography}{40}{Bibliography}{0}}
+\headcommand {\beamer@sectionpages {1}{39}}
+\headcommand {\beamer@subsectionpages {1}{39}}
+\headcommand {\slideentry {4}{0}{5}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {4}{0}{6}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {1}{41}}
+\headcommand {\beamer@subsectionpages {1}{41}}
+\headcommand {\beamer@sectionpages {1}{41}}
+\headcommand {\beamer@documentpages {41}}
+\headcommand {\def \inserttotalframenumber {20}}

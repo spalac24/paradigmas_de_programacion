@@ -1,0 +1,14 @@
+p(X,Z) :- q(X,Y), p(Y,Z).
+p(X,X).
+q(a,b).
+
+Universo de herbrand:
+
+U_r = { a,b }
+B_r = { p(a,a), p(b,b), p(a,b), p(b,a),
+	  	q(a,a), q(b,b), q(a,b), q(b,a)}
+
+
+Interpretaciones: es un subconjunto de B_r, o mejor dicho, Interpretacion ∈ P(B_r)
+
+{p(a,a), p(b,b), q(a,b), p(a,b)}

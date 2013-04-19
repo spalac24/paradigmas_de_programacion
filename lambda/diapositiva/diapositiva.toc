@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Formal notation}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{{{$\lambda $}-terms}{}}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Informal Interpretation}{18}{0}{2}
+\beamer@sectionintoc {3}{Operations}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Substitution}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{$\alpha $-conversion{}}{31}{0}{3}
+\beamer@subsectionintoc {3}{3}{{$\beta $-reduction}s{}}{32}{0}{3}
+\beamer@sectionintoc {4}{Bibliography}{40}{0}{4}

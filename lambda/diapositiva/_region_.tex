@@ -1,0 +1,40 @@
+\message{ !name(diapositiva.tex)}\documentclass{beamer}
+\mode<presentation>{}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\setbeamercovered{invisible}
+\usetheme{Warsaw}
+\usefonttheme{serif}
+
+\title{Introduction to Lambda Calculus}
+\author{Santiago Palacio Gómez}
+
+\institute{Universidad EAFIT}
+\date{\today}
+
+\newcommand{\lam}{{$\lambda$}}
+\newcommand{\lambdaterms}{{\lam-terms}}
+\newcommand{\lambdaterm}{{\lam-term}}
+\newcommand{\aconversion}{$\alpha$-conversion}
+\newcommand{\aconversions}{$\alpha$-conversions}
+\newcommand{\breduction}{$\beta$-reduction}
+\newcommand{\breductions}{{\breduction}s}
+
+\AtBeginSection[]
+{
+\begin{frame}{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{document}
+
+\message{ !name(diapositiva.tex) !offset(70) }
+
+\message{ !name(diapositiva.tex) !offset(101) }
+
+\end{document}

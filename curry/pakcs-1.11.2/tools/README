@@ -1,0 +1,38 @@
+PAKCS Tools
+===========
+
+This directory contains various tools for the PAKCS system.
+
+Currently it contains:
+
+Peval:
+   Directory containing a partial evaluator (integrated in the
+   Curry2Prolog compiler environment by the command ":peval").
+   See the README there for more details.
+
+emacs:
+   Emacs mode for editing Curry programs
+
+coosy:
+   A tool to observe the execution of Curry programs (command ":coosy").
+
+curry2xml.curry:
+   A translator for Curry programs into their
+   corresponding FlatCurry representation in XML.
+
+erd2curry:
+  This directory contains a compiler to translate database (ER) models
+  into Curry programs.
+
+optimize:
+   Directory containing a simple optimizer for FlatCurry programs
+   (integrated in the Curry2Prolog compiler environment by the
+   option "compact").
+
+ui:
+   This directory contains libraries to implement generic user interfaces.
+
+xmldata:
+   Directory containing a tool to generate conversion functions
+   between data types and XML representations. The corresponding
+   tool is called by "pakcs/bin/dataToXml".

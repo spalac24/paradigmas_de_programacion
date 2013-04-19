@@ -1,0 +1,1 @@
+test n = take n [0,2..]

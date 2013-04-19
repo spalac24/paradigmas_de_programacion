@@ -1,0 +1,7 @@
+child(a,b).
+child(a,c).
+child(a,d).
+child(b,e).
+child(b,f).
+child(f,h).
+child(c,g).

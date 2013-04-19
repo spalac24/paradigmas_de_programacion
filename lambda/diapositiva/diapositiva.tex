@@ -1,0 +1,195 @@
+\documentclass{beamer}
+\mode<presentation>{}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\setbeamercovered{invisible}
+\usetheme{Warsaw}
+\usefonttheme{serif}
+
+\title{Introduction to Lambda Calculus}
+\author{Santiago Palacio Gómez}
+
+\institute{Universidad EAFIT}
+\date{\today}
+
+\newcommand{\lam}{{$\lambda$}}
+\newcommand{\lambdaterms}{{\lam-terms}}
+\newcommand{\lambdaterm}{{\lam-term}}
+\newcommand{\aconversion}{$\alpha$-conversion}
+\newcommand{\aconversions}{$\alpha$-conversions}
+\newcommand{\breduction}{$\beta$-reduction}
+\newcommand{\breductions}{{\breduction}s}
+\renewcommand{\b}{$\beta$}
+
+\AtBeginSection[]
+{
+\begin{frame}{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{section}{Introduction}
+  \begin{frame}
+    $\lambda$-calculus is a collection of formal systems based on a notation invented by Alonzo Church in the 1930s. They are used to describe how operators and functions can be combined to create other functions.
+  \end{frame}
+  \begin{frame}
+    \uncover<1->{
+      In order to provide a little intuitive concept of the notation, think of the common mathematical expression ``$x-y$''. This can be thought as a function $f(x)$ or $g(y)$:
+      \begin{center}
+        $f(x) = x-y $ \hspace{3 cm}$ g(y) = x-y$
+      \end{center}
+    }
+      \uncover<2->{So there's a need for a notation to name those functions systematically. Church included an auxiliary symbol $\lambda$ and wrote:
+        \begin{center}
+          $f = \lambda x . x - y$ \hspace {3 cm} $g = \lambda y.x-y$
+        \end{center}
+      }
+      \uncover<3->{
+        then $f(0)$ or $g(0)$ would become
+        $(\lambda x . x - y)(0)$ and $(\lambda y . x - y)(0)$ respectively.
+      }
+  \end{frame}
+  \begin{frame}
+    \uncover<1->{
+      This notation can be extended to represent functions of more than 1 variable. Say we define $$ h(x,y) = x - y$$}
+    \uncover<2->{then we would have $$h = \lambda x y . x - y$$}\uncover<3->{ However this can be rewritten in terms of previous notation using:
+      $$ h^* = \lambda x . (\lambda y . x - y)$$ and this is what we currently name \textbf{currying}.
+    }
+  \end{frame}
+\end{section}
+  \begin{section}{Formal notation}
+    \begin{subsection}{\lambdaterms{}}
+      \begin{frame}
+        Initially, we assume there is an \textbf{infinite} set of expressions $v_0, v_1, v_2, \ldots$ called \textit{variables}, and a finite, infinite or empty set of expressions called \textit{atomic constants} (Note that the term \textit{atom} here has a different meaning from what it has in logic programming). When the sequence of \textit{atomic constants} is empty, the system will be called \textit{pure}, otherwise \textit{applied}. The set of expressions called \lambdaterms{} is defined inductively:
+        \begin{itemize}[a]
+        \item<1-> all variables and atomic constants, called \textit{atoms} are \lambdaterms{}
+        \item<2-> if $M$ and $N$ are \lambdaterms{}, then $(M N)$ is a \lambdaterm{} (this is called an \textit{application}).
+        \item<3-> if $M$ is a \lambdaterm{} and $x$ is a variable, then $(\lambda x. M)$ is a \lambdaterm{} (this is called an \textit{abstraction}).
+        \end{itemize}
+      \end{frame}
+      \begin{frame}
+        \begin{itemize}
+        \item<1->Expressions like $(x (\lambda x. (\lambda x. x)))$ are, albeit possible, discouraged since there are several occurrences of $\lambda x$ in one term.
+        \item<2->Application is left-associative. This is, writing $M_1 M_2 \ldots M_n$ is equivalent to writing $(((\ldots(M_1 M_2) M_3 )\ldots M_n)$.
+        \item<3->Writing $\lambda x_1,x_2,\ldots,x_n.M$ is equivalent to writing $(\lambda x_1.(\lambda x_2.(\ldots(\lambda x_n.M)\ldots))).$
+        \item<4->Application has higher precedence than abstraction, so $\lambda x . P Q \equiv \lambda x . (P Q)$, not $(\lambda x.P)Q$. (the symbol $\equiv$ means \textbf{Syntactic equivalence}).
+        \end{itemize}
+      \end{frame}
+    \end{subsection}
+    \begin{subsection}{Informal Interpretation}
+      \begin{frame}
+        \uncover<1->{In general, $(M N)$ is interpreted as applying $M$ to the argument $N$. Another common notation for this is $M(N)$ however $(M N)$ is the standard way in $\lambda$-calculus.}\\[0.5cm]
+        \uncover<2->{The terms in the form $(\lambda x.M)$ represents the function whose value with an argument $N$ is calculated by substituting $N$ for $x$ in $M$.}\\[0.5cm]
+        \uncover<3->{For example, $(\lambda x.x)(a)$ is the result of applying the function identity to the atom a.} 
+      \end{frame}
+    \end{subsection}
+\end{section}
+\begin{section}{Operations}
+    \begin{subsection}{Substitution}
+
+\begin{frame}
+      \uncover<1->{For any $M,N,x$, we define $[N/x]M$ to be the result of substituting $N$ for every \textbf{free} occurrence of $x$ in $M$, and changing bound variables to avoid clashes. This definition can be extended to several \textbf{simultaneous} substitution $[N_1/x_1, N_2/X_2 \ldots N_n/X_n]$, but it must not be confused with several consecutive substitutions.\\[1cm]}
+
+\uncover<2->{This definition is similar to that given in course, however the notation is opposite, here $[N/x]$ is similar to what $[x/N]$ is in the course.}
+\end{frame}
+\begin{frame}
+The precise inductive definition is:\\[0.5cm]
+  \begin{tabular}{l l r}
+   \uncover<1->{$[N/x]x &\equiv N$ &}\\
+   \uncover<2->{$[N/x]a &\equiv a$ & for all atoms $a \not\equiv x$}\\
+   \uncover<3->{$[N/x](P Q) &\equiv ([N/x]P [N/x]Q)$&}\\
+   \uncover<4->{$[N/x](\lambda x.P)&\equiv (\lambda x.P)$}\\
+   \uncover<5->{$[N/x](\lambda y.P)&\equiv (\lambda y.P)$ & if $x \notin FV(P)$}\\
+   \uncover<6->{$[N/x](\lambda y.P)&\equiv (\lambda y . [N/x]P)$ & if $x \in FV(P)$ and $y \notin FV(N)$}\\
+   \uncover<7->{$[N/x](\lambda y.P)&\rquiv (\lambda z.[N/x][z/y]P)$ & if $x \in FV(P)$ and $y \in FV(N)$}
+  \end{tabular} 
+  \hspace{1cm}\\[0.5cm]
+  \uncover<7->{where $FV(P)$ is the set of free variables present in $P$.}
+\end{frame}
+    \end{subsection}
+    \begin{subsection}{\aconversion{}}
+\begin{frame}
+
+We call an \aconversion{} of $P$ to be the change of a bound variable in $P$. For example, if we have the expression $\lambda x.M$, and let $y \notin FV(M)$. Then $\lambda y.[y/x]M$ is called an \aconversion{}.\\
+Iff $P$ can be changed to $Q$ by a finite series \aconversions{} then we say $P$ is \textbf{congruent} to $Q$, or $P$ $\alpha$-converts to $Q$, which is equivalent to write
+$$P \equiv_\alpha Q$$
+This relation results being reflexive, transitive and symmetric.
+
+\end{frame}
+\end{subsection}
+\begin{subsection}{\breductions{}}
+\begin{frame}[allowframebreaks]
+  
+  A term of the form $(\lambda x . M)N$ represents an operator $\x.M$ \textit{applied} to an argument $N$. Informally, it the value that results of substituting $N$ for $x$ in $M$, so $(\lambda x.M)N$ can be 'simplified' to $[N/x]M$.\\[0.5cm]
+
+
+  Any term in the form $$(\lambda x.M)N$$ is called a \textit{\b{}-redex}, and the corresponding term $$[N/x]M$$ is called its \textit{contractum}. 
+
+  \framebreak
+  If a term $P$ contains a \b{}-redex and we replace it to its contractum, getting the result $P'$, then we say that we have \textit{contracted} the redex-occurrence in $P$, and $P$ \textit{\b{}-contracts} to $P'$, and we note:
+
+$$P \rhd_{1\beta} P'$$
+
+If $P$ can be changed to $Q$ by a finite series of \b{}-contractions and changes of bound variables, we say $P$ \textit{\b{}-reduces} to $Q$, or
+
+$$P \rhd_\beta Q$$ 
+
+\end{frame}
+\begin{frame}
+
+Note that the result of a \b{}-contraction does not always ``simplifies'' the expression.
+\begin{itemize}
+\item<2->
+    $(\lambda x.x x) (\lambda x.x x)$
+\item<3->
+  $(\lambda x.x x y) (\lambda x.x x y)$
+\end{itemize}
+\uncover<4->{
+  In the first example, the result of applying the \b{}-contraction results is the same expression. In the second example we observe this pattern
+  \begin{align*}
+    (\lambda x. x x y)(\lambda x.x x y) &\rhd_\beta (\lambda x. x x y)(\lambda x. x x y) y\\
+    &\rhd_\beta (\lambda x.x x y)(\lambda x. x x y) y y\\
+    & \ldots etc.
+  \end{align*}
+  So the 'simplification' process might actually complicate the expression.
+}
+\end{frame}
+\begin{frame}{\b{}-normal form}{\b{}-nf}
+A term $Q$ which contains no \b{}-redexes is called a \textit{\b{}-normal form}, or a \b{}-nf. The class of all \b{}-normal forms is called \b{}-nf or $\lambda$\b{}-nf. If a term $P$ \b{}-reduces to a term $Q$ in \b{}-nf, then $Q$ is called a \b{}-normal form of $P$.\\
+As we saw before, not every expression has a \b{}-nf.\\[0.5cm]
+
+The Church-Rosser theorem states that if $P \rhd_\beta M$ and $P \rhd_\beta N$ then there exists a term $T$ such that $M \rhd_\beta T$ and $N \rhd_\beta T$. In general, this property is called \textit{confluence}, so this statement can be reduced to \textit{\b{}-reduction is confluent}.
+
+This theorems proves that if any statement $P$ has a normal form, then it is unique modulo $\equiv_\alpha$.
+
+\end{frame}
+\begin{frame}{\b{}-equality}
+  We say $P$ is \b{}-equal or \b{}-convertible to $Q$ (noted $P =_\beta Q$) iff $Q$ can be obtained from $P$ by a finite sequence of \b{}-contractions, reversed \b{}-contractions and changes of bound variables. That is, $P =_\beta Q$ iff $\exists (P_1, P_2,\ldots,P_n)$ such that
+  $$P_1 = P$$
+  $$P_n = Q$$
+  $$P_i \rhd_b P_{i+1} \lor P_{i+q} \rhd_\beta P_i \lor P_1 \equiv_\alpha P_{i+1}$$
+\end{frame}
+\end{subsection}
+\end{section}
+\begin{section}{Bibliography}
+\begin{frame}
+  All the information was taken from the book:
+
+  Lambda-Calculus and Combinators: An Indtroduction, by J.Roger Hindley and Jonathan P. Seldin
+  
+  Cambridge
+  
+\end{frame}
+\end{section}
+\end{document}
+

@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Tarea Semana Anterior}{3}{0}{1}
+\beamer@sectionintoc {2}{Pila}{7}{0}{2}
+\beamer@sectionintoc {3}{Cola}{10}{0}{3}
+\beamer@sectionintoc {4}{BFS: Breadth-First Search}{13}{0}{4}
+\beamer@sectionintoc {5}{DFS: Depth-First Search}{20}{0}{5}
+\beamer@sectionintoc {6}{Tarea}{27}{0}{6}

@@ -1,0 +1,5 @@
+progenitor(pedro,juana).
+progenitor(pedro,juan).
+progenitor(pedro,jose).
+
+

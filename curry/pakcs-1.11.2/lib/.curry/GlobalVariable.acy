@@ -1,0 +1,9 @@
+CurryProg "GlobalVariable"
+ ["Prelude"]
+ [CType ("GlobalVariable","GVar") Public [(0,"a")] [CCons ("GlobalVariable","GVarDef") 1 Private [CTVar (0,"a")],CCons ("GlobalVariable","GVarValue") 2 Private [CTCons ("Prelude","()") [],CTVar (0,"a")]]]
+ [CFunc ("GlobalVariable","gvar") 1 Public (CFuncType (CTVar (0,"a")) (CTCons ("GlobalVariable","GVar") [CTVar (0,"a")])) (CRules CFlex [CRule [CPVar (0,"v")] [(CSymbol ("Prelude","success"),CApply (CSymbol ("GlobalVariable","GVarDef")) (CVar (0,"v")))] []]),
+  CFunc ("GlobalVariable","readGVar") 1 Public (CFuncType (CTCons ("GlobalVariable","GVar") [CTVar (0,"a")]) (CTCons ("Prelude","IO") [CTVar (0,"a")])) (CRules CFlex [CRule [CPVar (0,"gv")] [(CSymbol ("Prelude","success"),CApply (CApply (CSymbol ("Prelude","$#")) (CSymbol ("GlobalVariable","prim_readGVar"))) (CVar (0,"gv")))] []]),
+  CFunc ("GlobalVariable","prim_readGVar") 1 Private (CFuncType (CTCons ("GlobalVariable","GVar") [CTVar (0,"a")]) (CTCons ("Prelude","IO") [CTVar (0,"a")])) (CExternal "prim_readGVar"),
+  CFunc ("GlobalVariable","writeGVar") 2 Public (CFuncType (CTCons ("GlobalVariable","GVar") [CTVar (0,"a")]) (CFuncType (CTVar (0,"a")) (CTCons ("Prelude","IO") [CTCons ("Prelude","()") []]))) (CRules CFlex [CRule [CPVar (0,"gv"),CPVar (1,"val")] [(CSymbol ("Prelude","success"),CApply (CApply (CSymbol ("Prelude","$!!")) (CApply (CApply (CSymbol ("Prelude","$#")) (CSymbol ("GlobalVariable","prim_writeGVar"))) (CVar (0,"gv")))) (CVar (1,"val")))] []]),
+  CFunc ("GlobalVariable","prim_writeGVar") 2 Private (CFuncType (CTCons ("GlobalVariable","GVar") [CTVar (0,"a")]) (CFuncType (CTVar (0,"a")) (CTCons ("Prelude","IO") [CTCons ("Prelude","()") []]))) (CExternal "prim_writeGVar")]
+ []

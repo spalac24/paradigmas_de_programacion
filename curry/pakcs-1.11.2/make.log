@@ -1,0 +1,467 @@
+Make started at Tue Apr  2 14:57:56 COT 2013
+make[1]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+cd scripts && make all
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/scripts'
+make /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/pakcs /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/makecurrycgi /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/.makesavedstate /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/parsecurry /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/cleancurry
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/scripts'
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/pakcs' is up to date.
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/makecurrycgi' is up to date.
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/.makesavedstate' is up to date.
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/parsecurry' is up to date.
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/cleancurry' is up to date.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/scripts'
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/scripts'
+make frontend
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+# pre-compile all libraries:
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make `echo .curry/Prelude.fcy .curry/AllSolutions.fcy .curry/Array.fcy .curry/Assertion.fcy .curry/CategorizedHtmlList.fcy .curry/Char.fcy .curry/CLPFD.fcy .curry/CLPR.fcy .curry/CLPB.fcy .curry/Combinatorial.fcy .curry/Constraint.fcy .curry/CPNS.fcy .curry/CSV.fcy .curry/Database.fcy .curry/DaVinci.fcy .curry/Dequeue.fcy .curry/Directory.fcy .curry/Distribution.fcy .curry/Dynamic.fcy .curry/FileGoodies.fcy .curry/FiniteMap.fcy .curry/Float.fcy .curry/GetOpt.fcy .curry/Global.fcy .curry/GlobalVariable.fcy .curry/GraphInductive.fcy .curry/GUI.fcy .curry/HTML.fcy .curry/HtmlCgi.fcy .curry/HtmlParser.fcy .curry/IO.fcy .curry/IOExts.fcy .curry/Integer.fcy .curry/JavaScript.fcy .curry/KeyDatabase.fcy .curry/KeyDatabaseSQLite.fcy .curry/KeyDB.fcy .curry/List.fcy .curry/Mail.fcy .curry/Maybe.fcy .curry/Markdown.fcy .curry/NamedSocket.fcy .curry/Parser.fcy .curry/PlProfileData.fcy .curry/Ports.fcy .curry/Pretty.fcy .curry/Profile.fcy .curry/PropertyFile.fcy .curry/Random.fcy .curry/Read.fcy .curry/ReadNumeric.fcy .curry/ReadShowTerm.fcy .curry/RedBlackTree.fcy .curry/SetRBT.fcy .curry/SetRBT0.fcy .curry/SetFunctions.fcy .curry/Socket.fcy .curry/Sort.fcy .curry/System.fcy .curry/TableRBT.fcy .curry/TableRBT0.fcy .curry/Time.fcy .curry/Tk.fcy .curry/Traversal.fcy .curry/Unsafe.fcy .curry/URL.fcy .curry/WUI.fcy .curry/WUIjs.fcy .curry/XML.fcy .curry/XmlConv.fcy .curry/meta/AbsCurry.fcy .curry/meta/AbsCurryIO.fcy .curry/meta/AbstractCurry.fcy .curry/meta/AbstractCurryPrinter.fcy .curry/meta/CurryStringClassifier.fcy .curry/meta/Flat.fcy .curry/meta/FlatTools.fcy .curry/meta/Flat2Fcy.fcy .curry/meta/FlatCurry.fcy .curry/meta/FlatCurryRead.fcy .curry/meta/FlatCurryShow.fcy .curry/meta/FlatCurryGoodies.fcy .curry/meta/FlatCurryTools.fcy .curry/meta/FlatXML.fcy .curry/meta/FlatCurryXML.fcy .curry/meta/FlexRigid.fcy .curry/meta/CompactFlatCurry.fcy .curry/meta/PrettyAbstract.fcy | sed 's|\.curry/meta/|meta/.curry/|g'`
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[3]: `.curry/Prelude.fcy' is up to date.
+make[3]: `.curry/AllSolutions.fcy' is up to date.
+make[3]: `.curry/Array.fcy' is up to date.
+make[3]: `.curry/Assertion.fcy' is up to date.
+make[3]: `.curry/CategorizedHtmlList.fcy' is up to date.
+make[3]: `.curry/Char.fcy' is up to date.
+make[3]: `.curry/CLPFD.fcy' is up to date.
+make[3]: `.curry/CLPR.fcy' is up to date.
+make[3]: `.curry/CLPB.fcy' is up to date.
+make[3]: `.curry/Combinatorial.fcy' is up to date.
+make[3]: `.curry/Constraint.fcy' is up to date.
+make[3]: `.curry/CPNS.fcy' is up to date.
+make[3]: `.curry/CSV.fcy' is up to date.
+make[3]: `.curry/Database.fcy' is up to date.
+make[3]: `.curry/DaVinci.fcy' is up to date.
+make[3]: `.curry/Dequeue.fcy' is up to date.
+make[3]: `.curry/Directory.fcy' is up to date.
+make[3]: `.curry/Distribution.fcy' is up to date.
+make[3]: `.curry/Dynamic.fcy' is up to date.
+make[3]: `.curry/FileGoodies.fcy' is up to date.
+make[3]: `.curry/FiniteMap.fcy' is up to date.
+make[3]: `.curry/Float.fcy' is up to date.
+make[3]: `.curry/GetOpt.fcy' is up to date.
+make[3]: `.curry/Global.fcy' is up to date.
+make[3]: `.curry/GlobalVariable.fcy' is up to date.
+make[3]: `.curry/GraphInductive.fcy' is up to date.
+make[3]: `.curry/GUI.fcy' is up to date.
+make[3]: `.curry/HTML.fcy' is up to date.
+make[3]: `.curry/HtmlCgi.fcy' is up to date.
+make[3]: `.curry/HtmlParser.fcy' is up to date.
+make[3]: `.curry/IO.fcy' is up to date.
+make[3]: `.curry/IOExts.fcy' is up to date.
+make[3]: `.curry/Integer.fcy' is up to date.
+make[3]: `.curry/JavaScript.fcy' is up to date.
+make[3]: `.curry/KeyDatabase.fcy' is up to date.
+make[3]: `.curry/KeyDatabaseSQLite.fcy' is up to date.
+make[3]: `.curry/KeyDB.fcy' is up to date.
+make[3]: `.curry/List.fcy' is up to date.
+make[3]: `.curry/Mail.fcy' is up to date.
+make[3]: `.curry/Maybe.fcy' is up to date.
+make[3]: `.curry/Markdown.fcy' is up to date.
+make[3]: `.curry/NamedSocket.fcy' is up to date.
+make[3]: `.curry/Parser.fcy' is up to date.
+make[3]: `.curry/PlProfileData.fcy' is up to date.
+make[3]: `.curry/Ports.fcy' is up to date.
+make[3]: `.curry/Pretty.fcy' is up to date.
+make[3]: `.curry/Profile.fcy' is up to date.
+make[3]: `.curry/PropertyFile.fcy' is up to date.
+make[3]: `.curry/Random.fcy' is up to date.
+make[3]: `.curry/Read.fcy' is up to date.
+make[3]: `.curry/ReadNumeric.fcy' is up to date.
+make[3]: `.curry/ReadShowTerm.fcy' is up to date.
+make[3]: `.curry/RedBlackTree.fcy' is up to date.
+make[3]: `.curry/SetRBT.fcy' is up to date.
+make[3]: `.curry/SetRBT0.fcy' is up to date.
+make[3]: `.curry/SetFunctions.fcy' is up to date.
+make[3]: `.curry/Socket.fcy' is up to date.
+make[3]: `.curry/Sort.fcy' is up to date.
+make[3]: `.curry/System.fcy' is up to date.
+make[3]: `.curry/TableRBT.fcy' is up to date.
+make[3]: `.curry/TableRBT0.fcy' is up to date.
+make[3]: `.curry/Time.fcy' is up to date.
+make[3]: `.curry/Tk.fcy' is up to date.
+make[3]: `.curry/Traversal.fcy' is up to date.
+make[3]: `.curry/Unsafe.fcy' is up to date.
+make[3]: `.curry/URL.fcy' is up to date.
+make[3]: `.curry/WUI.fcy' is up to date.
+make[3]: `.curry/WUIjs.fcy' is up to date.
+make[3]: `.curry/XML.fcy' is up to date.
+make[3]: `.curry/XmlConv.fcy' is up to date.
+make[3]: `meta/.curry/AbsCurry.fcy' is up to date.
+make[3]: `meta/.curry/AbsCurryIO.fcy' is up to date.
+make[3]: `meta/.curry/AbstractCurry.fcy' is up to date.
+make[3]: `meta/.curry/AbstractCurryPrinter.fcy' is up to date.
+make[3]: `meta/.curry/CurryStringClassifier.fcy' is up to date.
+make[3]: `meta/.curry/Flat.fcy' is up to date.
+make[3]: `meta/.curry/FlatTools.fcy' is up to date.
+make[3]: `meta/.curry/Flat2Fcy.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurry.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurryRead.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurryShow.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurryGoodies.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurryTools.fcy' is up to date.
+make[3]: `meta/.curry/FlatXML.fcy' is up to date.
+make[3]: `meta/.curry/FlatCurryXML.fcy' is up to date.
+make[3]: `meta/.curry/FlexRigid.fcy' is up to date.
+make[3]: `meta/.curry/CompactFlatCurry.fcy' is up to date.
+make[3]: `meta/.curry/PrettyAbstract.fcy' is up to date.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+# install the Curry2Prolog compiler as a saved system:
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+echo ':- module(pakcsversion,[compilerVersion/1, compilerMajorVersion/1, compilerMinorVersion/1, compilerRevisionVersion/1, buildVersion/1, buildDate/1]).' > /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo "compilerVersion('PAKCS1.11')." >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo 'compilerMajorVersion(1).' >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo 'compilerMinorVersion(11).' >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo 'compilerRevisionVersion(2).' >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo 'buildVersion(1).' >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+echo "buildDate('2013-03-21')." >> /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog/pakcsversion.pl
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make libswi
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_clpb.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_clpb.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_clpfd.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_clpfd.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_clpr.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_clpr.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_directory.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_directory.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_distribution.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_distribution.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_dynamic.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_dynamic.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_flat.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_flat.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_float.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_float.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_global.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_global.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_globalvar.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_globalvar.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_io.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_io.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_ioexts.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_ioexts.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_plprofiledata.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_plprofiledata.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_ports.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_ports.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_profile.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_profile.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_readshowterm.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_readshowterm.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_socket.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_socket.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_standard.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_standard.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_system.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_system.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_time.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_time.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+echo "[block2freeze]. transFile('prim_unsafe.pl')." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Translating Prolog file: prim_unsafe.pl
+true.
+
+
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+rm -f prologbasics.pl ; cp swibasics.pl prologbasics.pl
+make swi.state
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+PAKCSHOME=`pwd`/.. && export PAKCSHOME && \
+	  PAKCSLIBPATH=`pwd`/../lib:`pwd`/../lib/meta && \
+	  export PAKCSLIBPATH && \
+	  echo "compile(c2p). c2p('../lib/Prelude'), compile('`pwd`/../lib/.curry/pakcs/Prelude'),loader:loadAndCompile('`pwd`/../lib/.curry/pakcs/Prelude.pl',[],create). saveprog_entry('swi.state',user:pakcsMain)." | "`pwd`/../bin/swiprolog" -q -L0 -G0 -T0
+
+true.
+
+Compiling '../lib/.curry/Prelude.fcy' into '../lib/.curry/pakcs/Prelude.pl'...done
+true.
+
+true.
+
+
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+mv -f swi.state c2p.state
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+../bin/.makesavedstate -error c2p.state
+rm -f pakcs
+ln -s c2p.state pakcs
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/curry2prolog'
+# compile all libraries:
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make `echo .curry/Prelude.acy .curry/AllSolutions.acy .curry/Array.acy .curry/Assertion.acy .curry/CategorizedHtmlList.acy .curry/Char.acy .curry/CLPFD.acy .curry/CLPR.acy .curry/CLPB.acy .curry/Combinatorial.acy .curry/Constraint.acy .curry/CPNS.acy .curry/CSV.acy .curry/Database.acy .curry/DaVinci.acy .curry/Dequeue.acy .curry/Directory.acy .curry/Distribution.acy .curry/Dynamic.acy .curry/FileGoodies.acy .curry/FiniteMap.acy .curry/Float.acy .curry/GetOpt.acy .curry/Global.acy .curry/GlobalVariable.acy .curry/GraphInductive.acy .curry/GUI.acy .curry/HTML.acy .curry/HtmlCgi.acy .curry/HtmlParser.acy .curry/IO.acy .curry/IOExts.acy .curry/Integer.acy .curry/JavaScript.acy .curry/KeyDatabase.acy .curry/KeyDatabaseSQLite.acy .curry/KeyDB.acy .curry/List.acy .curry/Mail.acy .curry/Maybe.acy .curry/Markdown.acy .curry/NamedSocket.acy .curry/Parser.acy .curry/PlProfileData.acy .curry/Ports.acy .curry/Pretty.acy .curry/Profile.acy .curry/PropertyFile.acy .curry/Random.acy .curry/Read.acy .curry/ReadNumeric.acy .curry/ReadShowTerm.acy .curry/RedBlackTree.acy .curry/SetRBT.acy .curry/SetRBT0.acy .curry/SetFunctions.acy .curry/Socket.acy .curry/Sort.acy .curry/System.acy .curry/TableRBT.acy .curry/TableRBT0.acy .curry/Time.acy .curry/Tk.acy .curry/Traversal.acy .curry/Unsafe.acy .curry/URL.acy .curry/WUI.acy .curry/WUIjs.acy .curry/XML.acy .curry/XmlConv.acy .curry/meta/AbsCurry.acy .curry/meta/AbsCurryIO.acy .curry/meta/AbstractCurry.acy .curry/meta/AbstractCurryPrinter.acy .curry/meta/CurryStringClassifier.acy .curry/meta/Flat.acy .curry/meta/FlatTools.acy .curry/meta/Flat2Fcy.acy .curry/meta/FlatCurry.acy .curry/meta/FlatCurryRead.acy .curry/meta/FlatCurryShow.acy .curry/meta/FlatCurryGoodies.acy .curry/meta/FlatCurryTools.acy .curry/meta/FlatXML.acy .curry/meta/FlatCurryXML.acy .curry/meta/FlexRigid.acy .curry/meta/CompactFlatCurry.acy .curry/meta/PrettyAbstract.acy | sed 's|\.curry/meta/|meta/.curry/|g'`
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[3]: `.curry/Prelude.acy' is up to date.
+make[3]: `.curry/AllSolutions.acy' is up to date.
+make[3]: `.curry/Array.acy' is up to date.
+make[3]: `.curry/Assertion.acy' is up to date.
+make[3]: `.curry/CategorizedHtmlList.acy' is up to date.
+make[3]: `.curry/Char.acy' is up to date.
+make[3]: `.curry/CLPFD.acy' is up to date.
+make[3]: `.curry/CLPR.acy' is up to date.
+make[3]: `.curry/CLPB.acy' is up to date.
+make[3]: `.curry/Combinatorial.acy' is up to date.
+make[3]: `.curry/Constraint.acy' is up to date.
+make[3]: `.curry/CPNS.acy' is up to date.
+make[3]: `.curry/CSV.acy' is up to date.
+make[3]: `.curry/Database.acy' is up to date.
+make[3]: `.curry/DaVinci.acy' is up to date.
+make[3]: `.curry/Dequeue.acy' is up to date.
+make[3]: `.curry/Directory.acy' is up to date.
+make[3]: `.curry/Distribution.acy' is up to date.
+make[3]: `.curry/Dynamic.acy' is up to date.
+make[3]: `.curry/FileGoodies.acy' is up to date.
+make[3]: `.curry/FiniteMap.acy' is up to date.
+make[3]: `.curry/Float.acy' is up to date.
+make[3]: `.curry/GetOpt.acy' is up to date.
+make[3]: `.curry/Global.acy' is up to date.
+make[3]: `.curry/GlobalVariable.acy' is up to date.
+make[3]: `.curry/GraphInductive.acy' is up to date.
+make[3]: `.curry/GUI.acy' is up to date.
+make[3]: `.curry/HTML.acy' is up to date.
+make[3]: `.curry/HtmlCgi.acy' is up to date.
+make[3]: `.curry/HtmlParser.acy' is up to date.
+make[3]: `.curry/IO.acy' is up to date.
+make[3]: `.curry/IOExts.acy' is up to date.
+make[3]: `.curry/Integer.acy' is up to date.
+make[3]: `.curry/JavaScript.acy' is up to date.
+make[3]: `.curry/KeyDatabase.acy' is up to date.
+make[3]: `.curry/KeyDatabaseSQLite.acy' is up to date.
+make[3]: `.curry/KeyDB.acy' is up to date.
+make[3]: `.curry/List.acy' is up to date.
+make[3]: `.curry/Mail.acy' is up to date.
+make[3]: `.curry/Maybe.acy' is up to date.
+make[3]: `.curry/Markdown.acy' is up to date.
+make[3]: `.curry/NamedSocket.acy' is up to date.
+make[3]: `.curry/Parser.acy' is up to date.
+make[3]: `.curry/PlProfileData.acy' is up to date.
+make[3]: `.curry/Ports.acy' is up to date.
+make[3]: `.curry/Pretty.acy' is up to date.
+make[3]: `.curry/Profile.acy' is up to date.
+make[3]: `.curry/PropertyFile.acy' is up to date.
+make[3]: `.curry/Random.acy' is up to date.
+make[3]: `.curry/Read.acy' is up to date.
+make[3]: `.curry/ReadNumeric.acy' is up to date.
+make[3]: `.curry/ReadShowTerm.acy' is up to date.
+make[3]: `.curry/RedBlackTree.acy' is up to date.
+make[3]: `.curry/SetRBT.acy' is up to date.
+make[3]: `.curry/SetRBT0.acy' is up to date.
+make[3]: `.curry/SetFunctions.acy' is up to date.
+make[3]: `.curry/Socket.acy' is up to date.
+make[3]: `.curry/Sort.acy' is up to date.
+make[3]: `.curry/System.acy' is up to date.
+make[3]: `.curry/TableRBT.acy' is up to date.
+make[3]: `.curry/TableRBT0.acy' is up to date.
+make[3]: `.curry/Time.acy' is up to date.
+make[3]: `.curry/Tk.acy' is up to date.
+make[3]: `.curry/Traversal.acy' is up to date.
+make[3]: `.curry/Unsafe.acy' is up to date.
+make[3]: `.curry/URL.acy' is up to date.
+make[3]: `.curry/WUI.acy' is up to date.
+make[3]: `.curry/WUIjs.acy' is up to date.
+make[3]: `.curry/XML.acy' is up to date.
+make[3]: `.curry/XmlConv.acy' is up to date.
+make[3]: `meta/.curry/AbsCurry.acy' is up to date.
+make[3]: `meta/.curry/AbsCurryIO.acy' is up to date.
+make[3]: `meta/.curry/AbstractCurry.acy' is up to date.
+make[3]: `meta/.curry/AbstractCurryPrinter.acy' is up to date.
+make[3]: `meta/.curry/CurryStringClassifier.acy' is up to date.
+make[3]: `meta/.curry/Flat.acy' is up to date.
+make[3]: `meta/.curry/FlatTools.acy' is up to date.
+make[3]: `meta/.curry/Flat2Fcy.acy' is up to date.
+make[3]: `meta/.curry/FlatCurry.acy' is up to date.
+make[3]: `meta/.curry/FlatCurryRead.acy' is up to date.
+make[3]: `meta/.curry/FlatCurryShow.acy' is up to date.
+make[3]: `meta/.curry/FlatCurryGoodies.acy' is up to date.
+make[3]: `meta/.curry/FlatCurryTools.acy' is up to date.
+make[3]: `meta/.curry/FlatXML.acy' is up to date.
+make[3]: `meta/.curry/FlatCurryXML.acy' is up to date.
+make[3]: `meta/.curry/FlexRigid.acy' is up to date.
+make[3]: `meta/.curry/CompactFlatCurry.acy' is up to date.
+make[3]: `meta/.curry/PrettyAbstract.acy' is up to date.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+# prepare for separate compilation by compiling all librariers to Prolog code:
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[3]: `.curry/pakcs/Prelude.pl' is up to date.
+rm -f .curry/pakcs/AllSolutions.pl && "`pwd`/../bin/pakcs" --quiet -c AllSolutions
+>>> /home/spalac24/.pakcsrc installed.
+/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/bin/.local/cymake: error while loading shared libraries: libgmp.so.3: cannot open shared object file: No such file or directory
+ERROR occurred during parsing!
+make[3]: *** [.curry/pakcs/AllSolutions.pl] Error 1
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[2]: *** [pl] Error 2
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2/lib'
+make[1]: *** [install] Error 2
+make[1]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/pakcs-1.11.2'
+Make finished at Tue Apr  2 14:57:57 COT 2013
