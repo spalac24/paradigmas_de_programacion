@@ -1,6 +1,6 @@
 --from http://www.mail-archive.com/haskell-cafe@haskell.org/msg63957.html
 
-numDigits1 n = numDigits1_aux 10 n where
+numDigits1 n = numDigits1_aux 10 (abs(n)) where
            numDigits1_aux b n = 1 + fst (ilog b n) where
                       ilog b  n
                            | n < b     = (0, n)
