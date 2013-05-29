@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.13)  29 MAY 2013 11:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.13)  29 MAY 2013 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1543,10 +1543,10 @@ LaTeX Info: Redefining \% on input line 2.
 File: pictures/def_trees.png Graphic file (type png)
 
 <use pictures/def_trees.png>
-Package pdftex.def Info: pictures/def_trees.png used on input line 397.
+Package pdftex.def Info: pictures/def_trees.png used on input line 396.
 (pdftex.def)             Requested size: 332.24043pt x 136.00778pt.
 
-Overfull \hbox (24.95056pt too wide) in paragraph at lines 397--397
+Overfull \hbox (24.95056pt too wide) in paragraph at lines 396--396
 [][]  
  []
 
@@ -1607,15 +1607,15 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@snm=\write9
 \openout9 = `diapositiva.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 502.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 502.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
 
 (./diapositiva.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 502.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 502.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
 Package rerunfilecheck Info: File `diapositiva.out' has not changed.
 (rerunfilecheck)             Checksum: 84CE0E840FE0713AED1BF25DDFED019C;1438.
 
@@ -1623,7 +1623,7 @@ Package rerunfilecheck Info: File `diapositiva.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 502.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
  ) 
 Here is how much of TeX's memory you used:
  18855 strings out of 493485
@@ -1646,7 +1646,7 @@ m/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfon
 t/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/ma
 tha10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha
 8.pfb>
-Output written on diapositiva.pdf (50 pages, 299685 bytes).
+Output written on diapositiva.pdf (50 pages, 299763 bytes).
 PDF statistics:
  2255 PDF objects out of 2487 (max. 8388607)
  2145 compressed objects within 22 object streams
