@@ -1,0 +1,47 @@
+sean X,Y in V, t = f(X,X) ^ s=f(X,f(Y,a))
+
+lineal: f
+var(t) = X
+var(s) = X,Y
+root(t) = f
+root(s) = f
+
+
+arbol de t = f(g(z,x), h(i(y)))
+
+
+	  	 nombre del termino (posicion)
+ 	  	-------- f(eps) ---------
+		|						|
+	----g( 1 )---				h( 2 )
+	|		 	|				|
+	z(1,1)		x(1,2)			i(2,1)
+								|
+								y(2,1,1)
+
+Si por fuera se habla de un termino. Nos referimos tambien a todos sus descendientes, i.e. t/1 = g(z,x)
+
+Ocurrencias de un termino: 
+
+O sontodas las posiciones donde hay un termino
+O(t) = {eps,1,1.1, 1.2, 2, 2.1, 2.1.1}
+
+
+O^- son ocurrencias no cariables de untermino t, se define como las posiciones que no son variables
+
+
+Ordenes sobre las posiciones:
+
+orden de prefijos : p <= q sii p es prefijo de q
+
+Orden lexicografico : sea p =i.p' y q = j.q'
+p <=L q sii i <(enteros) j  v  (i = j ^ p' <=L q')
+
+sustitucion de terminos
+
+t[s]_u es el termino que resulta al reemplazar en t el subtermino de t en la ocurrencia de u por el termino s
+
+t[a]1 = f(a,h(i(Y)))
+t[b]2.1 = f(g(Z,X),h(b))
+t[c]eps = c
+t[a]1.2 [b]2.1 = f(g(Z,a),h(b))

@@ -1,0 +1,189 @@
+\documentclass{beamer}
+\mode<presentation>{}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\setbeamercovered{invisible}
+\usetheme{Warsaw}
+\usefonttheme{serif}
+
+\newcommand{\q}[1]{\texttt{#1}}
+
+\title{Curry\\ A truly integrated functional logic language}
+\author{Santiago Palacio Gómez}
+
+\institute{Universidad EAFIT}
+\date{\today}
+
+\AtBeginSection[]
+{
+\begin{frame}{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{document}
+\lstset{language=Haskell}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+ \tableofcontents
+\end{frame}
+
+
+\begin{section}{Introduction}
+
+\begin{frame}
+Curry is a programming language designed to join the most important concepts
+from declarative programming paradigms. It combines features from functional
+programming (nested expressions, lazy evaluation, high-order functions,...),
+logic programming (logic variables, built-in search,...).
+ \end{frame}
+\end{section}
+
+\begin{section}{Major Elements}
+
+\begin{subsection}{Expressions}
+  
+  \begin{frame}[fragile]
+
+  An expression is either an \textit{atom} (literal or symbol) or an application
+of an expression to another expression. For example, the expressions
+``\q{2}'' or ``\q{True}'' are considered \textit{atoms}, while
+``\q{2+3}'' or ``\q{not True}'' are complex expressions; those
+combinations are referred to as \textit{function application}. In curry, like in
+many other functional languages, function application is written simply by
+juxtaposition of terms with spaces in between. The result of evaluating an
+expression is a value, e.g. \q{2+3} has a value of \q{5}.
+\end{frame}
+
+\end{subsection}
+
+ \begin{subsection}{Functions}
+  \begin{frame}
+   Curry provides functions as a \textit{procedural abstraction}. Functions can
+be viewed as a parametrized expression, possibly with a name.
+   Unlike with pure functional languages, in curry functions are not
+deterministic. This is, same parameters may result in different return values.
+This is due to the integration with the logic paradigm.
+  \end{frame}
+  \begin{frame}
+    In the previous examples, \q{+} and \q{not} were functions, both defined in
+the \textit{prelude}. We see that curry provides infix operators (functions) so
+we can write normal aritmethic expressions like \q{2+5*6}, and also provides
+operator precedence and asociativiry so \q{1+2+5*6} is interpreted like
+\q{(1+2)+(5*6)}. For example, in curry, some arithmetic operators can be
+defined like:\\
+\begin{tabular}[c]{l}
+\\
+\q{infixl 7 *, ‘div‘, ‘mod‘}\\
+\q{infixl 6 +, -}\\
+\q{infix 4 <, >, <=, >=}
+\end{tabular}
+  \end{frame}
+ \end{subsection}
+ \begin{subsection}{Data types}
+ 
+  \begin{frame}
+   Curry provides some basic types, referred as \textit{builtin types}. Here
+are some examples
+  \begin{itemize}
+   \item[Int] Integers with arbitrary precision.
+   \item[Bool] Booleans, can take only \q{True} or \q{False} values.
+   \item[Char] Characters from ascii.
+   \item[\lbrack$\tau$\rbrack ] Lists that are either empty \q{[]} or a
+concatenation of an element of type $\tau$ with another list
+\q{x:list}.
+   \item[String] Strings are seen in curry as a list of characters.
+   \item[()] Unit, used when the return value of a function is not relevant.
+  \end{itemize}
+
+  \end{frame}
+  
+  \begin{frame}
+  Besides of these basic types, Curry provides data types in order to
+help the programmer to manage more advanced data.
+
+  For example, we could define natural numbers this way:
+  \begin{tabular}[c]{l}
+  \\
+   \q{data Natural = Zero | Succ Natural}\\
+   \\
+   
+  \end{tabular}
+  
+  Here \q{Natural} is a \textit{type constructor}, and \q{Succ} is a
+\textit{data constructor}.
+  Or a little more complicated example, we can define a binary tree with
+elements of type \q{a} on its nodes like this:\\
+  \begin{tabular}[c]{l}
+  \\
+\q{data Tree a = Leaf | Node a (Tree a) (Tree a)}\\
+\\
+
+  \end{tabular}
+\\And we would get that the type of, for example, \q{Node 0 (Node 1 Leaf Leaf)
+Leaf} is \q{Tree Int}.
+  
+  \end{frame}
+ \end{subsection}
+\end{section}
+
+  \begin{section}{High-Order Functions}
+    \begin{subsection}{Functions as values}
+      \begin{frame}
+        In curry, functions are values themselves. This is, the parameter of a
+        function, the result of a function, the result of an expression can be a
+        function itself.
+    
+        Functions that take other functions as parameters are called
+        \textit{High-Order Functions}.
+
+        For example, a function comonly predefined in most functional languages,
+        \q{map} is a function that takes another function, and applies it to the
+        elements of a list.
+
+        It might be defined as follows:
+        \begin{tabular}[c]{l}
+        \\
+        \q{map \_ [] = []}\\
+        \q{map f (x:xs) = (f x):(map f xs)}\\
+        
+        \end{tabular}
+      \end{frame}
+     
+     \begin{frame}
+        Functions, being values, have types too. In mathematics we define a
+        function like this:
+        $$ f : A \mapsto B$$
+        $$ x \rightarrow f(x)$$
+        In Curry, like in Haskell, functions type are defined this way:
+        \begin{tabular}[c]{l}
+         \\
+         \q{f :: a -> b}\\
+         \\
+         
+        \end{tabular}\\
+        where a is the type of the first parameter, and b is the result.
+        Map, for example, has this type
+        \begin{tabular}[c]{l}
+         \\
+         \q{map :: (a -> b) -> [a] -> [b]}\\
+         
+        \end{tabular}\\
+        
+        The operator \q{->}  is right associative, i.e.\q{a -> b -> c = a -> (b
+        -> c)}. This is because Curry uses currying. So every function in curry
+        actually takes just one parameter and returns another function that
+        takes the rest of the parameters.
+
+     \end{frame}
+
+  \end{subsection}
+\end{section}
+\end{document}

@@ -1,0 +1,1 @@
+[ForType "Socket" Nothing,ForFunction "prim_listenOn",ForFunction "listenOnFresh",ForFunction "prim_socketListen",ForFunction "prim_socketAccept",ForFunction "prim_waitForSocketAccept",ForFunction "prim_connectToSocket"]

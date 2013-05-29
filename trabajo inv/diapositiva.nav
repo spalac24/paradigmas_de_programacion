@@ -1,0 +1,144 @@
+\beamer@endinputifotherversion {3.10pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {0}{0}{3}{3/4}{}{0}}
+\headcommand {\beamer@framepages {3}{4}}
+\headcommand {\sectionentry {1}{Introduction}{5}{Introduction}{0}}
+\headcommand {\beamer@sectionpages {1}{4}}
+\headcommand {\beamer@subsectionpages {1}{4}}
+\headcommand {\slideentry {1}{0}{4}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{0}{4}{5/6}{}{0}}
+\headcommand {\beamer@framepages {5}{6}}
+\headcommand {\slideentry {1}{0}{5}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\sectionentry {2}{Major Elements}{8}{Major Elements}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\slideentry {2}{0}{6}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{0}{6}{8/9}{}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{Expressions}}\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\slideentry {2}{1}{1}{10/10}{Expressions}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{Functions}}\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{Functions}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{2}{2}{12/12}{Functions}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Data types}}\headcommand {\beamer@subsectionpages {8}{12}}
+\headcommand {\slideentry {2}{3}{1}{13/13}{Data types}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\sectionentry {3}{High-Order Functions}{14}{High-Order Functions}{0}}
+\headcommand {\beamer@sectionpages {1}{13}}
+\headcommand {\beamer@subsectionpages {1}{13}}
+\headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{0}{2}{14/15}{}{0}}
+\headcommand {\beamer@framepages {14}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{16}{Functions as values}}\headcommand {\beamer@subsectionpages {14}{15}}
+\headcommand {\slideentry {3}{1}{1}{16/16}{Functions as values}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{17}{Function types}}\headcommand {\beamer@subsectionpages {14}{16}}
+\headcommand {\slideentry {3}{2}{1}{17/17}{Function types}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{2}{2}{18/18}{Function types}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\sectionentry {4}{Scope}{19}{Scope}{0}}
+\headcommand {\beamer@sectionpages {1}{18}}
+\headcommand {\beamer@subsectionpages {1}{18}}
+\headcommand {\slideentry {4}{0}{3}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{0}{3}{19/20}{}{0}}
+\headcommand {\beamer@framepages {19}{20}}
+\headcommand {\slideentry {4}{0}{4}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{22}{where clauses}}\headcommand {\beamer@subsectionpages {19}{21}}
+\headcommand {\slideentry {4}{1}{1}{22/22}{where clauses}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{23}{let clauses}}\headcommand {\beamer@subsectionpages {19}{22}}
+\headcommand {\slideentry {4}{2}{1}{23/23}{let clauses}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\sectionentry {5}{Narrowing}{24}{Narrowing}{0}}
+\headcommand {\beamer@sectionpages {1}{23}}
+\headcommand {\beamer@subsectionpages {1}{23}}
+\headcommand {\slideentry {5}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {5}{0}{2}{24/25}{}{0}}
+\headcommand {\beamer@framepages {24}{25}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{26}{Basic definitions}}\headcommand {\beamer@subsectionpages {24}{25}}
+\headcommand {\slideentry {5}{1}{1}{26/26}{Basic definitions}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {5}{1}{2}{27/27}{Basic definitions}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{28}{Rewrite Strategy}}\headcommand {\beamer@subsectionpages {24}{27}}
+\headcommand {\slideentry {5}{2}{1}{28/28}{Rewrite Strategy}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {5}{2}{2}{29/29}{Rewrite Strategy}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {5}{2}{3}{30/30}{Rewrite Strategy}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{31}{Formal Definition}}\headcommand {\beamer@subsectionpages {24}{30}}
+\headcommand {\slideentry {5}{3}{1}{31/31}{Formal Definition}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{32}{Example}}\headcommand {\beamer@subsectionpages {24}{31}}
+\headcommand {\slideentry {5}{4}{1}{32/32}{Example}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {5}{4}{2}{33/33}{Example}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\sectionentry {6}{Needed Narrowing}{34}{Needed Narrowing}{0}}
+\headcommand {\beamer@sectionpages {1}{33}}
+\headcommand {\beamer@subsectionpages {1}{33}}
+\headcommand {\slideentry {6}{0}{3}{34/34}{}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {6}{0}{3}{34/35}{}{0}}
+\headcommand {\beamer@framepages {34}{35}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{36}{Definition}}\headcommand {\beamer@subsectionpages {34}{35}}
+\headcommand {\slideentry {6}{1}{1}{36/36}{Definition}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{37}{Example}}\headcommand {\beamer@subsectionpages {34}{36}}
+\headcommand {\slideentry {6}{2}{1}{37/37}{Example}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{38}{Inductively Sequential TRS}}\headcommand {\beamer@subsectionpages {34}{37}}
+\headcommand {\slideentry {6}{3}{1}{38/38}{Inductively Sequential TRS}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {6}{3}{2}{39/39}{Inductively Sequential TRS}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {6}{3}{3}{40/40}{Inductively Sequential TRS}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {6}{3}{4}{41/41}{Inductively Sequential TRS}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {6}{3}{5}{42/42}{Inductively Sequential TRS}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@subsectionentry {0}{6}{4}{43}{Strict Equality}}\headcommand {\beamer@subsectionpages {34}{42}}
+\headcommand {\slideentry {6}{4}{1}{43/43}{Strict Equality}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {6}{4}{2}{44/44}{Strict Equality}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@subsectionentry {0}{6}{5}{45}{Weakly Needed Narrowing}}\headcommand {\beamer@subsectionpages {34}{44}}
+\headcommand {\slideentry {6}{5}{1}{45/45}{Weakly Needed Narrowing}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {6}{5}{2}{46/46}{Weakly Needed Narrowing}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@subsectionentry {0}{6}{6}{47}{Non-determinism}}\headcommand {\beamer@subsectionpages {34}{46}}
+\headcommand {\slideentry {6}{6}{1}{47/47}{Non-determinism}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\sectionentry {7}{Bibliography}{48}{Bibliography}{0}}
+\headcommand {\beamer@sectionpages {1}{47}}
+\headcommand {\beamer@subsectionpages {1}{47}}
+\headcommand {\slideentry {7}{0}{2}{48/48}{}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {7}{0}{2}{48/49}{}{0}}
+\headcommand {\beamer@framepages {48}{49}}
+\headcommand {\slideentry {7}{0}{3}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@partpages {1}{50}}
+\headcommand {\beamer@subsectionpages {1}{50}}
+\headcommand {\beamer@sectionpages {1}{50}}
+\headcommand {\beamer@documentpages {50}}
+\headcommand {\def \inserttotalframenumber {50}}

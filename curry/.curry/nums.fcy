@@ -1,0 +1,1 @@
+Prog "nums" ["Prelude"] [] [Func ("nums","f") 1 Public (FuncType (TCons ("Prelude","Int") []) (TCons ("Prelude","Bool") [])) (Rule [1] (Comb FuncCall ("Prelude","<=") [Var 1,Lit (Intc  2)]))] []

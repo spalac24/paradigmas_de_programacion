@@ -1,0 +1,1 @@
+Prog "SubmitForm" ["HtmlCgi","Prelude"] [] [Func ("SubmitForm","main") 0 Public (TCons ("Prelude","IO") [TCons ("Prelude","()") []]) (Rule [] (Var 0))] []

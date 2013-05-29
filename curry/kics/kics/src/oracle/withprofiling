@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm *.hi *.o
+ghc -c -prof -auto-all Term.hs
+ghc -c -prof -auto-all DebuggerMonad.hs
+ghc -c -prof -auto-all PartCalls.hs
+ghc -c -prof -auto-all StrictSteps.hs

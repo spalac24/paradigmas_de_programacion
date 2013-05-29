@@ -1,0 +1,1 @@
+Prog "CPNSD" ["CPNS","Prelude"] [] [Func ("CPNSD","main") 0 Public (TCons ("Prelude","IO") [TCons ("Prelude","()") []]) (Rule [] (Var 0))] []

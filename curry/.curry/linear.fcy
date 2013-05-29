@@ -1,0 +1,1 @@
+Prog "linear" ["Prelude"] [] [Func ("linear","sub") 2 Public (FuncType (TCons ("Prelude","Int") []) (FuncType (TCons ("Prelude","Int") []) (TCons ("Prelude","Int") []))) (Rule [1,2] (Or (Comb FuncCall ("Prelude","cond") [Comb FuncCall ("Prelude","=:=") [Var 1,Var 2],Lit (Intc  0)]) (Var 1)))] []

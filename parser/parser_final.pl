@@ -1,3 +1,7 @@
+%codigo escrito por Santiago Palacio Gomez
+%para la materia PARADIGMAS DE PROGRAMACION
+%universidad EAFIT 2013
+
 %writeFile(File) Lee, desde stdin, clausulas de prolog hacia File.
 writeFile(File):-
 	tell(File),
@@ -57,16 +61,22 @@ propiedad(File) :-
 	see(File),
 	read(Lista),
 	getAns(Lista,C1,F1,S1),append(C1,C),append(F1,F),append(S1,S),write('constantes'),nl,
-	write(C),nl,write('functores'),nl,write(F),nl,write('simbolos de predicado'),nl,write(S),nl,seen.
+	makeSet(C,Cs),write(Cs),nl,write('functores'),nl,makeSet(F,Fs),write(Fs),nl,write('simbolos de predicado'),nl,makeSet(S,Ss),write(Ss),nl,seen.
 
+%elimina repetidos
+makeSet([],[]).
+makeSet([X|Xs], [X|Ys]) :- not(member(X,Xs)),!,makeSet(Xs,Ys).
+makeSet([X|Xs], Ys) :- member(X,Xs),!,makeSet(Xs,Ys).
+
+%de un programa expresado como lista de listas, extrae las constantes, functores y simbolos de predicados
 getAns([],[],[],[]) :- !.
 getAns([L|Ls], [X|Xs], [Y|Ys], [Z|Zs]) :-prop1(L,X,Y,Z),getAns(Ls,Xs,Ys,Zs).
 
-
+%de una clausula, extrae las constantes, functores y simbolos de predicados.
 prop1([],[],[],[]).
-prop1([Hr|Br],Cons,Func,Symb) :- getCons([Hr],C1), getCons(Br,C2), append(C1,C2,Cons2), getFunc([Hr],F1),
-	getFunc(Br,F2), append(F1,F2,Func2), getSymb([Hr],S1), getSymb(Br,S2), append(S1,S2,Symb), diff(Func2,Symb,Func), diff(Cons2,Symb,Cons).
+prop1(Rule,Cons,Func,Symb) :- getCons(Rule,Cons2), getFunc(Rule,Func2),getSymb(Rule,Symb), diff(Func2,Symb,Func), diff(Cons2,Symb,Cons).
 
+%diferencia entre dos listas
 diff([],_,[]):-!.
 diff([X|Xs],Y,L) :- member(X,Y),!,diff(Xs,Y,L).
 diff([X|Xs],Y,[X|L]) :- not(member(X,Y)), !,diff(Xs,Y,L).
@@ -78,7 +88,9 @@ getCons([X|Xs],Ys) :- var(X),!,getCons(Xs,Ys). %si es una variable, la ignora
 %similarmente para getFunc
 
 getFunc([],[]):- !.
-getFunc([X|Xs],[Xf|L]) :- compound(X), not(var(X)), !, functor(X,Xf,_),X =.. L1, L1 = [_|L2], getFunc(Xs,Ys), getFunc(L2,L3), append(L3,Ys,L).
+getFunc([X|Xs],[Xf|L]) :- compound(X), not(var(X)),
+	!, functor(X,Xf,_),X =.. L1, L1 = [_|L2],getFunc(Xs,Ys), getFunc(L2,L3),
+	append(L3,Ys,L).
 getFunc([X|Xs],Ys) :- (atom(X);var(X)),!, getFunc(Xs,Ys). 
 
 getSymb([],[]).

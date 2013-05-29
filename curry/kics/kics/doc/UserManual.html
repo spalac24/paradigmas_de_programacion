@@ -1,0 +1,1714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >KiCS -- The Kiel Curry System </title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta name="generator" content="pandoc"
+     /><meta name="author" content="Bernd Braßel `bbr@informatik.uni-kiel.de`"
+     /></head
+  ><body
+  ><h1 class="title"
+    >KiCS -- The Kiel Curry System </h1
+    ><div id="toc"
+    ><ul
+      ><li
+	><a href="#getting-started" id="TOC-getting-started"
+	  >Getting Started</a
+	  ><ul
+	  ><li
+	    ><a href="#requirements-and-supported-platforms" id="TOC-requirements-and-supported-platforms"
+	      >Requirements and Supported Platforms</a
+	      ></li
+	    ><li
+	    ><a href="#download-and-installation" id="TOC-download-and-installation"
+	      >Download and Installation</a
+	      ></li
+	    ><li
+	    ><a href="#installing-the-frontend" id="TOC-installing-the-frontend"
+	      >Installing the Frontend</a
+	      ><ul
+	      ><li
+		><a href="#installing-the-backend" id="TOC-installing-the-backend"
+		  >Installing the Backend</a
+		  ></li
+		></ul
+	      ></li
+	    ></ul
+	  ></li
+	><li
+	><a href="#using-KiCSi" id="TOC-using-KiCSi"
+	  >Using <code
+	    >KiCSi</code
+	    ></a
+	  ><ul
+	  ><li
+	    ><a href="#commands" id="TOC-commands"
+	      >Commands</a
+	      ></li
+	    ><li
+	    ><a href="#settings-and-how-to-change-them" id="TOC-settings-and-how-to-change-them"
+	      >Settings and how to change them</a
+	      ><ul
+	      ><li
+		><a href="#setters-for-switches" id="TOC-setters-for-switches"
+		  >Setters for Switches</a
+		  ></li
+		><li
+		><a href="#setters-for-modes" id="TOC-setters-for-modes"
+		  >Setters for Modes</a
+		  ></li
+		></ul
+	      ></li
+	    ><li
+	    ><a href="#editing-commands-and-history" id="TOC-editing-commands-and-history"
+	      >Editing Commands and History</a
+	      ></li
+	    ></ul
+	  ></li
+	><li
+	><a href="#using-KiCS" id="TOC-using-KiCS"
+	  >Using <code
+	    >KiCS</code
+	    ></a
+	  ></li
+	><li
+	><a href="#the-debugger-bio" id="TOC-the-debugger-bio"
+	  >The Debugger B.i.O.</a
+	  ><ul
+	  ><li
+	    ><a href="#example-sessions" id="TOC-example-sessions"
+	      >Example Sessions</a
+	      ><ul
+	      ><li
+		><a href="#declarative-debugging" id="TOC-declarative-debugging"
+		  >Declarative Debugging</a
+		  ></li
+		><li
+		><a href="#step-by-step-debugging-and-virtual-io" id="TOC-step-by-step-debugging-and-virtual-io"
+		  >Step-by-Step Debugging and Virtual I/O</a
+		  ></li
+		></ul
+	      ></li
+	    ><li
+	    ><a href="#overview-commands-and-options-of-bio" id="TOC-overview-commands-and-options-of-bio"
+	      >Overview Commands and Options of B.i.O.</a
+	      ></li
+	    ><li
+	    ><a href="#trusted-functions" id="TOC-trusted-functions"
+	      >Trusted Functions</a
+	      ></li
+	    ></ul
+	  ></li
+	><li
+	><a href="#concluding-remarks" id="TOC-concluding-remarks"
+	  >Concluding Remarks</a
+	  ></li
+	></ul
+      ></div
+    ><h1 id="getting-started"
+    ><a href="#TOC-getting-started"
+      >Getting Started</a
+      ></h1
+    ><h2 id="requirements-and-supported-platforms"
+    ><a href="#TOC-requirements-and-supported-platforms"
+      >Requirements and Supported Platforms</a
+      ></h2
+    ><p
+    >The Kiel Curry System (<code
+      >KiCS</code
+      >) is a compiler for the functional logic language Curry.<a href="#fn1" class="footnoteRef" id="fnref1"
+      ><sup
+	>1</sup
+	></a
+      > It generates code in the functional language Haskell <a href="#fn2" class="footnoteRef" id="fnref2"
+      ><sup
+	>2</sup
+	></a
+      >. <code
+      >KiCS</code
+      > makes use of some extensions of the Glasgow Haskell Compilation System (GHC)<a href="#fn3" class="footnoteRef" id="fnref3"
+      ><sup
+	>3</sup
+	></a
+      > and requires a version greater or equal than 6.8.2 of that system. Currently, <code
+      >KiCS</code
+      > only works on unix based systems.</p
+    ><h2 id="download-and-installation"
+    ><a href="#TOC-download-and-installation"
+      >Download and Installation</a
+      ></h2
+    ><p
+    ><code
+      >KiCS</code
+      > is divided into two parts: frontend and backend which are available separately. Prior to starting the installation process of any of the parts, make sure that the main binary of the Glasgow Haskell Compilation System (GHC)<span class="math"
+      ><sup
+	>1</sup
+	></span
+      > is contained in the search path and is equal or greater to the required version of 6.8.2.</p
+    ><p
+    >Test this by typing:</p
+    ><pre class="haskell"
+    ><code
+      >  $ ghc --version
+</code
+      ></pre
+    ><p
+    >You should get something like:</p
+    ><pre class="haskell"
+    ><code
+      >  The Glorious Glasgow Haskell Compilation System, version 6.8.2
+</code
+      ></pre
+    ><p
+    >You should also have cabal<a href="#fn4" class="footnoteRef" id="fnref4"
+      ><sup
+	>4</sup
+	></a
+      > installed.</p
+    ><h2 id="installing-the-frontend"
+    ><a href="#TOC-installing-the-frontend"
+      >Installing the Frontend</a
+      ></h2
+    ><p
+    >The Curry frontend lives on hackage<a href="#fn5" class="footnoteRef" id="fnref5"
+      ><sup
+	>5</sup
+	></a
+      >. Therefore, the only thing you have to do to install it is:</p
+    ><pre class="haskell"
+    ><code
+      >  $ cabal install curry-frontend 
+</code
+      ></pre
+    ><p
+    >Make sure that the cabal directory for binaries is in your path, e.g., by</p
+    ><pre class="haskell"
+    ><code
+      >  $ export PATH=~/.cabal/bin:$PATH
+</code
+      ></pre
+    ><p
+    >Note that you need to set the path for installation process only.</p
+    ><p
+    >Test that you can access <code
+      >cymake</code
+      > now, e.g. by:</p
+    ><pre class="haskell"
+    ><code
+      >  $ which cymake
+  /home/my_name/.cabal/bin/cymake
+</code
+      ></pre
+    ><p
+    >Instead of setting the path you can also change the information in the <code
+      >Makefile</code
+      >. You can change one or both of the two lines</p
+    ><pre class="haskell"
+    ><code
+      >GHCBIN = $(shell which ghc)
+CYMAKEBIN = $(shell which cymake)
+</code
+      ></pre
+    ><p
+    >to</p
+    ><pre class="haskell"
+    ><code
+      >GHCBIN = path_to_ghc/bin
+CYMAKEBIN = path_to_cabal_bin
+</code
+      ></pre
+    ><h3 id="installing-the-backend"
+    ><a href="#TOC-installing-the-backend"
+      >Installing the Backend</a
+      ></h3
+    ><p
+    >The backend's source code is available from the internet.<a href="#fn6" class="footnoteRef" id="fnref6"
+      ><sup
+	>6</sup
+	></a
+      > Make sure that both commands, <code
+      >ghc --version</code
+      > and <code
+      >which cymake</code
+      > give the desired output, cf. the prvious section.</p
+    ><p
+    >Now unpack the tar ball and make it, e.g.:</p
+    ><pre class="haskell"
+    ><code
+      >  $ gunzip kics_src.tgz 
+  $ tar xf kics_src.tar 
+  $ cd kics 
+  $ make
+</code
+      ></pre
+    ><p
+    >If you want to use the b.i.o. debugger, cf. Section, you have to type additionally:</p
+    ><pre class="haskell"
+    ><code
+      >  make bio
+</code
+      ></pre
+    ><p
+    >This procedure might take time (yes longer than building the main system.)</p
+    ><h1 id="using-KiCSi"
+    ><a href="#TOC-using-KiCSi"
+      >Using <code
+	>KiCSi</code
+	></a
+      ></h1
+    ><p
+    >There are two main binaries build by the make process described in the previous section. The first is <code
+      >kics</code
+      >, a compiler from Curry to Haskell and the second is <code
+      >kicsi</code
+      >, an interactive environment for <code
+      >KiCS</code
+      >.</p
+    ><p
+    >After the make process is finished start the <code
+      >kicsi</code
+      > binary which has been generated in the directory</p
+    ><pre class="haskell"
+    ><code
+      >  path_to_where_you_unpacked_tarfile/kics/bin
+</code
+      ></pre
+    ><p
+    >You will get a prompt which looks something like this:</p
+    ><pre class="haskell"
+    ><code
+      >         _               _           _            _
+        /\_\            /\ \       /\ \          / /\
+       / / /  _         \ \ \     /  \ \        / /  \
+      / / /  /\_\       /\ \_\   / /\ \ \      / / /\ \__
+     / / /__/ / /      / /\/_/  / / /\ \ \    / / /\ \___\
+    / /\_____/ /      / / /    / / /  \ \_\   \ \ \ \/___/
+   / /\_______/      / / /    / / /    \/_/    \ \ \
+  / / /\ \ \        / / /    / / /         _    \ \ \  The
+ / / /  \ \ \   ___/ / /__  / / /________ /_/\__/ / /  Kiel
+/ / /    \ \ \ /\__\/_/___\/ / /_________\\ \/___/ /  Curry
+\/_/      \_\_\\/_________/\/____________/ \_____\/  System
+
+Version 0.81893
+
+&gt; 
+</code
+      ></pre
+    ><p
+    >At this prompt you can enter arbitrary Curry expressions to evaluate them, e.g.:</p
+    ><pre class="haskell"
+    ><code
+      >  &gt; 3+4
+  7
+  More?
+</code
+      ></pre
+    ><p
+    >As Curry is a functional <em
+      >logic</em
+      > language it has an integrated search for solutions. In the standard setting you will be asked whether you want the search to proceed to the next solutions. Typing anything but a word beginning with <code
+      >n</code
+      > will let the search proceed, either by printing the next solution or by the message that no further solution was found:</p
+    ><pre class="haskell"
+    ><code
+      >  &gt; 3+4
+  7
+  More?
+
+  No more Solutions
+</code
+      ></pre
+    ><p
+    >Another example has more than one solution:</p
+    ><pre class="haskell"
+    ><code
+      >  &gt; 3+(4?5)
+  7
+  More?
+
+  8
+  More?
+
+  No more Solutions
+</code
+      ></pre
+    ><h2 id="commands"
+    ><a href="#TOC-commands"
+      >Commands</a
+      ></h2
+    ><p
+    >Apart from evaluating expressions, <code
+      >KiCSi</code
+      > supports a number of commands which all begin with typing a colon <code
+      >:</code
+      > before either using the short one letter version or the longer one. The following table subsumes the supported commands:</p
+    ><table
+    ><tr class="header"
+      ><th align="left" style="width: 25%;"
+	>Short</th
+	><th align="left" style="width: 12%;"
+	>Long</th
+	><th align="left" style="width: 51%;"
+	>Description</th
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >:l</code
+	  > &lt;module&gt;<sup
+	  >+</sup
+	  ></td
+	><td align="left"
+	><code
+	  >:load</code
+	  ></td
+	><td align="left"
+	>load some Curry modules</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >:r</code
+	  ></td
+	><td align="left"
+	><code
+	  >:reload</code
+	  ></td
+	><td align="left"
+	>repeat last load command</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >:a</code
+	  > &lt;module&gt;<sup
+	  >+</sup
+	  ></td
+	><td align="left"
+	><code
+	  >:add</code
+	  ></td
+	><td align="left"
+	>add modules to list of loaded modules</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >:t</code
+	  > &lt;expression&gt;</td
+	><td align="left"
+	><code
+	  >:type</code
+	  ></td
+	><td align="left"
+	>print type of expression</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >:h</code
+	  >, <code
+	  >:?</code
+	  ></td
+	><td align="left"
+	><code
+	  >:help</code
+	  ></td
+	><td align="left"
+	>print some useful information</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >:i</code
+	  ></td
+	><td align="left"
+	><code
+	  >:info</code
+	  ></td
+	><td align="left"
+	>print interface of loaded modules</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >:set</code
+	  > &lt;setting&gt;</td
+	><td align="left"
+	></td
+	><td align="left"
+	>change current settings (see below)</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >:s</code
+	  ></td
+	><td align="left"
+	><code
+	  >:save</code
+	  ></td
+	><td align="left"
+	>save settings to <code
+	  >~/.kicsrc</code
+	  > (see below)</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >:!</code
+	  >&lt;command&gt;</td
+	><td align="left"
+	></td
+	><td align="left"
+	>execute command in shell</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >:q</code
+	  ></td
+	><td align="left"
+	><code
+	  >:quit</code
+	  ></td
+	><td align="left"
+	>exit <code
+	  >KiCSi</code
+	  ></td
+	></tr
+      ></table
+    ><p
+    >For the <code
+      >:load</code
+      > and <code
+      >:add</code
+      > command, all files and all modules the given modules depend upon will be compiled if necessary. The first module in the list will be the main module, e.g., for <code
+      >System.getProgName</code
+      >. After loading, the prompt will enumerate all modules that could be loaded.</p
+    ><h2 id="settings-and-how-to-change-them"
+    ><a href="#TOC-settings-and-how-to-change-them"
+      >Settings and how to change them</a
+      ></h2
+    ><p
+    >There are two different kind of settings for <code
+      >KiCSi</code
+      >: switches and modes. A switch is a setting that can either be on or off. A mode is a selection within a greater range of options than just yes/no. All settings are generally changed by the <code
+      >:set</code
+      > command followed by at least one space and then a setter. If <code
+      >:set</code
+      > is not followed by a setter, a list of current settings is printed.</p
+    ><h3 id="setters-for-switches"
+    ><a href="#TOC-setters-for-switches"
+      >Setters for Switches</a
+      ></h3
+    ><p
+    >Each switch has a short, i.e, one letter, and a long name. Short names can be combined in ANSI command line style. For example, the command</p
+    ><pre class="haskell"
+    ><code
+      >  :set +td-ef
+</code
+      ></pre
+    ><p
+    >is short for</p
+    ><pre class="haskell"
+    ><code
+      >  :set +t
+  :set +d
+  :set -e
+  :set -f
+</code
+      ></pre
+    ><p
+    >As a result, long names for settings have to be preceded by a double switch indicator, e.g.:</p
+    ><pre class="haskell"
+    ><code
+      >  :set ++time
+</code
+      ></pre
+    ><p
+    >which is the long version of</p
+    ><pre class="haskell"
+    ><code
+      >  :set +t
+</code
+      ></pre
+    ><p
+    >The switches supported by <code
+      >KiCSi</code
+      > are:</p
+    ><table
+    ><tr class="header"
+      ><th align="left" style="width: 10%;"
+	>Short</th
+	><th align="left" style="width: 12%;"
+	>Long</th
+	><th align="left" style="width: 51%;"
+	>Description</th
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >t</code
+	  ></td
+	><td align="left"
+	><code
+	  >time</code
+	  ></td
+	><td align="left"
+	>print elapsed time after evaluation</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >e</code
+	  ></td
+	><td align="left"
+	><code
+	  >eval</code
+	  ></td
+	><td align="left"
+	>switch evaluation/compile mode</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >d</code
+	  ></td
+	><td align="left"
+	><code
+	  >debug</code
+	  ></td
+	><td align="left"
+	>turn on debugging (Section <strong
+	  >B.i.O.</strong
+	  >)</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >f</code
+	  ></td
+	><td align="left"
+	><code
+	  >force</code
+	  ></td
+	><td align="left"
+	>force recompilation of all <code
+	  >KiCS</code
+	  >-files</td
+	></tr
+      ></table
+    ><p
+    >Most often you will want to use <code
+      >+t</code
+      > together with <code
+      >-e</code
+      >. Otherwise you will include startup and compilation time for <code
+      >ghci</code
+      > in your measurement.</p
+    ><p
+    >With <code
+      >+e</code
+      >, <code
+      >KiCSi</code
+      > will use the expression evaluation mode of GHC. The time until the evaluation is started will generally be shorter. With <code
+      >-e</code
+      >, <code
+      >KiCSi</code
+      > will create a binary (called <code
+      >request</code
+      >) via GHC. Compiling takes longer but overall performance increases.</p
+    ><p
+    >With the flag <code
+      >force</code
+      >, the files generated by the frontend, are <em
+      >not</em
+      > recreated.</p
+    ><h3 id="setters-for-modes"
+    ><a href="#TOC-setters-for-modes"
+      >Setters for Modes</a
+      ></h3
+    ><p
+    >Modes are settings with more than a +/- range of alternatives. <code
+      >KiCSi</code
+      > supports the following modes, where the column &quot;Mode&quot; indicates the relation between the settings. For example, any setter effecting the &quot;Strategy&quot; after a <code
+      >:set df</code
+      > command overwrites that setting.</p
+    ><table
+    ><tr class="header"
+      ><th align="left" style="width: 10%;"
+	>Short</th
+	><th align="left" style="width: 22%;"
+	>Long</th
+	><th align="left" style="width: 12%;"
+	>Mode</th
+	><th align="left" style="width: 37%;"
+	>Description</th
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >df</code
+	  ></td
+	><td align="left"
+	><code
+	  >depth first</code
+	  ></td
+	><td align="left"
+	>Strategy</td
+	><td align="left"
+	>search strategy depth first</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >bf</code
+	  ></td
+	><td align="left"
+	><code
+	  >breadth first</code
+	  ></td
+	><td align="left"
+	>Strategy</td
+	><td align="left"
+	>search strategy breadth first</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >all</code
+	  ></td
+	><td align="left"
+	><code
+	  >all solutions</code
+	  ></td
+	><td align="left"
+	>Solutions</td
+	><td align="left"
+	>print list of all solutions</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >first</code
+	  ></td
+	><td align="left"
+	><code
+	  >first solution</code
+	  ></td
+	><td align="left"
+	>Solutions</td
+	><td align="left"
+	>print first solution only</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >i</code
+	  ></td
+	><td align="left"
+	><code
+	  >interactive</code
+	  ></td
+	><td align="left"
+	>Solutions</td
+	><td align="left"
+	>ask for more after each solution</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >st</code
+	  ></td
+	><td align="left"
+	><code
+	  >search tree</code
+	  ></td
+	><td align="left"
+	>Strategy Solutions</td
+	><td align="left"
+	>print whole search tree</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >path</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	></td
+	><td align="left"
+	>search path for modules</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >v</code
+	  ></td
+	><td align="left"
+	><code
+	  >verbosity</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	>output level for <code
+	  >KiCS</code
+	  ></td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >cmd</code
+	  ></td
+	><td align="left"
+	><code
+	  >command</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	>command line options for executed program</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >rts</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	></td
+	><td align="left"
+	>runtime settings for GHC</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >rts+</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	></td
+	><td align="left"
+	>append <code
+	  >rts</code
+	  > instead of replace</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >ghc</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	></td
+	><td align="left"
+	>compile options for GHC</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >ghc+</code
+	  ></td
+	><td align="left"
+	></td
+	><td align="left"
+	></td
+	><td align="left"
+	>append <code
+	  >ghc</code
+	  > instead of replace</td
+	></tr
+      ></table
+    ><p
+    >For the verbosity level of output, the range is from &quot;0=be quiet&quot; to &quot;6=print all you can think of&quot;.</p
+    ><p
+    >The option <code
+      >command</code
+      > is useful only in combination with the <code
+      >--eval</code
+      > switch (see the section on switches above) and if the program uses <code
+      >System.getArgs</code
+      >.</p
+    ><p
+    >The run time settings (<code
+      >rts</code
+      >) effect, e.g., the stack and heap reserved for the execution. The settings will be included between <code
+      >+RTS</code
+      > and <code
+      >-RTS</code
+      > in the call to GHC.<a href="#fn7" class="footnoteRef" id="fnref7"
+      ><sup
+	>7</sup
+	></a
+      ></p
+    ><h2 id="editing-commands-and-history"
+    ><a href="#TOC-editing-commands-and-history"
+      >Editing Commands and History</a
+      ></h2
+    ><p
+    ><code
+      >KiCSi</code
+      > supports the <code
+      >readline</code
+      > framework.<a href="#fn8" class="footnoteRef" id="fnref8"
+      ><sup
+	>8</sup
+	></a
+      > As an additional feature <code
+      >KiCSi</code
+      > supports an initialization of the edit history. Upon start up, <code
+      >KiCSi</code
+      > will read a file <code
+      >kicsi.hist</code
+      > and add its content to the edit history. Expressions contained in the file will be enumerated beginning with 1, e.g., <code
+      >3+4</code
+      > could be added to the history as <code
+      >{-2-} 3+4</code
+      > if it is the second expression in the file. This feature is useful for demonstrations using <code
+      >KiCSi</code
+      >. The presenter should also be accustomed to the standard <code
+      >readline</code
+      > features.</p
+    ><h1 id="using-KiCS"
+    ><a href="#TOC-using-KiCS"
+      >Using <code
+	>KiCS</code
+	></a
+      ></h1
+    ><p
+    >The second main binary coming with the <code
+      >KiCS</code
+      > distribution is the compiler <code
+      >kics</code
+      >. It is used to generate binaries for Curry programs. Assume, for example, that you have a module <code
+      >MyCurryModule</code
+      > containing a function <code
+      >main</code
+      > of type <code
+      >IO ()</code
+      >. Then you would write the following line to obtain an executable called <code
+      >test</code
+      > executing <code
+      >main</code
+      >.</p
+    ><pre class="haskell"
+    ><code
+      >kics -executable -o test MyCurryModule
+</code
+      ></pre
+    ><p
+    >Here is the full table of options for <code
+      >kics</code
+      >.</p
+    ><table
+    ><tr class="header"
+      ><th align="left" style="width: 20%;"
+	>Option</th
+	><th align="left" style="width: 52%;"
+	>Description</th
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-main</td
+	><td align="left"
+	>name of main function</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-frontend</td
+	><td align="left"
+	>path to frontend binary</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-kicspath</td
+	><td align="left"
+	>path to kics compiler</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-userlibpath</td
+	><td align="left"
+	>path to curry libraries</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-nouserlibpath</td
+	><td align="left"
+	>only standard curry libraries</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-ghc</td
+	><td align="left"
+	>path to ghc</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-make</td
+	><td align="left"
+	>chase imported modules</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-nomake</td
+	><td align="left"
+	>do not chase imported modules</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-executable</td
+	><td align="left"
+	>create executable</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-noexecutable</td
+	><td align="left"
+	>do not create executable</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-v <n></td
+	><td align="left"
+	>set verbosity level to n, e.g., -v 3</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-q</td
+	><td align="left"
+	>scarce output</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-force</td
+	><td align="left"
+	>force recompilation</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-noforce</td
+	><td align="left"
+	>do not force recompilation</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-all df</td
+	><td align="left"
+	>print all solutions depth first</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-all bf</td
+	><td align="left"
+	>print all solutions breadth first</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-st</td
+	><td align="left"
+	>print solutions as search tree</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-i df</td
+	><td align="left"
+	>interactively show solutions depth first</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	>-i bf</td
+	><td align="left"
+	>interactively show solutions breadth first</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	>-o</td
+	><td align="left"
+	>name of output file</td
+	></tr
+      ></table
+    ><h1 id="the-debugger-bio"
+    ><a href="#TOC-the-debugger-bio"
+      >The Debugger B.i.O.</a
+      ></h1
+    ><p
+    >The <code
+      >KiCS</code
+      > system comes with a debugger called B.i.O. which is short for <strong
+      >B</strong
+      >elieve <strong
+      >i</strong
+      >n <strong
+      >O</strong
+      >racles. To find out more about the oracle technique have a look at the corresponding papers.<a href="#fn9" class="footnoteRef" id="fnref9"
+      ><sup
+	>9</sup
+	></a
+      > <a href="#fn10" class="footnoteRef" id="fnref10"
+      ><sup
+	>10</sup
+	></a
+      >.</p
+    ><p
+    >Before you can start the debugger, remember that you have to execute <code
+      >make bio</code
+      > in addition to building <code
+      >KiCS</code
+      >, as explained in the section about the installation procedure.</p
+    ><p
+    >B.i.O. supports two major modes. The first is an implementation of the well known declarative debugging method. The second is a step-by-step tracer allowing us to follow a program's execution as if the underlying semantics was strict, skipping uninteresting sub computations. In addition, the tool gives some support for finding bugs in programs employing I/O. Both modes are described in the following section.</p
+    ><h2 id="example-sessions"
+    ><a href="#TOC-example-sessions"
+      >Example Sessions</a
+      ></h2
+    ><p
+    >The next pages exemplify the usage of B.i.O.. If you prefer a compact description of commands and options, jump ahead to the overview section.</p
+    ><h3 id="declarative-debugging"
+    ><a href="#TOC-declarative-debugging"
+      >Declarative Debugging</a
+      ></h3
+    ><p
+    >Consider the following small example program containing an intentional error to demonstrate the declarative debugging mode.</p
+    ><pre class="haskell"
+    ><code
+      >module Example where
+
+import Prelude hiding (length)
+
+length []     = 0
+length (_:xs) = length xs
+
+fiblist x = fib x : fiblist (x+1)
+
+fib :: Int -&gt; Int
+fib _ = error &quot;this will not be evaluated&quot;
+</code
+      ></pre
+    ><p
+    >The function <code
+      >fiblist</code
+      > creates a potentially infinite list of delayed calls to function <code
+      >fib</code
+      >. Due to laziness, <code
+      >fib</code
+      > is never evaluated in our example, so we omit its definition. The infinite list is cut to the first two elements by a call to function <code
+      >take</code
+      >, which is defined in the usual way. On top level, function <code
+      >length</code
+      > is applied to count the elements of the resulting list.</p
+    ><p
+    >It is to be expected that the program returns the number 2.</p
+    ><pre class="haskell"
+    ><code
+      >&gt; :l Example
+Example&gt; length (take 2 (fiblist 0))
+0
+</code
+      ></pre
+    ><p
+    >We see that running the program reveals the result <code
+      >0</code
+      >, which indicates that there must be a bug somewhere. Therefore, we switch on the debug mode and execute the program once again.</p
+    ><pre class="haskell"
+    ><code
+      >Example&gt; :set +d
+Example&gt; length (take 2 (fiblist 0))
+</code
+      ></pre
+    ><p
+    >In the background, our example program and all the modules it depends on are transformed to new modules which are then compiled. This may take some time if you debug an expression in the context of a larger project. Don't worry; the next time you will debug within this project the startup will be much faster. Upon completion of the compilation processes the actual debugging session starts.</p
+    ><pre class="haskell"
+    ><code
+      > ____    ____    _____
+(  _ \  (_  _)  (  _  )   Believe
+ ) _ &lt;   _)(_    )(_)(    in
+(____/()(____)()(_____)() Oracles
+--------type ? for help----------
+
+main
+</code
+      ></pre
+    ><p
+    >Initially, we only see a call to function <code
+      >main</code
+      > which was added by the system to refer to the expression we entered at the prompt in our example. Pressing <code
+      >i</code
+      > turns on <em
+      >inspect mode</em
+      >. In inspect mode, the result of every sub computation is directly shown and can be &quot;inspected&quot; by the user, i.e., rated as correct or wrong. Inspect mode therefore corresponds to the declarative debugging method. But as we will see in the next section, the display of results of sub computations can be turned on and off at any time. Of course, there is a help menu available, showing a list of all possible inputs.</p
+    ><p
+    >After pressing <code
+      >i</code
+      >, the debugger evaluates the expression and displays the result.</p
+    ><pre class="haskell"
+    ><code
+      >main ~&gt; 0
+</code
+      ></pre
+    ><p
+    >We expected main to have value <code
+      >2</code
+      >, but the program returned value <code
+      >0</code
+      >. Thus, we enter <code
+      >w</code
+      > (<em
+      >wrong</em
+      >) in order to tell the debugger that the result was wrong. The debugging tool stores this choice. As the value of <code
+      >main</code
+      > depends on several function calls on the right hand side of its definition, the tool now displays the first of these calls in a leftmost, innermost order:</p
+    ><pre class="haskell"
+    ><code
+      >fiblist 0 ~&gt; _ : (_ : _)
+</code
+      ></pre
+    ><p
+    >The line above shows that the expression <code
+      >fiblist 0</code
+      > has been evaluated to a list that has at least two elements. This might be correct, but we are not too sure, since this result depends strongly on the evaluation context. A &quot;don't know&quot; in declarative debugging actually corresponds to the skipping of sub computations in the step-by-step mode, as described in the next section. We therefore press <code
+      >s</code
+      > (<em
+      >skip</em
+      >).</p
+    ><pre class="haskell"
+    ><code
+      >take 2 (_ : (_ : _)) ~&gt; [_,_]
+</code
+      ></pre
+    ><p
+    >Actually, this looks quite good. By entering <code
+      >c</code
+      > (<em
+      >correct</em
+      >) we declare that this sub computation meets our expectation. Now the following calculation is displayed:</p
+    ><pre class="haskell"
+    ><code
+      >length [_,_] ~&gt; 0
+</code
+      ></pre
+    ><p
+    >The function <code
+      >length</code
+      > is supposed to count the elements in a list. Since the argument is a two-element list, the result should be <code
+      >2</code
+      >, but it is actually <code
+      >0</code
+      >. By pressing <code
+      >w</code
+      > we therefore state that this calculation is erroneous. Now the debugger asks for the first sub computation leading to this result:</p
+    ><pre class="haskell"
+    ><code
+      >length [_]  ~&gt; 0
+</code
+      ></pre
+    ><p
+    >This is also wrong, but for the sake of demonstration we delay our decision. By pressing the space bar (<em
+      >step into</em
+      >) we move to the sub expressions of <code
+      >length [_]</code
+      >. We now get to the final question:</p
+    ><pre class="haskell"
+    ><code
+      >length [] ~&gt; 0
+</code
+      ></pre
+    ><p
+    >The length of an empty list <code
+      >[]</code
+      > is zero, so by pressing <code
+      >c</code
+      > (<em
+      >correct</em
+      >) we state that this evaluation step is correct. Now we have reached the end of the program execution, but a bug has not been isolated yet. We have narrowed down the error to the function call <code
+      >length [_,_]</code
+      >, but still there are unrated sub computations which might have contributed to the erroneous result. The tool asks if the user wants to restart the debugging session re-using previously given ratings:</p
+    ><pre class="haskell"
+    ><code
+      >end reached. press 'q' to abort or any other key to restart.
+</code
+      ></pre
+    ><p
+    >After pressing <code
+      >&lt;SPACE&gt;</code
+      >, the debugger restarts and asks for the remaining function calls. There is only one unrated call left within the erroneous sub computation:</p
+    ><pre class="haskell"
+    ><code
+      >length [_] ~&gt; 0
+</code
+      ></pre
+    ><p
+    >Now we provide the rating we previously skipped. After entering <code
+      >w</code
+      > (<em
+      >wrong</em
+      >) it is evident which definition contains the error:</p
+    ><pre class="haskell"
+    ><code
+      >found bug in rule:
+  lhs = length [_]
+  rhs = 0
+</code
+      ></pre
+    ><h3 id="step-by-step-debugging-and-virtual-io"
+    ><a href="#TOC-step-by-step-debugging-and-virtual-io"
+      >Step-by-Step Debugging and Virtual I/O</a
+      ></h3
+    ><p
+    >A further interesting advantage of our approach to reexecute the program with a strict evaluation strategy is the possibility to include &quot;virtual I/O&quot;.<a href="#fn11" class="footnoteRef" id="fnref11"
+      ><sup
+	>11</sup
+	></a
+      > During the execution of the original program, all externally defined I/O-actions with non-trivial results, i.e., other than <code
+      >IO ()</code
+      >, are stored in a special file. These values are retrieved during the debugging session. In addition, selected externally defined I/O-actions, e.g., <code
+      >putChar</code
+      >, are provided with a &quot;virtual implementation&quot;. To show what this means, we demonstrate how the <code
+      >main</code
+      > action of the following program is treated by our debugging tool.</p
+    ><pre class="haskell"
+    ><code
+      >module IOExample where
+
+import Prelude hiding (getLine)
+
+getLine :: IO String
+getLine = getChar &gt;&gt;= testEOL
+
+testEOL :: Char -&gt; IO String
+testEOL c = if c=='\n' then return []
+                       else getLine &gt;&gt;= \ cs -&gt; return (c:cs)
+
+main = getLine &gt;&gt;= writeFile &quot;userInput&quot;
+</code
+      ></pre
+    ><p
+    >As the example program contains user interaction, we also have to enter a line. We type <code
+      >abc</code
+      > for this demonstration.<br
+       />Now the debugging tool is started, and we look at the first two single steps by typing <code
+      >&lt;SPACE&gt;</code
+      > twice. This is what the tool displays at this point:</p
+    ><pre class="haskell"
+    ><code
+      >main
+getLine
+getLine ~&gt; getChar &gt;&gt;= testEOL
+main ~&gt; (getChar &gt;&gt;= testEOL) &gt;&gt;= writeFile &quot;userInput&quot;
+initial action computed. press any key to execute it
+</code
+      ></pre
+    ><p
+    >In step-by-step mode, we only get to see results when a subcomputation is finished. The above lines mean that the evaluation of both, <code
+      >getLine</code
+      > and <code
+      >main</code
+      > is now complete. The results are partial calls of the bind operator <code
+      >(&gt;&gt;=)</code
+      > waiting for the world, so to speak. We press an arbitrary key to start the action followed by a <code
+      >&lt;SPACE&gt;</code
+      > to make one more single step and get:</p
+    ><pre class="haskell"
+    ><code
+      >getChar &gt;&gt;= testEOL
+getChar
+</code
+      ></pre
+    ><p
+    >When we hit <code
+      >&lt;SPACE&gt;</code
+      > now, two things happen at once. First, the value <code
+      >'a'</code
+      > is retrieved from the file and, second, a GUI called <code
+      >B.I.O.tope</code
+      > is started, which represents the virtual I/O environment. <code
+      >B.I.O.tope</code
+      > is told that someone has typed an <code
+      >a</code
+      > on the console, which is the &quot;virtual I/O-action&quot; we connected with <code
+      >getChar</code
+      >. The <code
+      >B.I.O.tope</code
+      > window is shown in the following picture.</p
+    ><p
+    ><img src="snapshot1.png" alt="B.I.O.tope"
+       /></p
+    ><p
+    >Meanwhile, on the console we see the result of the call to <code
+      >testEOL 'a'</code
+      >, which we skip by typing <code
+      >s</code
+      >.</p
+    ><pre class="haskell"
+    ><code
+      >testEOL 'a' ~&gt; (getChar &gt;&gt;= testEOL) &gt;&gt;= testEOL_lambda 'a'
+(getChar &gt;&gt;= testEOL) &gt;&gt;= testEOL_lambda 'a'
+</code
+      ></pre
+    ><p
+    >Admittedly, the expression <code
+      >testEOL_{}lambda 'a'</code
+      > shows that the source code binding is improvable. Now we wonder, whether or not the current sub computation is interesting. We type <code
+      >r</code
+      > to have a look at the result and get:</p
+    ><pre class="haskell"
+    ><code
+      >(getChar &gt;&gt;= testEOL) &gt;&gt;= testEOL_lambda 'a' ~&gt; IO &quot;abc&quot;
+</code
+      ></pre
+    ><p
+    >This is fine, so we decide to skip the computation by pressing <code
+      >s</code
+      >. Note, that as soon as a result is shown, we can also rate the sub computation, i.e., tell the tool that this result is correct or wrong. This information will then be considered if we restart the debugging session in inspect mode as described in the previous section. It is also noteworthy that the virtual I/O commands are never issued twice, even if we had decided to go into the sub computation instead of skipping it.</p
+    ><p
+    >The final action of our program is:</p
+    ><pre class="haskell"
+    ><code
+      >writeFile &quot;userInput&quot; &quot;abc&quot;
+</code
+      ></pre
+    ><p
+    >Executing this action brings another change to the <code
+      >B.I.O.tope</code
+      > as shown in the next picture. There we can see the GUI has switched to the file dialog. It contains a list of files which have been read (<code
+      >R:</code
+      >) or written (<code
+      >W:</code
+      >) during the debugging session and clicking a file in this list makes the file contents visible as they are at the current point of the debugging session.</p
+    ><p
+    ><img src="snapshot2.png" alt="Files in B.I.O.tope"
+       /></p
+    ><h2 id="overview-commands-and-options-of-bio"
+    ><a href="#TOC-overview-commands-and-options-of-bio"
+      >Overview Commands and Options of B.i.O.</a
+      ></h2
+    ><p
+    >B.i.O. supports the following commands where an entry in column &quot;Restriction&quot; means that the command is only available under certain conditions. For example, you can only rate a result as correct if B.i.O. actually shows the result of the current expression.</p
+    ><table
+    ><tr class="header"
+      ><th align="left" style="width: 12%;"
+	>Key</th
+	><th align="left" style="width: 17%;"
+	>Restriction</th
+	><th align="left" style="width: 52%;"
+	>Description</th
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >s</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	><em
+	  >skip</em
+	  > current sub computation</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >&lt;SPACE&gt;</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	>step into current sub computation</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >b</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	>take <em
+	  >back</em
+	  > last command</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >i</code
+	  ></td
+	><td align="left"
+	>step mode</td
+	><td align="left"
+	>switch to <em
+	  >inspect</em
+	  > mode</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >i</code
+	  ></td
+	><td align="left"
+	>inspect mode</td
+	><td align="left"
+	>leave <em
+	  >inspect</em
+	  > mode, enter step mode</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >r</code
+	  ></td
+	><td align="left"
+	>step mode</td
+	><td align="left"
+	>show <em
+	  >result</em
+	  ></td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >c</code
+	  ></td
+	><td align="left"
+	>result shown</td
+	><td align="left"
+	>rate the shown result as <em
+	  >correct</em
+	  ></td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >w</code
+	  ></td
+	><td align="left"
+	>result shown</td
+	><td align="left"
+	>rate the shown result as <em
+	  >wrong</em
+	  ></td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >q</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	><em
+	  >quit</em
+	  > debugging session</td
+	></tr
+      ><tr class="even"
+      ><td align="left"
+	><code
+	  >d</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	>set max <em
+	  >depth</em
+	  > to print terms</td
+	></tr
+      ><tr class="odd"
+      ><td align="left"
+	><code
+	  >-</code
+	  ></td
+	><td align="left"
+	>-</td
+	><td align="left"
+	>pressing (almost) any other key results in printing helpful hints.</td
+	></tr
+      ></table
+    ><p
+    >The <em
+      >skip</em
+      > command can also be understood as &quot;don't know&quot; in declarative debugging mode. For the <em
+      >back</em
+      > command you can take back your last decision, i.e., not the last setting, in arbitrary depth. Even if you are not currently doing declarative debugging, looking at the result with the <em
+      >result</em
+      > command might be useful in order to decide whether or not to enter into the current sub computation. For the <em
+      >depth</em
+      >-command, after pressing <code
+      >d</code
+      > you are supposed to enter a number and then hit <code
+      >&lt;RETURN&gt;</code
+      >. A depth of <code
+      >0</code
+      > means that there is no restriction to the terms shown.</p
+    ><h2 id="trusted-functions"
+    ><a href="#TOC-trusted-functions"
+      >Trusted Functions</a
+      ></h2
+    ><p
+    >A trusted function will not appear during debugging. All the functions in standard modules are trusted, for example.</p
+    ><p
+    >For each module M you can add a file M.trust in the same directory. A .trust file contains the names of functions, possibly lead by a bang.</p
+    ><p
+    >Let, for example, M contain functions f1, f2, f3. If you write in M.trust</p
+    ><pre class="haskell"
+    ><code
+      >  !f1 
+  f2
+</code
+      ></pre
+    ><p
+    >Then f1 is not trusted, while f2 is trusted.</p
+    ><p
+    >The default for all functions is defined by the first entry in the trust file. If the first entry is lead by a bang then the default is that functions are trusted. If the first entry has no bang then the default is &quot;not trusted&quot;. In the above example f3 is, therefore, trusted (and the second line superfluous). The reasoning is that you'd rather like to write the exceptions to the file than to repeat the usual case all over. Along the same line, an empty .trust file simply means: trust the whole module.</p
+    ><p
+    >And sometimes one of the arguments of a function is just not interesting. Imagine a dictionary carried around at all times.</p
+    ><p
+    >You can omit such arguments in a trust file like this</p
+    ><pre class="haskell"
+    ><code
+      >  !mysuperfun _ x _ _ y
+</code
+      ></pre
+    ><p
+    >Now from the function &quot;mysuperfun&quot; you will only see the second and fifth argument. Actually, you will also see any remaining arguments if the function has more than five. Thus, you could also have written</p
+    ><pre class="haskell"
+    ><code
+      >  !mysuperfun _ x _ _
+</code
+      ></pre
+    ><p
+    >for the same effect.</p
+    ><p
+    >Don't worry about what to call <code
+      >x</code
+      > or <code
+      >y</code
+      >. Every string but <code
+      >_</code
+      > will be interpreted as &quot;I want to see this&quot;. Thus, its still the same to write:</p
+    ><pre class="haskell"
+    ><code
+      >  !mysuperfun _ showmethismostimportantargumentatallcalls _ _
+</code
+      ></pre
+    ><p
+    >During debugging, trusted arguments are shown as green underscores (so that you won't confuse it with an unneeded argument).</p
+    ><h1 id="concluding-remarks"
+    ><a href="#TOC-concluding-remarks"
+      >Concluding Remarks</a
+      ></h1
+    ><p
+    >Thanks for looking into <code
+      >KiCS</code
+      > and for any feedback, cheers blames or bug reports, contact me at <script type="text/javascript"
+      >
+<!--
+h='&#x69;&#110;&#102;&#x6f;&#114;&#x6d;&#x61;&#116;&#x69;&#x6b;&#46;&#x75;&#110;&#x69;&#x2d;&#x6b;&#x69;&#x65;&#108;&#46;&#100;&#x65;';a='&#64;';n='&#98;&#98;&#114;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'<code>'+e+'</code>'+'<\/'+'a'+'>');
+// -->
+</script
+      ><noscript
+      >&#98;&#98;&#114;&#32;&#x61;&#116;&#32;&#x69;&#110;&#102;&#x6f;&#114;&#x6d;&#x61;&#116;&#x69;&#x6b;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#110;&#x69;&#x2d;&#x6b;&#x69;&#x65;&#108;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript
+      >.</p
+    ><p
+    ><img src="curry.png" alt="Logo"
+       /></p
+    ><p
+    >This document has been generated by<br
+       /><a href="http://johnmacfarlane.net/pandoc/" title="Pandoc"
+      >Pandoc</a
+      >.</p
+    ><div class="footnotes"
+    ><hr
+       /><ol
+      ><li id="fn1"
+	><p
+	  >M. Hanus (ed.). <em
+	    >Curry: An integrated functional logic language (vers. 0.8.2).</em
+	    > Available at <a href="http://www.informatik.uni-kiel.de/~curry"
+	    ><code
+	      >http://www.informatik.uni-kiel.de/~curry</code
+	      ></a
+	    >, 2006. <a href="#fnref1" class="footnoteBackLink" title="Jump back to footnote 1">&#8617;</a></p
+	  ></li
+	><li id="fn2"
+	><p
+	  >S. Peyton Jones, editor. <em
+	    >Haskell 98 Language and Libraries---The Revised Report.</em
+	    > Cambridge University Press, 2003. <a href="#fnref2" class="footnoteBackLink" title="Jump back to footnote 2">&#8617;</a></p
+	  ></li
+	><li id="fn3"
+	><p
+	  ><a href="http://www.haskell.org/ghc"
+	    ><code
+	      >http://www.haskell.org/ghc</code
+	      ></a
+	    > <a href="#fnref3" class="footnoteBackLink" title="Jump back to footnote 3">&#8617;</a></p
+	  ></li
+	><li id="fn4"
+	><p
+	  ><a href="http://www.haskell.org/cabal"
+	    ><code
+	      >http://www.haskell.org/cabal</code
+	      ></a
+	    > <a href="#fnref4" class="footnoteBackLink" title="Jump back to footnote 4">&#8617;</a></p
+	  ></li
+	><li id="fn5"
+	><p
+	  ><a href="http://hackage.haskell.org/package/curry-frontend"
+	    ><code
+	      >http://hackage.haskell.org/package/curry-frontend</code
+	      ></a
+	    > <a href="#fnref5" class="footnoteBackLink" title="Jump back to footnote 5">&#8617;</a></p
+	  ></li
+	><li id="fn6"
+	><p
+	  ><a href="http://www-ps.informatik.uni-kiel.de/~bbr/download/kics_src.tgz"
+	    ><code
+	      >http://www-ps.informatik.uni-kiel.de/~bbr/download/kics_src.tgz</code
+	      ></a
+	    > <a href="#fnref6" class="footnoteBackLink" title="Jump back to footnote 6">&#8617;</a></p
+	  ></li
+	><li id="fn7"
+	><p
+	  >See <a href="http://www.haskell.org/ghc/docs/latest/html/users_guide/"
+	    ><code
+	      >http://www.haskell.org/ghc/docs/latest/html/users_guide/</code
+	      ></a
+	    > for details <a href="#fnref7" class="footnoteBackLink" title="Jump back to footnote 7">&#8617;</a></p
+	  ></li
+	><li id="fn8"
+	><p
+	  ><a href="http://tiswww.case.edu/php/chet/readline/rltop.html"
+	    ><code
+	      >http://tiswww.case.edu/php/chet/readline/rltop.html</code
+	      ></a
+	    > <a href="#fnref8" class="footnoteBackLink" title="Jump back to footnote 8">&#8617;</a></p
+	  ></li
+	><li id="fn9"
+	><p
+	  >B. Braßel, S. Fischer, M. Hanus, F. Huch, and G. Vidal. Lazy call-by-value evaluation. In <em
+	    >Proceedings of the 12th ACM SIGPLAN International Conference on Functional Programming (ICFP'07)</em
+	    >, pages 265 -- 276, 2007. <a href="#fnref9" class="footnoteBackLink" title="Jump back to footnote 9">&#8617;</a></p
+	  ></li
+	><li id="fn10"
+	><p
+	  >Bernd Braßel and Holger Siegel. Debugging Lazy Functional Programs by Asking the Oracle. In Olaf Chitil, editor, <em
+	    >Proc. Implementation of Functional Languages (IFL 2007)</em
+	    >, Lecture Notes in Computer Science. Springer, 2008. <a href="#fnref10" class="footnoteBackLink" title="Jump back to footnote 10">&#8617;</a></p
+	  ></li
+	><li id="fn11"
+	><p
+	  >Note that an installation of tcl/tk is needed to use virtual I/O. <a href="#fnref11" class="footnoteBackLink" title="Jump back to footnote 11">&#8617;</a></p
+	  ></li
+	></ol
+      ></div
+    ></body
+  ></html
+>
+

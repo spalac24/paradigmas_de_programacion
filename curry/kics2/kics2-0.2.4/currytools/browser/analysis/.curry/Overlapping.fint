@@ -1,0 +1,1 @@
+Prog "Overlapping" ["FlatCurry","Prelude"] [] [Func ("Overlapping","isOverlappingFunction") 1 Public (FuncType (TCons ("FlatCurry","FuncDecl") []) (TCons ("Prelude","Bool") [])) (Rule [] (Var 0)),Func ("Overlapping","orInExpr") 1 Public (FuncType (TCons ("FlatCurry","Expr") []) (TCons ("Prelude","Bool") [])) (Rule [] (Var 0))] []

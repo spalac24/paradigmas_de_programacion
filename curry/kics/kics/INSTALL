@@ -1,0 +1,57 @@
+To install KiCS on your system, follow this procedure:
+
+1. Make sure that you have a fairly new and functional version of the 
+   Glasgow Haskell Compiler (GHC>=6.8.2) installed. 
+   To check your installation, type:
+
+      $ ghc --version
+
+   and you should get something like:
+
+      The Glorious Glasgow Haskell Compilation System, version 6.8.2
+
+   Note that the place of the ghc binary has to be included in your
+   current search path prior to building kics.
+
+2. The KiCS system is divided in two parts: a frontend and a backend. 
+   If you should happen to have the PAKCS system installed, 
+   you only need to install the KiCS backend. 
+   Simply set a path to the PAKCS frontend, e.g., for bash type:
+
+      $ export PATH=your_path_to_pakcs/mccparser/bin:$PATH
+
+   If you need to install the frontend, download the source tarball at
+   http://www-ps.informatik.uni-kiel.de/~bbr/download/frontend.tgz 
+   Unpack and make it, e.g.:
+
+      $ gunzip frontend.tgz
+      $ tar xf frontend.tar
+      $ cd mccparser
+      $ make
+
+   Afterwards you have to set a path to the newly created binary, e.g.:
+
+      $ export PATH=path_to_where_you_unpacked_tarfile/mccparser/bin:$PATH
+
+   You can check the frontend by
+
+      $ which cymake
+
+   And you should see something like
+
+      /home/bbr/mccparser/bin/cymake
+
+3. Now install the backend. 
+   This file is already part of the source tarball originally from
+   http://www-ps.informatik.uni-kiel.de/~bbr/download/kics_src.tgz
+   Unpack the tar ball and make it, e.g.:
+
+      $ gunzip kics_src.tgz
+      $ tar xf kics_src.tar
+      $ cd kics
+      $ make
+
+4. If you want to use the b.i.o. debugger you have to type additionally:
+
+      make bio
+

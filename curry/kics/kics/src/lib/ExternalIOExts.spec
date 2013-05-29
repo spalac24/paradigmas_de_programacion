@@ -1,0 +1,1 @@
+[ForType "IORef" Nothing,ForFunction "prim_execCmd",ForFunction "choiceStreamOrMsgs",ForFunction "prim_setAssoc",ForFunction "prim_getAssoc",ForFunction "newIORef",ForFunction "prim_readIORef",ForFunction "prim_writeIORef"]

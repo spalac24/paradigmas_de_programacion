@@ -1,0 +1,1 @@
+[ForFunction "prim_doesFileExist",ForFunction "prim_doesDirectoryExist",ForFunction "prim_fileSize",ForFunction "prim_getModificationTime",ForFunction "prim_getDirectoryContents"]

@@ -1,0 +1,204 @@
+#!/bin/sh
+# Compile a Curry program (using the HTML library) into a cgi script
+
+# Standard suffix that will be added to the main script:
+CGISUFFIX="_CGIMAIN_$$"
+# Name of the main function in the main script (should not be in conflict
+# with any exported name of the Curry program)
+MAINCALL="main_cgi_9999_$$"
+
+ERROR=
+HELP=no
+COMPILEROPTIONS=
+WRITEERRORS=yes
+COMPACT=no
+DEBUG=no
+DEBUGFILE=
+ULIMIT="-t 60"
+MAIN=main
+CGIFILE=
+WUIJS=no
+WUIMODULES=
+SERVERTIMEOUT=
+MULTIPLESERVERS=
+ARGS=
+
+while [ $# -gt 0 -a -z "$ERROR" ]; do
+  case $1 in
+   -help | -h | -\? ) HELP=yes ;;
+   -D*              ) COMPILEROPTIONS="$COMPILEROPTIONS $1" ;;
+   -noerror         ) WRITEERRORS=no ;;
+   -compact         ) COMPACT=yes ;;
+   -debug           ) DEBUG=yes ;;
+   -debugfile       ) shift ; DEBUGFILE=$1 ;;
+   -servertimeout   ) shift ; SERVERTIMEOUT="-servertimeout $1" ;;
+   -multipleservers ) MULTIPLESERVERS="-multipleservers" ;;
+   -ulimit          ) shift; ULIMIT=$1 ;;
+   -wuijs           ) WUIJS=yes ;;
+   -wui             ) shift; WUIMODULES="$WUIMODULES $1" ;;
+   -m               ) shift; MAIN=$1 ;;
+   -o               ) shift; CGIFILE=$1 ;;
+   -*               ) ERROR="Unknown option: $1" ;;
+   *                ) ARGS="$ARGS $1" ;; # collect non-option arguments
+  esac
+  shift
+done
+if test -n "$ARGS" ; then
+  set $ARGS
+fi
+
+if [ $HELP = yes ] ; then
+  set "1" ; shift # to show next usage message
+fi
+
+if test -n "$ERROR" ; then
+  echo "ERROR: $ERROR"
+  set "1" ; shift # to show next usage message
+fi
+
+if [ $# != 1 -a $# != 3 ] ; then
+  echo "USAGE: $0 [options] <curry>"
+  echo
+  echo "MAIN OPTIONS:"
+  echo "-o <cgi>   : name of the file (with suffix .cgi) where the cgi program should"
+  echo "             be stored (default: <curry>.cgi)."
+  echo "-main <form>  : Curry expression (of type IO HtmlForm) computing the HTML form"
+  echo "             (default: main)."
+  echo "<curry>    : name of the Curry program (without suffix) containing the script"
+  echo
+  echo "FURTHER OPTIONS:"
+  echo '-Dname=val : define pakcsrc property "name" as "val"'
+  echo "-noerror   : do not write errors in error log file of the web server"
+  echo "-compact   : reduce size of generated cgi program by deleting unused functions"
+  echo "-debug     : include code for showing failures"
+  echo "             (= PAKCS options '+printfail/+allfails')"
+  echo "-debugfile f: include code for storing failure trace in file f"
+  echo "             (= PAKCS options '+consfail file:f')"
+  echo "-ulimit <l>: set 'ulimit <l>' when executing the cgi program"
+  echo "-servertimeout <ms>: set the timeout for the cgi server process to"
+  echo "                     <ms> milliseconds (default: 7200000 / two hours)"
+  echo "-multipleservers: start a new server process for each initial call to"
+  echo "                  the cgi script (only reasonable with short timeout)"
+  echo "-wuijs     : generate JavaScript support code for WUIs"
+  echo "-wui <mod> : consider also imported module <mod> (that contains WUI"
+  echo "             specifications) when generating JavaScript support code"
+  exit 1
+fi
+
+# Compute the main directory where PACKS is installed:
+PATHNAME=`(cd \`dirname $0\` > /dev/null ; pwd)`
+COMPILERHOME=`expr $PATHNAME : '\(.*\)/bin'`
+export COMPILERHOME
+COMPILER="$COMPILERHOME/bin/kics -executable "
+
+# Definitions for WUI/JavaScript generation:
+WUIJS_PREPROCESSOR=$COMPILERHOME/tools/curry2js/Curry2JS.state
+WUIJS_DEFAULT_JS=$COMPILERHOME/include/wui_prims.js
+
+# remove possible suffix:
+PROG=`expr $1 : '\(.*\)\.lcurry' \| $1`
+PROG=`expr $PROG : '\(.*\)\.curry' \| $PROG`
+
+if test -z "$CGIFILE" ; then
+  CGIFILE=$PROG.cgi
+fi
+MAINMOD=$PROG$CGISUFFIX
+MAINCURRY=$MAINMOD.curry
+
+# compute (relative) name of cgi program:
+CGIDIR=`dirname $CGIFILE`
+if [ $CGIDIR = "." ] ; then
+  CGIPROG=$CGIFILE
+else
+  CGIPROG=`expr $CGIFILE : "$CGIDIR/\(.*\)"`
+fi
+
+# name of the server:
+CGIFILEPATHNAME=`(cd $CGIDIR > /dev/null ; pwd)`
+CGISERVERPROG=$CGIPROG.server
+CGISERVERFILE=$CGIFILEPATHNAME/$CGIPROG.server
+
+# unique key for this cgi script:
+CGIKEY="$CGIFILEPATHNAME/$CGIPROG `date '+%m/%d/%y/%H/%M/%S'`"
+
+# stop old server, if necessary:
+if [ -f $CGISERVERFILE ] ; then
+  echo "Stop old version of the server '$CGISERVERFILE'..."
+  $COMPILERHOME/www/registry stopServers $CGISERVERFILE 
+fi
+
+# generate cgi script:
+rm -f $CGIFILE
+echo "#!/bin/sh" >> $CGIFILE
+echo "$COMPILERHOME/www/submitform $SERVERTIMEOUT $MULTIPLESERVERS \"$CGIPROG\" \"$CGIKEY\" \"$CGISERVERFILE\" 2>> /tmp/submitform.log" >> $CGIFILE
+chmod 755 $CGIFILE
+
+# generate server program implementing the cgi script application:
+rm -f $MAINCURRY
+echo "module $MAINMOD($MAINCALL) where" >> $MAINCURRY
+echo "import $PROG" >> $MAINCURRY
+echo "import HTML" >> $MAINCURRY
+if [ $WUIJS = no ] ; then
+  echo "$MAINCALL = runFormServerWithKey \"$CGIPROG\" \"$CGIKEY\" ($MAIN)" >> $MAINCURRY
+else
+  CGIBASE=`expr $CGIPROG : '\(.*\)\.cgi' \| $CGIPROG`
+  JSFILE=$CGIBASE\_wui.js
+  $WUIJS_PREPROCESSOR -wui -o $JSFILE $PROG $WUIMODULES
+  if [ $? != 0 ] ; then
+    rm -f $MAINCURRY
+    exit $?
+  fi
+  chmod 644 $JSFILE
+  if [ $CGIDIR != "." ] ; then
+    mv $JSFILE $CGIDIR/$JSFILE
+  fi
+  echo "$MAINCALL = runFormServerWithKeyAndFormParams \"$CGIPROG\" \"$CGIKEY\" [FormJScript \"$JSFILE\",FormOnSubmit \"return submissionAllowed()\"] ($MAIN)" >> $MAINCURRY
+fi
+
+# compile main module:
+echo "Generating saved state for initial expression: $MAIN"
+echo
+if [ $DEBUG = yes ] ; then
+  PRINTFAIL="-set +allfails -set +printfail"
+elif [ -n "$DEBUGFILE" ] ; then
+  PRINTFAIL="-set +consfail file:$DEBUGFILE"
+else
+  PRINTFAIL=
+fi
+# if [ $WRITEERRORS = yes ] ; then
+#  ERRORMODE="-set +error"
+# else
+#  ERRORMODE="-set -error"
+# fi
+if [ $COMPACT = yes ] ; then
+  FCYPP="$FCYPP -compactexport " ; export FCYPP
+fi
+
+echo $CGISERVERFILE
+
+$COMPILER -userlibpath $CURRYPATH $COMPILEROPTIONS $PRINTFAIL $ERRORMODE -executable -o $MAINMOD.state -main $MAINCALL $MAINMOD
+rm -f $MAINMOD.curry $MAINMOD.fcy $MAINMOD.fint Curry$MAINMOD.hi Curry$MAINMOD.o Curry$MAINMOD.hs
+STATE=$MAINMOD.state
+
+# now the file $STATE should contain the saved state computing the HTML form:
+if test ! -f $STATE ; then
+  echo "Error: saved state '$STATE' does not exist!"
+  exit 1
+fi
+
+#if test -n "$ULIMIT" ; then
+#  echo "ULIMIT"
+#  TMPFILE=TMPCGIPROLOG$$
+#  echo "#!/bin/sh" > $TMPFILE
+#  echo "ulimit $ULIMIT" >> $TMPFILE
+#  cat $TMPFILE $STATE > $CGISERVERFILE
+#  rm -f $TMPFILE $STATE
+#else
+  mv $STATE $CGISERVERFILE
+#fi
+chmod 755 $CGISERVERFILE
+
+echo "`date`: cgi script compiled" > $CGIFILE.log
+
+echo
+echo "New files \"$CGIFILE[.server]\" with compiled cgi script generated."

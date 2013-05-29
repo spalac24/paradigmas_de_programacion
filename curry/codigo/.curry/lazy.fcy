@@ -1,0 +1,1 @@
+Prog "lazy" ["Prelude"] [] [Func ("lazy","from") 1 Public (FuncType (TCons ("Prelude","Int") []) (TCons ("Prelude","[]") [TCons ("Prelude","Int") []])) (Rule [1] (Comb ConsCall ("Prelude",":") [Var 1,Comb FuncCall ("lazy","from") [Comb FuncCall ("Prelude","+") [Var 1,Lit (Intc  1)]]]))] []

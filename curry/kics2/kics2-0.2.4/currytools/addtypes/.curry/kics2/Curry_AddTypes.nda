@@ -1,0 +1,1 @@
+("(BranchFM (\"Curry_AddTypes\",\"C_main\") ND 2 (BranchFM (\"Curry_AddTypes\",\"C_addTypeSignatures\") ND 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_AddTypes\",\"C_main\") FO 2 (BranchFM (\"Curry_AddTypes\",\"C_addTypeSignatures\") FO 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_Prelude\",\"C_Success\") FO 1 EmptyFM EmptyFM)","EmptyFM")

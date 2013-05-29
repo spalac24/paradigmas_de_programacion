@@ -1,0 +1,24 @@
+\BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Major Elements}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.10}{Expressions}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.11}{Functions}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.3.13}{Data types}{Outline0.2}% 5
+\BOOKMARK [2][]{Outline0.3}{High-Order Functions}{}% 6
+\BOOKMARK [3][]{Outline0.3.1.16}{Functions as values}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.2.17}{Function types}{Outline0.3}% 8
+\BOOKMARK [2][]{Outline0.4}{Scope}{}% 9
+\BOOKMARK [3][]{Outline0.4.1.22}{where clauses}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.2.23}{let clauses}{Outline0.4}% 11
+\BOOKMARK [2][]{Outline0.5}{Narrowing}{}% 12
+\BOOKMARK [3][]{Outline0.5.1.26}{Basic definitions}{Outline0.5}% 13
+\BOOKMARK [3][]{Outline0.5.2.28}{Rewrite Strategy}{Outline0.5}% 14
+\BOOKMARK [3][]{Outline0.5.3.31}{Formal Definition}{Outline0.5}% 15
+\BOOKMARK [3][]{Outline0.5.4.32}{Example}{Outline0.5}% 16
+\BOOKMARK [2][]{Outline0.6}{Needed Narrowing}{}% 17
+\BOOKMARK [3][]{Outline0.6.1.36}{Definition}{Outline0.6}% 18
+\BOOKMARK [3][]{Outline0.6.2.37}{Example}{Outline0.6}% 19
+\BOOKMARK [3][]{Outline0.6.3.38}{Inductively Sequential TRS}{Outline0.6}% 20
+\BOOKMARK [3][]{Outline0.6.4.43}{Strict Equality}{Outline0.6}% 21
+\BOOKMARK [3][]{Outline0.6.5.45}{Weakly Needed Narrowing}{Outline0.6}% 22
+\BOOKMARK [3][]{Outline0.6.6.47}{Non-determinism}{Outline0.6}% 23
+\BOOKMARK [2][]{Outline0.7}{Bibliography}{}% 24

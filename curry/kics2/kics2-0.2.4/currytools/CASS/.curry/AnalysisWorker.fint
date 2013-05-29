@@ -1,0 +1,1 @@
+Prog "AnalysisWorker" ["AnalysisCollection","Configuration","IO","Prelude","ReadShowTerm","ServerFunctions","Socket","System"] [] [Func ("AnalysisWorker","main") 0 Public (TCons ("Prelude","IO") [TCons ("Prelude","()") []]) (Rule [] (Var 0))] []

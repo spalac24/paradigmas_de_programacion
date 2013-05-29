@@ -1,0 +1,687 @@
+Make started at Wed May 15 09:32:57 COT 2013
+make[2]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4'
+cd frontend && make
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/frontend'
+make[3]: `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/cymake' is up to date.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/frontend'
+cd scripts && make ROOT=/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/scripts'
+Scripts generated in directory /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/scripts'
+cd src && make
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src'
+mkdir -p /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local
+"/usr/bin/ghc" -O2 --make -v1 -cpp -package ghc -XMultiParamTypeClasses -XFlexibleInstances -XRelaxedPolyRec -i/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/idsupplyghc:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/ -o /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2c CompileBoot.hs
+[ 1 of 62] Compiling Installation     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Installation.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Installation.o )
+[ 2 of 62] Compiling MonadList        ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/MonadList.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/MonadList.o )
+[ 3 of 62] Compiling ID[boot]         ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ID.hs-boot, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ID.o-boot )
+[ 4 of 62] Compiling IDSupply         ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/idsupplyghc/IDSupply.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/idsupplyghc/IDSupply.o )
+[ 5 of 62] Compiling CurryException   ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/CurryException.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/CurryException.o )
+[ 6 of 62] Compiling Debug            ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Debug.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Debug.o )
+[ 7 of 62] Compiling ID               ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ID.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ID.o )
+[ 8 of 62] Compiling ConstStore       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ConstStore.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/ConstStore.o )
+[ 9 of 62] Compiling Types            ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Types.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Types.o )
+[10 of 62] Compiling PrimTypes        ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/PrimTypes.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/PrimTypes.o )
+[11 of 62] Compiling Solver           ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Solver.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Solver.o )
+[12 of 62] Compiling MonadSearch      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/MonadSearch.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/MonadSearch.o )
+[13 of 62] Compiling Strategies       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Strategies.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Strategies.o )
+[14 of 62] Compiling Search           ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Search.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Search.o )
+[15 of 62] Compiling Basics           ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Basics.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/Basics.o )
+[16 of 62] Compiling Curry_Prelude    ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Prelude.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Prelude.o )
+[17 of 62] Compiling Curry_AbstractHaskell ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskell.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskell.o )
+[18 of 62] Compiling Curry_Base       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Base.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Base.o )
+[19 of 62] Compiling Curry_Char       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Char.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Char.o )
+[20 of 62] Compiling Curry_AbstractHaskellGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskellGoodies.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskellGoodies.o )
+[21 of 62] Compiling Curry_Maybe      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Maybe.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Maybe.o )
+[22 of 62] Compiling Curry_List       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_List.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_List.o )
+[23 of 62] Compiling Curry_ReadShowTerm ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_ReadShowTerm.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_ReadShowTerm.o )
+[24 of 62] Compiling Curry_FiniteMap  ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FiniteMap.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FiniteMap.o )
+[25 of 62] Compiling Curry_Utils      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Utils.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Utils.o )
+[26 of 62] Compiling Curry_GetOpt     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_GetOpt.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_GetOpt.o )
+[27 of 62] Compiling Curry_IO         ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_IO.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_IO.o )
+[28 of 62] Compiling Curry_Installation ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Installation.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Installation.o )
+[29 of 62] Compiling Curry_Global     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Global.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Global.o )
+[30 of 62] Compiling Curry_System     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_System.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_System.o )
+[31 of 62] Compiling Curry_FilePath   ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FilePath.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FilePath.o )
+[32 of 62] Compiling Curry_Time       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Time.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Time.o )
+[33 of 62] Compiling Curry_Directory  ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Directory.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Directory.o )
+[34 of 62] Compiling Curry_FileGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FileGoodies.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_FileGoodies.o )
+[35 of 62] Compiling Curry_CompilerOpts ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_CompilerOpts.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_CompilerOpts.o )
+[36 of 62] Compiling Curry_Message    ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Message.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Message.o )
+[37 of 62] Compiling Curry_Files      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Files.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Files.o )
+[38 of 62] Compiling Curry_Names      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Names.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Names.o )
+[39 of 62] Compiling Curry_SimpleMake ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_SimpleMake.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_SimpleMake.o )
+[40 of 62] Compiling Curry_IOExts     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_IOExts.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_IOExts.o )
+[41 of 62] Compiling Curry_PropertyFile ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_PropertyFile.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_PropertyFile.o )
+[42 of 62] Compiling Curry_Distribution ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Distribution.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Distribution.o )
+[43 of 62] Compiling Curry_FlatCurry  ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurry.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurry.o )
+[44 of 62] Compiling Curry_FlatCurry2AbstractHaskell ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_FlatCurry2AbstractHaskell.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_FlatCurry2AbstractHaskell.o )
+[45 of 62] Compiling Curry_FlatCurryGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryGoodies.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryGoodies.o )
+[46 of 62] Compiling Curry_LiftCase   ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_LiftCase.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_LiftCase.o )
+[47 of 62] Compiling Curry_RedBlackTree ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_RedBlackTree.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_RedBlackTree.o )
+[48 of 62] Compiling Curry_SetRBT     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_SetRBT.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_SetRBT.o )
+[49 of 62] Compiling Curry_Sort       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Sort.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Sort.o )
+[50 of 62] Compiling Curry_Dependency2 ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Dependency2.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Dependency2.o )
+[51 of 62] Compiling Curry_Analysis   ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Analysis.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Analysis.o )
+[52 of 62] Compiling Curry_TransTypes ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_TransTypes.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_TransTypes.o )
+[53 of 62] Compiling Curry_Splits     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Splits.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Splits.o )
+[54 of 62] Compiling Curry_Read       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Read.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Read.o )
+[55 of 62] Compiling Curry_AbstractHaskellPrinter ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskellPrinter.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractHaskellPrinter.o )
+[56 of 62] Compiling Curry_TransFunctions ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_TransFunctions.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_TransFunctions.o )
+[57 of 62] Compiling Curry_SCC        ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_SCC.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_SCC.o )
+[58 of 62] Compiling Curry_ModuleDeps ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_ModuleDeps.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_ModuleDeps.o )
+[59 of 62] Compiling Curry_State      ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_State.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_State.o )
+[60 of 62] Compiling Curry_EliminateCond ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_EliminateCond.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_EliminateCond.o )
+[61 of 62] Compiling Curry_Compile    ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Compile.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Compile.o )
+[62 of 62] Compiling Main             ( CompileBoot.hs, CompileBoot.o )
+Linking /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2c ...
+/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2c -v2 -i/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib -i/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/Installation.curry
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/Installation.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/Prelude.curry ...
+[1 of 2] Analyzing Prelude ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/Prelude.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_Prelude.nda )
+[2 of 2] Analyzing Installation ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/Installation.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Installation.nda )
+make CompileBoot
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src'
+mkdir -p /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local
+"/usr/bin/ghc" -O2 --make -v1 -cpp -package ghc -XMultiParamTypeClasses -XFlexibleInstances -XRelaxedPolyRec -i/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/idsupplyghc:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/ -o /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2c CompileBoot.hs
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src'
+mkdir -p /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local
+"/usr/bin/ghc" -O2 --make -v1 -cpp -package ghc -XMultiParamTypeClasses -XFlexibleInstances -XRelaxedPolyRec -i/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime/idsupplyghc:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/ -o /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2i REPLBoot.hs
+[20 of 48] Compiling Curry_ReadNumeric ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_ReadNumeric.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2/Curry_ReadNumeric.o )
+[28 of 48] Compiling Curry_GhciComm   ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_GhciComm.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_GhciComm.o )
+[36 of 48] Compiling Curry_AbstractCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurry.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurry.o )
+[37 of 48] Compiling Curry_AbstractCurryGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractCurryGoodies.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_AbstractCurryGoodies.o )
+[39 of 48] Compiling Curry_RCFile     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_RCFile.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_RCFile.o )
+[46 of 48] Compiling Curry_Linker     ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Linker.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_Linker.o )
+[47 of 48] Compiling Curry_REPL       ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_REPL.hs, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src/.curry/kics2/Curry_REPL.o )
+[48 of 48] Compiling Main             ( REPLBoot.hs, REPLBoot.o )
+Linking /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2i ...
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/src'
+cd lib     && make unregister
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+"/usr/bin/ghc-pkg" unregister kics2-libraries-0.2.4
+ghc-pkg: cannot find package kics2-libraries-0.2.4
+make[3]: [unregister] Error 1 (ignored)
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+cd runtime && make unregister
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime'
+"/usr/bin/ghc-pkg" unregister kics2-runtime-0.2.4
+ghc-pkg: cannot find package kics2-runtime-0.2.4
+make[3]: [unregister] Error 1 (ignored)
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime'
+cd runtime && make
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime'
+cabal install --with-compiler="/usr/bin/ghc" --with-hc-pkg="/usr/bin/ghc-pkg" -O2
+Resolving dependencies...
+In order, the following will be installed:
+parallel-3.2.0.3 (reinstall) changes: containers-0.5.2.1 -> 0.5.0.0
+parallel-tree-search-0.4.1 (reinstall)
+kics2-runtime-0.2.4 (new package)
+Warning: Note that reinstalls are always dangerous. Continuing anyway...
+Configuring parallel-3.2.0.3...
+Building parallel-3.2.0.3...
+Preprocessing library parallel-3.2.0.3...
+[1 of 3] Compiling Control.Parallel ( Control/Parallel.hs, dist/build/Control/Parallel.o )
+[2 of 3] Compiling Control.Seq      ( Control/Seq.hs, dist/build/Control/Seq.o )
+[3 of 3] Compiling Control.Parallel.Strategies ( Control/Parallel/Strategies.hs, dist/build/Control/Parallel/Strategies.o )
+Registering parallel-3.2.0.3...
+Installing library in /home/spalac24/.cabal/lib/parallel-3.2.0.3/ghc-7.6.2
+Registering parallel-3.2.0.3...
+Configuring parallel-tree-search-0.4.1...
+Building parallel-tree-search-0.4.1...
+Preprocessing library parallel-tree-search-0.4.1...
+[1 of 1] Compiling Control.Parallel.TreeSearch ( Control/Parallel/TreeSearch.hs, dist/build/Control/Parallel/TreeSearch.o )
+Registering parallel-tree-search-0.4.1...
+Installing library in
+/home/spalac24/.cabal/lib/parallel-tree-search-0.4.1/ghc-7.6.2
+Registering parallel-tree-search-0.4.1...
+Configuring kics2-runtime-0.2.4...
+Building kics2-runtime-0.2.4...
+Preprocessing library kics2-runtime-0.2.4...
+[ 1 of 16] Compiling SafeExec         ( SafeExec.hs, dist/build/SafeExec.o )
+[ 2 of 16] Compiling MonadList        ( MonadList.hs, dist/build/MonadList.o )
+[ 3 of 16] Compiling Installation     ( Installation.hs, dist/build/Installation.o )
+[ 4 of 16] Compiling ID[boot]         ( ID.hs-boot, dist/build/ID.o-boot )
+[ 5 of 16] Compiling IDSupply         ( idsupplyioref/IDSupply.hs, dist/build/IDSupply.o )
+[ 6 of 16] Compiling CurryException   ( CurryException.hs, dist/build/CurryException.o )
+[ 7 of 16] Compiling Debug            ( Debug.hs, dist/build/Debug.o )
+[ 8 of 16] Compiling ID               ( ID.hs, dist/build/ID.o )
+[ 9 of 16] Compiling MonadSearch      ( MonadSearch.hs, dist/build/MonadSearch.o )
+[10 of 16] Compiling Strategies       ( Strategies.hs, dist/build/Strategies.o )
+[11 of 16] Compiling ConstStore       ( ConstStore.hs, dist/build/ConstStore.o )
+[12 of 16] Compiling Types            ( Types.hs, dist/build/Types.o )
+[13 of 16] Compiling Solver           ( Solver.hs, dist/build/Solver.o )
+[14 of 16] Compiling PrimTypes        ( PrimTypes.hs, dist/build/PrimTypes.o )
+[15 of 16] Compiling Search           ( Search.hs, dist/build/Search.o )
+[16 of 16] Compiling Basics           ( Basics.hs, dist/build/Basics.o )
+Registering kics2-runtime-0.2.4...
+Installing library in /home/spalac24/.cabal/lib/kics2-runtime-0.2.4/ghc-7.6.2
+Registering kics2-runtime-0.2.4...
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/runtime'
+# compile all libraries for a global installation
+cd lib     && make compilelibs
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+"/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/.local/kics2i" :set v2 :set -ghci :set path /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta :l AllLibraries.curry :eval main :quit
+skipping AllLibraries.curry ...
+skipping Prelude.curry ...
+skipping AllSolutions.curry ...
+skipping SearchTree.curry ...
+skipping Array.curry ...
+skipping Integer.curry ...
+skipping Assertion.curry ...
+skipping IO.curry ...
+skipping List.curry ...
+skipping Maybe.curry ...
+skipping Socket.curry ...
+skipping System.curry ...
+skipping Global.curry ...
+skipping CategorizedHtmlList.curry ...
+skipping Char.curry ...
+skipping HTML.curry ...
+skipping Distribution.curry ...
+skipping FileGoodies.curry ...
+skipping Directory.curry ...
+skipping FilePath.curry ...
+skipping Time.curry ...
+skipping PropertyFile.curry ...
+skipping IOExts.curry ...
+skipping HtmlCgi.curry ...
+skipping CPNS.curry ...
+skipping Profile.curry ...
+skipping ReadShowTerm.curry ...
+skipping NamedSocket.curry ...
+skipping ReadNumeric.curry ...
+skipping Combinatorial.curry ...
+skipping Constraint.curry ...
+skipping CSV.curry ...
+skipping Dequeue.curry ...
+skipping FiniteMap.curry ...
+skipping Float.curry ...
+skipping GetOpt.curry ...
+skipping GraphInductive.curry ...
+skipping Sort.curry ...
+skipping GUI.curry ...
+skipping Read.curry ...
+skipping Unsafe.curry ...
+skipping HtmlParser.curry ...
+skipping JavaScript.curry ...
+skipping KeyDatabaseSQLite.curry ...
+skipping Mail.curry ...
+skipping Markdown.curry ...
+skipping Parser.curry ...
+skipping Pretty.curry ...
+skipping Random.curry ...
+skipping RedBlackTree.curry ...
+skipping SetFunctions.curry ...
+skipping SetRBT.curry ...
+skipping TableRBT.curry ...
+skipping Traversal.curry ...
+skipping URL.curry ...
+skipping WUI.curry ...
+skipping WUIjs.curry ...
+skipping XmlConv.curry ...
+skipping XML.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurryPrinter.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AnnotatedFlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CompactFlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CurryStringClassifier.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryGoodies.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryRead.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryShow.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryTools.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryXML.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlexRigid.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/PrettyAbstract.curry ...
+[ 1 of 72] Analyzing Prelude ( Prelude.curry, .curry/kics2/Curry_Prelude.nda )
+[ 2 of 72] Analyzing Char ( Char.curry, .curry/kics2/Curry_Char.nda )
+[ 3 of 72] Analyzing Maybe ( Maybe.curry, .curry/kics2/Curry_Maybe.nda )
+[ 4 of 72] Analyzing List ( List.curry, .curry/kics2/Curry_List.nda )
+[ 5 of 72] Analyzing Global ( Global.curry, .curry/kics2/Curry_Global.nda )
+[ 6 of 72] Analyzing System ( System.curry, .curry/kics2/Curry_System.nda )
+[ 7 of 72] Analyzing FilePath ( FilePath.curry, .curry/kics2/Curry_FilePath.nda )
+[ 8 of 72] Analyzing Time ( Time.curry, .curry/kics2/Curry_Time.nda )
+[ 9 of 72] Analyzing Directory ( Directory.curry, .curry/kics2/Curry_Directory.nda )
+[10 of 72] Analyzing FileGoodies ( FileGoodies.curry, .curry/kics2/Curry_FileGoodies.nda )
+[11 of 72] Analyzing IO ( IO.curry, .curry/kics2/Curry_IO.nda )
+[12 of 72] Analyzing IOExts ( IOExts.curry, .curry/kics2/Curry_IOExts.nda )
+[13 of 72] Analyzing PropertyFile ( PropertyFile.curry, .curry/kics2/Curry_PropertyFile.nda )
+[14 of 72] Analyzing Distribution ( Distribution.curry, .curry/kics2/Curry_Distribution.nda )
+[15 of 72] Analyzing ReadShowTerm ( ReadShowTerm.curry, .curry/kics2/Curry_ReadShowTerm.nda )
+[16 of 72] Analyzing AbstractCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurry.nda )
+[17 of 72] Analyzing FiniteMap ( FiniteMap.curry, .curry/kics2/Curry_FiniteMap.nda )
+[18 of 72] Analyzing Read ( Read.curry, .curry/kics2/Curry_Read.nda )
+[19 of 72] Analyzing Sort ( Sort.curry, .curry/kics2/Curry_Sort.nda )
+[20 of 72] Analyzing AbstractCurryPrinter ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurryPrinter.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurryPrinter.nda )
+[21 of 72] Analyzing SearchTree ( SearchTree.curry, .curry/kics2/Curry_SearchTree.nda )
+[22 of 72] Analyzing AllSolutions ( AllSolutions.curry, .curry/kics2/Curry_AllSolutions.nda )
+[23 of 72] Analyzing FlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurry.nda )
+[24 of 72] Analyzing AnnotatedFlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AnnotatedFlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AnnotatedFlatCurry.nda )
+[25 of 72] Analyzing Integer ( Integer.curry, .curry/kics2/Curry_Integer.nda )
+[26 of 72] Analyzing Array ( Array.curry, .curry/kics2/Curry_Array.nda )
+[27 of 72] Analyzing Socket ( Socket.curry, .curry/kics2/Curry_Socket.nda )
+[28 of 72] Analyzing Assertion ( Assertion.curry, .curry/kics2/Curry_Assertion.nda )
+[29 of 72] Analyzing Profile ( Profile.curry, .curry/kics2/Curry_Profile.nda )
+[30 of 72] Analyzing CPNS ( CPNS.curry, .curry/kics2/Curry_CPNS.nda )
+[31 of 72] Analyzing CSV ( CSV.curry, .curry/kics2/Curry_CSV.nda )
+[32 of 72] Analyzing NamedSocket ( NamedSocket.curry, .curry/kics2/Curry_NamedSocket.nda )
+[33 of 72] Analyzing ReadNumeric ( ReadNumeric.curry, .curry/kics2/Curry_ReadNumeric.nda )
+[34 of 72] Analyzing HtmlCgi ( HtmlCgi.curry, .curry/kics2/Curry_HtmlCgi.nda )
+[35 of 72] Analyzing HTML ( HTML.curry, .curry/kics2/Curry_HTML.nda )
+[36 of 72] Analyzing CategorizedHtmlList ( CategorizedHtmlList.curry, .curry/kics2/Curry_CategorizedHtmlList.nda )
+[37 of 72] Analyzing Combinatorial ( Combinatorial.curry, .curry/kics2/Curry_Combinatorial.nda )
+[38 of 72] Analyzing RedBlackTree ( RedBlackTree.curry, .curry/kics2/Curry_RedBlackTree.nda )
+[39 of 72] Analyzing SetRBT ( SetRBT.curry, .curry/kics2/Curry_SetRBT.nda )
+[40 of 72] Analyzing TableRBT ( TableRBT.curry, .curry/kics2/Curry_TableRBT.nda )
+[41 of 72] Analyzing XML ( XML.curry, .curry/kics2/Curry_XML.nda )
+[42 of 72] Analyzing CompactFlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CompactFlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_CompactFlatCurry.nda )
+[43 of 72] Analyzing Constraint ( Constraint.curry, .curry/kics2/Curry_Constraint.nda )
+[44 of 72] Analyzing CurryStringClassifier ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CurryStringClassifier.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_CurryStringClassifier.nda )
+[45 of 72] Analyzing Dequeue ( Dequeue.curry, .curry/kics2/Curry_Dequeue.nda )
+[46 of 72] Analyzing FlatCurryGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryGoodies.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryGoodies.nda )
+[47 of 72] Analyzing FlatCurryRead ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryRead.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryRead.nda )
+[48 of 72] Analyzing FlatCurryShow ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryShow.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryShow.nda )
+[49 of 72] Analyzing FlatCurryTools ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryTools.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryTools.nda )
+[50 of 72] Analyzing XmlConv ( XmlConv.curry, .curry/kics2/Curry_XmlConv.nda )
+[51 of 72] Analyzing FlatCurryXML ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryXML.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryXML.nda )
+[52 of 72] Analyzing FlexRigid ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlexRigid.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlexRigid.nda )
+[53 of 72] Analyzing Float ( Float.curry, .curry/kics2/Curry_Float.nda )
+[54 of 72] Analyzing Unsafe ( Unsafe.curry, .curry/kics2/Curry_Unsafe.nda )
+[55 of 72] Analyzing GUI ( GUI.curry, .curry/kics2/Curry_GUI.nda )
+[56 of 72] Analyzing GetOpt ( GetOpt.curry, .curry/kics2/Curry_GetOpt.nda )
+[57 of 72] Analyzing GraphInductive ( GraphInductive.curry, .curry/kics2/Curry_GraphInductive.nda )
+[58 of 72] Analyzing HtmlParser ( HtmlParser.curry, .curry/kics2/Curry_HtmlParser.nda )
+[59 of 72] Analyzing JavaScript ( JavaScript.curry, .curry/kics2/Curry_JavaScript.nda )
+[60 of 72] Analyzing KeyDatabaseSQLite ( KeyDatabaseSQLite.curry, .curry/kics2/Curry_KeyDatabaseSQLite.nda )
+[61 of 72] Analyzing Mail ( Mail.curry, .curry/kics2/Curry_Mail.nda )
+[62 of 72] Analyzing Markdown ( Markdown.curry, .curry/kics2/Curry_Markdown.nda )
+[63 of 72] Analyzing Parser ( Parser.curry, .curry/kics2/Curry_Parser.nda )
+[64 of 72] Analyzing Pretty ( Pretty.curry, .curry/kics2/Curry_Pretty.nda )
+[65 of 72] Analyzing PrettyAbstract ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/PrettyAbstract.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_PrettyAbstract.nda )
+[66 of 72] Analyzing Random ( Random.curry, .curry/kics2/Curry_Random.nda )
+[67 of 72] Analyzing SetFunctions ( SetFunctions.curry, .curry/kics2/Curry_SetFunctions.nda )
+[68 of 72] Analyzing Traversal ( Traversal.curry, .curry/kics2/Curry_Traversal.nda )
+[69 of 72] Analyzing URL ( URL.curry, .curry/kics2/Curry_URL.nda )
+[70 of 72] Analyzing WUI ( WUI.curry, .curry/kics2/Curry_WUI.nda )
+[71 of 72] Analyzing WUIjs ( WUIjs.curry, .curry/kics2/Curry_WUIjs.nda )
+[72 of 72] Analyzing AllLibraries ( AllLibraries.curry, .curry/kics2/Curry_AllLibraries.nda )
+generating Curry_Main_Goal.acy ...
+generating Curry_Main_Goal.fcy ...
+skipping AllLibraries.curry ...
+skipping Prelude.curry ...
+skipping AllSolutions.curry ...
+skipping SearchTree.curry ...
+skipping Array.curry ...
+skipping Integer.curry ...
+skipping Assertion.curry ...
+skipping IO.curry ...
+skipping List.curry ...
+skipping Maybe.curry ...
+skipping Socket.curry ...
+skipping System.curry ...
+skipping Global.curry ...
+skipping CategorizedHtmlList.curry ...
+skipping Char.curry ...
+skipping HTML.curry ...
+skipping Distribution.curry ...
+skipping FileGoodies.curry ...
+skipping Directory.curry ...
+skipping FilePath.curry ...
+skipping Time.curry ...
+skipping PropertyFile.curry ...
+skipping IOExts.curry ...
+skipping HtmlCgi.curry ...
+skipping CPNS.curry ...
+skipping Profile.curry ...
+skipping ReadShowTerm.curry ...
+skipping NamedSocket.curry ...
+skipping ReadNumeric.curry ...
+skipping Combinatorial.curry ...
+skipping Constraint.curry ...
+skipping CSV.curry ...
+skipping Dequeue.curry ...
+skipping FiniteMap.curry ...
+skipping Float.curry ...
+skipping GetOpt.curry ...
+skipping GraphInductive.curry ...
+skipping Sort.curry ...
+skipping GUI.curry ...
+skipping Read.curry ...
+skipping Unsafe.curry ...
+skipping HtmlParser.curry ...
+skipping JavaScript.curry ...
+skipping KeyDatabaseSQLite.curry ...
+skipping Mail.curry ...
+skipping Markdown.curry ...
+skipping Parser.curry ...
+skipping Pretty.curry ...
+skipping Random.curry ...
+skipping RedBlackTree.curry ...
+skipping SetFunctions.curry ...
+skipping SetRBT.curry ...
+skipping TableRBT.curry ...
+skipping Traversal.curry ...
+skipping URL.curry ...
+skipping WUI.curry ...
+skipping WUIjs.curry ...
+skipping XmlConv.curry ...
+skipping XML.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurryPrinter.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AnnotatedFlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CompactFlatCurry.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CurryStringClassifier.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryGoodies.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryRead.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryShow.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryTools.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryXML.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlexRigid.curry ...
+skipping /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/PrettyAbstract.curry ...
+[ 1 of 73] Analyzing Prelude ( Prelude.curry, .curry/kics2/Curry_Prelude.nda )
+[ 2 of 73] Analyzing Char ( Char.curry, .curry/kics2/Curry_Char.nda )
+[ 3 of 73] Analyzing Maybe ( Maybe.curry, .curry/kics2/Curry_Maybe.nda )
+[ 4 of 73] Analyzing List ( List.curry, .curry/kics2/Curry_List.nda )
+[ 5 of 73] Analyzing Global ( Global.curry, .curry/kics2/Curry_Global.nda )
+[ 6 of 73] Analyzing System ( System.curry, .curry/kics2/Curry_System.nda )
+[ 7 of 73] Analyzing FilePath ( FilePath.curry, .curry/kics2/Curry_FilePath.nda )
+[ 8 of 73] Analyzing Time ( Time.curry, .curry/kics2/Curry_Time.nda )
+[ 9 of 73] Analyzing Directory ( Directory.curry, .curry/kics2/Curry_Directory.nda )
+[10 of 73] Analyzing FileGoodies ( FileGoodies.curry, .curry/kics2/Curry_FileGoodies.nda )
+[11 of 73] Analyzing IO ( IO.curry, .curry/kics2/Curry_IO.nda )
+[12 of 73] Analyzing IOExts ( IOExts.curry, .curry/kics2/Curry_IOExts.nda )
+[13 of 73] Analyzing PropertyFile ( PropertyFile.curry, .curry/kics2/Curry_PropertyFile.nda )
+[14 of 73] Analyzing Distribution ( Distribution.curry, .curry/kics2/Curry_Distribution.nda )
+[15 of 73] Analyzing ReadShowTerm ( ReadShowTerm.curry, .curry/kics2/Curry_ReadShowTerm.nda )
+[16 of 73] Analyzing AbstractCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurry.nda )
+[17 of 73] Analyzing FiniteMap ( FiniteMap.curry, .curry/kics2/Curry_FiniteMap.nda )
+[18 of 73] Analyzing Read ( Read.curry, .curry/kics2/Curry_Read.nda )
+[19 of 73] Analyzing Sort ( Sort.curry, .curry/kics2/Curry_Sort.nda )
+[20 of 73] Analyzing AbstractCurryPrinter ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AbstractCurryPrinter.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AbstractCurryPrinter.nda )
+[21 of 73] Analyzing SearchTree ( SearchTree.curry, .curry/kics2/Curry_SearchTree.nda )
+[22 of 73] Analyzing AllSolutions ( AllSolutions.curry, .curry/kics2/Curry_AllSolutions.nda )
+[23 of 73] Analyzing FlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurry.nda )
+[24 of 73] Analyzing AnnotatedFlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/AnnotatedFlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_AnnotatedFlatCurry.nda )
+[25 of 73] Analyzing Integer ( Integer.curry, .curry/kics2/Curry_Integer.nda )
+[26 of 73] Analyzing Array ( Array.curry, .curry/kics2/Curry_Array.nda )
+[27 of 73] Analyzing Socket ( Socket.curry, .curry/kics2/Curry_Socket.nda )
+[28 of 73] Analyzing Assertion ( Assertion.curry, .curry/kics2/Curry_Assertion.nda )
+[29 of 73] Analyzing Profile ( Profile.curry, .curry/kics2/Curry_Profile.nda )
+[30 of 73] Analyzing CPNS ( CPNS.curry, .curry/kics2/Curry_CPNS.nda )
+[31 of 73] Analyzing CSV ( CSV.curry, .curry/kics2/Curry_CSV.nda )
+[32 of 73] Analyzing NamedSocket ( NamedSocket.curry, .curry/kics2/Curry_NamedSocket.nda )
+[33 of 73] Analyzing ReadNumeric ( ReadNumeric.curry, .curry/kics2/Curry_ReadNumeric.nda )
+[34 of 73] Analyzing HtmlCgi ( HtmlCgi.curry, .curry/kics2/Curry_HtmlCgi.nda )
+[35 of 73] Analyzing HTML ( HTML.curry, .curry/kics2/Curry_HTML.nda )
+[36 of 73] Analyzing CategorizedHtmlList ( CategorizedHtmlList.curry, .curry/kics2/Curry_CategorizedHtmlList.nda )
+[37 of 73] Analyzing Combinatorial ( Combinatorial.curry, .curry/kics2/Curry_Combinatorial.nda )
+[38 of 73] Analyzing RedBlackTree ( RedBlackTree.curry, .curry/kics2/Curry_RedBlackTree.nda )
+[39 of 73] Analyzing SetRBT ( SetRBT.curry, .curry/kics2/Curry_SetRBT.nda )
+[40 of 73] Analyzing TableRBT ( TableRBT.curry, .curry/kics2/Curry_TableRBT.nda )
+[41 of 73] Analyzing XML ( XML.curry, .curry/kics2/Curry_XML.nda )
+[42 of 73] Analyzing CompactFlatCurry ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CompactFlatCurry.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_CompactFlatCurry.nda )
+[43 of 73] Analyzing Constraint ( Constraint.curry, .curry/kics2/Curry_Constraint.nda )
+[44 of 73] Analyzing CurryStringClassifier ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/CurryStringClassifier.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_CurryStringClassifier.nda )
+[45 of 73] Analyzing Dequeue ( Dequeue.curry, .curry/kics2/Curry_Dequeue.nda )
+[46 of 73] Analyzing FlatCurryGoodies ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryGoodies.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryGoodies.nda )
+[47 of 73] Analyzing FlatCurryRead ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryRead.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryRead.nda )
+[48 of 73] Analyzing FlatCurryShow ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryShow.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryShow.nda )
+[49 of 73] Analyzing FlatCurryTools ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryTools.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryTools.nda )
+[50 of 73] Analyzing XmlConv ( XmlConv.curry, .curry/kics2/Curry_XmlConv.nda )
+[51 of 73] Analyzing FlatCurryXML ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlatCurryXML.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlatCurryXML.nda )
+[52 of 73] Analyzing FlexRigid ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/FlexRigid.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_FlexRigid.nda )
+[53 of 73] Analyzing Float ( Float.curry, .curry/kics2/Curry_Float.nda )
+[54 of 73] Analyzing Unsafe ( Unsafe.curry, .curry/kics2/Curry_Unsafe.nda )
+[55 of 73] Analyzing GUI ( GUI.curry, .curry/kics2/Curry_GUI.nda )
+[56 of 73] Analyzing GetOpt ( GetOpt.curry, .curry/kics2/Curry_GetOpt.nda )
+[57 of 73] Analyzing GraphInductive ( GraphInductive.curry, .curry/kics2/Curry_GraphInductive.nda )
+[58 of 73] Analyzing HtmlParser ( HtmlParser.curry, .curry/kics2/Curry_HtmlParser.nda )
+[59 of 73] Analyzing JavaScript ( JavaScript.curry, .curry/kics2/Curry_JavaScript.nda )
+[60 of 73] Analyzing KeyDatabaseSQLite ( KeyDatabaseSQLite.curry, .curry/kics2/Curry_KeyDatabaseSQLite.nda )
+[61 of 73] Analyzing Mail ( Mail.curry, .curry/kics2/Curry_Mail.nda )
+[62 of 73] Analyzing Markdown ( Markdown.curry, .curry/kics2/Curry_Markdown.nda )
+[63 of 73] Analyzing Parser ( Parser.curry, .curry/kics2/Curry_Parser.nda )
+[64 of 73] Analyzing Pretty ( Pretty.curry, .curry/kics2/Curry_Pretty.nda )
+[65 of 73] Analyzing PrettyAbstract ( /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/PrettyAbstract.curry, /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2/Curry_PrettyAbstract.nda )
+[66 of 73] Analyzing Random ( Random.curry, .curry/kics2/Curry_Random.nda )
+[67 of 73] Analyzing SetFunctions ( SetFunctions.curry, .curry/kics2/Curry_SetFunctions.nda )
+[68 of 73] Analyzing Traversal ( Traversal.curry, .curry/kics2/Curry_Traversal.nda )
+[69 of 73] Analyzing URL ( URL.curry, .curry/kics2/Curry_URL.nda )
+[70 of 73] Analyzing WUI ( WUI.curry, .curry/kics2/Curry_WUI.nda )
+[71 of 73] Analyzing WUIjs ( WUIjs.curry, .curry/kics2/Curry_WUIjs.nda )
+[72 of 73] Analyzing AllLibraries ( AllLibraries.curry, .curry/kics2/Curry_AllLibraries.nda )
+[73 of 73] Compiling Curry_Main_Goal ( Curry_Main_Goal.curry, .curry/kics2/Curry_Curry_Main_Goal.hs )
+Compiling ./.curry/kics2/Main.hs with: "/usr/bin/ghc" -no-user-package-conf -package-conf "/home/spalac24/.ghc/x86_64-linux-7.4.2/package.conf.d" -O2 --make -v1 -package ghc -XMultiParamTypeClasses -XFlexibleInstances -XRelaxedPolyRec -i./.curry/kics2:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/.curry/kics2:/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib/meta/.curry/kics2 ./.curry/kics2/Main.hs
+
+on the commandline: Warning:
+    -no-user-package-conf is deprecated: Use -no-user-package-db instead
+
+on the commandline: Warning:
+    -package-conf is deprecated: Use -package-db instead
+<command line>: cannot satisfy -package ghc: 
+    ghc-7.6.2-5b8bbdd82f838e8100a24e29af9d2a7c is unusable due to missing or recursive dependencies:
+      Cabal-1.16.0-3e9c5568536ced79e8c934bf82ebe058 bin-package-db-0.0.0.0-ba4bad80efb8929786fbe1215fe3dd7e directory-1.2.0.1-b1a268a666fc395cce31f24592f54dfe hpc-0.6.0.0-e3015bc18143b6377ef7ece52cb71580 process-1.1.0.2-f4b6bd3212af86bd7608fa0a0764d50e
+    (use -v for more information)
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+cd lib     && make installlibs
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+cabal install --with-compiler="/usr/bin/ghc" --with-hc-pkg="/usr/bin/ghc-pkg" -O2 --ghc-options=""
+Resolving dependencies...
+Configuring kics2-libraries-0.2.4...
+Building kics2-libraries-0.2.4...
+Preprocessing library kics2-libraries-0.2.4...
+[ 1 of 71] Compiling Curry_Prelude    ( .curry/kics2/Curry_Prelude.hs, dist/build/Curry_Prelude.o )
+[ 2 of 71] Compiling Curry_SearchTree ( .curry/kics2/Curry_SearchTree.hs, dist/build/Curry_SearchTree.o )
+[ 3 of 71] Compiling Curry_Integer    ( .curry/kics2/Curry_Integer.hs, dist/build/Curry_Integer.o )
+[ 4 of 71] Compiling Curry_Array      ( .curry/kics2/Curry_Array.hs, dist/build/Curry_Array.o )
+[ 5 of 71] Compiling Curry_IO         ( .curry/kics2/Curry_IO.hs, dist/build/Curry_IO.o )
+[ 6 of 71] Compiling Curry_Char       ( .curry/kics2/Curry_Char.hs, dist/build/Curry_Char.o )
+[ 7 of 71] Compiling Curry_Combinatorial ( .curry/kics2/Curry_Combinatorial.hs, dist/build/Curry_Combinatorial.o )
+[ 8 of 71] Compiling Curry_Constraint ( .curry/kics2/Curry_Constraint.hs, dist/build/Curry_Constraint.o )
+[ 9 of 71] Compiling Curry_ReadShowTerm ( .curry/kics2/Curry_ReadShowTerm.hs, dist/build/Curry_ReadShowTerm.o )
+[10 of 71] Compiling Curry_Time       ( .curry/kics2/Curry_Time.hs, dist/build/Curry_Time.o )
+[11 of 71] Compiling Curry_Dequeue    ( .curry/kics2/Curry_Dequeue.hs, dist/build/Curry_Dequeue.o )
+[12 of 71] Compiling Curry_Maybe      ( .curry/kics2/Curry_Maybe.hs, dist/build/Curry_Maybe.o )
+[13 of 71] Compiling Curry_List       ( .curry/kics2/Curry_List.hs, dist/build/Curry_List.o )
+[14 of 71] Compiling Curry_Profile    ( .curry/kics2/Curry_Profile.hs, dist/build/Curry_Profile.o )
+[15 of 71] Compiling Curry_CSV        ( .curry/kics2/Curry_CSV.hs, dist/build/Curry_CSV.o )
+[16 of 71] Compiling Curry_FiniteMap  ( .curry/kics2/Curry_FiniteMap.hs, dist/build/Curry_FiniteMap.o )
+[17 of 71] Compiling Curry_Float      ( .curry/kics2/Curry_Float.hs, dist/build/Curry_Float.o )
+[18 of 71] Compiling Curry_GetOpt     ( .curry/kics2/Curry_GetOpt.hs, dist/build/Curry_GetOpt.o )
+[19 of 71] Compiling Curry_Global     ( .curry/kics2/Curry_Global.hs, dist/build/Curry_Global.o )
+[20 of 71] Compiling Curry_System     ( .curry/kics2/Curry_System.hs, dist/build/Curry_System.o )
+[21 of 71] Compiling Curry_Socket     ( .curry/kics2/Curry_Socket.hs, dist/build/Curry_Socket.o )
+[22 of 71] Compiling Curry_FilePath   ( .curry/kics2/Curry_FilePath.hs, dist/build/Curry_FilePath.o )
+[23 of 71] Compiling Curry_Directory  ( .curry/kics2/Curry_Directory.hs, dist/build/Curry_Directory.o )
+[24 of 71] Compiling Curry_FileGoodies ( .curry/kics2/Curry_FileGoodies.hs, dist/build/Curry_FileGoodies.o )
+[25 of 71] Compiling Curry_Sort       ( .curry/kics2/Curry_Sort.hs, dist/build/Curry_Sort.o )
+[26 of 71] Compiling Curry_GraphInductive ( .curry/kics2/Curry_GraphInductive.hs, dist/build/Curry_GraphInductive.o )
+[27 of 71] Compiling Curry_IOExts     ( .curry/kics2/Curry_IOExts.hs, dist/build/Curry_IOExts.o )
+[28 of 71] Compiling Curry_PropertyFile ( .curry/kics2/Curry_PropertyFile.hs, dist/build/Curry_PropertyFile.o )
+[29 of 71] Compiling Curry_Distribution ( .curry/kics2/Curry_Distribution.hs, dist/build/Curry_Distribution.o )
+[30 of 71] Compiling Curry_CPNS       ( .curry/kics2/Curry_CPNS.hs, dist/build/Curry_CPNS.o )
+[31 of 71] Compiling Curry_Read       ( .curry/kics2/Curry_Read.hs, dist/build/Curry_Read.o )
+[32 of 71] Compiling Curry_Unsafe     ( .curry/kics2/Curry_Unsafe.hs, dist/build/Curry_Unsafe.o )
+[33 of 71] Compiling Curry_GUI        ( .curry/kics2/Curry_GUI.hs, dist/build/Curry_GUI.o )
+[34 of 71] Compiling Curry_NamedSocket ( .curry/kics2/Curry_NamedSocket.hs, dist/build/Curry_NamedSocket.o )
+[35 of 71] Compiling Curry_ReadNumeric ( .curry/kics2/Curry_ReadNumeric.hs, dist/build/Curry_ReadNumeric.o )
+[36 of 71] Compiling Curry_HtmlCgi    ( .curry/kics2/Curry_HtmlCgi.hs, dist/build/Curry_HtmlCgi.o )
+[37 of 71] Compiling Curry_HTML       ( .curry/kics2/Curry_HTML.hs, dist/build/Curry_HTML.o )
+[38 of 71] Compiling Curry_CategorizedHtmlList ( .curry/kics2/Curry_CategorizedHtmlList.hs, dist/build/Curry_CategorizedHtmlList.o )
+[39 of 71] Compiling Curry_HtmlParser ( .curry/kics2/Curry_HtmlParser.hs, dist/build/Curry_HtmlParser.o )
+[40 of 71] Compiling Curry_JavaScript ( .curry/kics2/Curry_JavaScript.hs, dist/build/Curry_JavaScript.o )
+[41 of 71] Compiling Curry_KeyDatabaseSQLite ( .curry/kics2/Curry_KeyDatabaseSQLite.hs, dist/build/Curry_KeyDatabaseSQLite.o )
+[42 of 71] Compiling Curry_Mail       ( .curry/kics2/Curry_Mail.hs, dist/build/Curry_Mail.o )
+[43 of 71] Compiling Curry_Markdown   ( .curry/kics2/Curry_Markdown.hs, dist/build/Curry_Markdown.o )
+[44 of 71] Compiling Curry_Parser     ( .curry/kics2/Curry_Parser.hs, dist/build/Curry_Parser.o )
+[45 of 71] Compiling Curry_Pretty     ( .curry/kics2/Curry_Pretty.hs, dist/build/Curry_Pretty.o )
+[46 of 71] Compiling Curry_Random     ( .curry/kics2/Curry_Random.hs, dist/build/Curry_Random.o )
+[47 of 71] Compiling Curry_RedBlackTree ( .curry/kics2/Curry_RedBlackTree.hs, dist/build/Curry_RedBlackTree.o )
+[48 of 71] Compiling Curry_SetFunctions ( .curry/kics2/Curry_SetFunctions.hs, dist/build/Curry_SetFunctions.o )
+[49 of 71] Compiling Curry_SetRBT     ( .curry/kics2/Curry_SetRBT.hs, dist/build/Curry_SetRBT.o )
+[50 of 71] Compiling Curry_TableRBT   ( .curry/kics2/Curry_TableRBT.hs, dist/build/Curry_TableRBT.o )
+[51 of 71] Compiling Curry_Traversal  ( .curry/kics2/Curry_Traversal.hs, dist/build/Curry_Traversal.o )
+[52 of 71] Compiling Curry_URL        ( .curry/kics2/Curry_URL.hs, dist/build/Curry_URL.o )
+[53 of 71] Compiling Curry_WUI        ( .curry/kics2/Curry_WUI.hs, dist/build/Curry_WUI.o )
+[54 of 71] Compiling Curry_WUIjs      ( .curry/kics2/Curry_WUIjs.hs, dist/build/Curry_WUIjs.o )
+[55 of 71] Compiling Curry_XML        ( .curry/kics2/Curry_XML.hs, dist/build/Curry_XML.o )
+[56 of 71] Compiling Curry_XmlConv    ( .curry/kics2/Curry_XmlConv.hs, dist/build/Curry_XmlConv.o )
+[57 of 71] Compiling Curry_AbstractCurry ( meta/.curry/kics2/Curry_AbstractCurry.hs, dist/build/Curry_AbstractCurry.o )
+[58 of 71] Compiling Curry_AbstractCurryPrinter ( meta/.curry/kics2/Curry_AbstractCurryPrinter.hs, dist/build/Curry_AbstractCurryPrinter.o )
+[59 of 71] Compiling Curry_FlatCurry  ( meta/.curry/kics2/Curry_FlatCurry.hs, dist/build/Curry_FlatCurry.o )
+[60 of 71] Compiling Curry_AnnotatedFlatCurry ( meta/.curry/kics2/Curry_AnnotatedFlatCurry.hs, dist/build/Curry_AnnotatedFlatCurry.o )
+[61 of 71] Compiling Curry_CompactFlatCurry ( meta/.curry/kics2/Curry_CompactFlatCurry.hs, dist/build/Curry_CompactFlatCurry.o )
+[62 of 71] Compiling Curry_CurryStringClassifier ( meta/.curry/kics2/Curry_CurryStringClassifier.hs, dist/build/Curry_CurryStringClassifier.o )
+[63 of 71] Compiling Curry_FlatCurryGoodies ( meta/.curry/kics2/Curry_FlatCurryGoodies.hs, dist/build/Curry_FlatCurryGoodies.o )
+[64 of 71] Compiling Curry_FlatCurryRead ( meta/.curry/kics2/Curry_FlatCurryRead.hs, dist/build/Curry_FlatCurryRead.o )
+[65 of 71] Compiling Curry_FlatCurryShow ( meta/.curry/kics2/Curry_FlatCurryShow.hs, dist/build/Curry_FlatCurryShow.o )
+[66 of 71] Compiling Curry_FlatCurryTools ( meta/.curry/kics2/Curry_FlatCurryTools.hs, dist/build/Curry_FlatCurryTools.o )
+[67 of 71] Compiling Curry_FlatCurryXML ( meta/.curry/kics2/Curry_FlatCurryXML.hs, dist/build/Curry_FlatCurryXML.o )
+[68 of 71] Compiling Curry_FlexRigid  ( meta/.curry/kics2/Curry_FlexRigid.hs, dist/build/Curry_FlexRigid.o )
+[69 of 71] Compiling Curry_PrettyAbstract ( meta/.curry/kics2/Curry_PrettyAbstract.hs, dist/build/Curry_PrettyAbstract.o )
+[70 of 71] Compiling Curry_AllSolutions ( .curry/kics2/Curry_AllSolutions.hs, dist/build/Curry_AllSolutions.o )
+[71 of 71] Compiling Curry_Assertion  ( .curry/kics2/Curry_Assertion.hs, dist/build/Curry_Assertion.o )
+Registering kics2-libraries-0.2.4...
+Installing library in
+/home/spalac24/.cabal/lib/kics2-libraries-0.2.4/ghc-7.6.2
+Registering kics2-libraries-0.2.4...
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+cd lib     && make acy
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+make  ./.curry/AllSolutions.acy  ./.curry/Array.acy  ./.curry/Assertion.acy  ./.curry/CategorizedHtmlList.acy  ./.curry/Char.acy  ./.curry/Combinatorial.acy  ./.curry/Constraint.acy  ./.curry/CPNS.acy  ./.curry/CSV.acy  ./.curry/Dequeue.acy  ./.curry/Directory.acy  ./.curry/Distribution.acy  ./.curry/FileGoodies.acy  ./.curry/FilePath.acy  ./.curry/FiniteMap.acy  ./.curry/Float.acy  ./.curry/GetOpt.acy  ./.curry/Global.acy  ./.curry/GraphInductive.acy  ./.curry/GUI.acy  ./.curry/HtmlCgi.acy  ./.curry/HTML.acy  ./.curry/HtmlParser.acy  ./.curry/Integer.acy  ./.curry/IO.acy  ./.curry/IOExts.acy  ./.curry/JavaScript.acy  ./.curry/KeyDatabaseSQLite.acy  ./.curry/List.acy  ./.curry/Mail.acy  ./.curry/Markdown.acy  ./.curry/Maybe.acy  ./.curry/NamedSocket.acy  ./.curry/Parser.acy  ./.curry/Prelude.acy  ./.curry/Pretty.acy  ./.curry/Profile.acy  ./.curry/PropertyFile.acy  ./.curry/Random.acy  ./.curry/Read.acy  ./.curry/ReadNumeric.acy  ./.curry/ReadShowTerm.acy  ./.curry/RedBlackTree.acy  ./.curry/SearchTree.acy  ./.curry/SetFunctions.acy  ./.curry/SetRBT.acy  ./.curry/Socket.acy  ./.curry/Sort.acy  ./.curry/System.acy  ./.curry/TableRBT.acy  ./.curry/Time.acy  ./.curry/Traversal.acy  ./.curry/Unsafe.acy  ./.curry/URL.acy  ./.curry/WUI.acy  ./.curry/WUIjs.acy  ./.curry/XmlConv.acy  ./.curry/XML.acy  meta/.curry/AbstractCurry.acy  meta/.curry/AbstractCurryPrinter.acy  meta/.curry/AnnotatedFlatCurry.acy  meta/.curry/CompactFlatCurry.acy  meta/.curry/CurryStringClassifier.acy  meta/.curry/FlatCurry.acy  meta/.curry/FlatCurryGoodies.acy  meta/.curry/FlatCurryRead.acy  meta/.curry/FlatCurryShow.acy  meta/.curry/FlatCurryTools.acy  meta/.curry/FlatCurryXML.acy  meta/.curry/FlexRigid.acy  meta/.curry/PrettyAbstract.acy
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+make[4]: `.curry/AllSolutions.acy' is up to date.
+make[4]: `.curry/Array.acy' is up to date.
+make[4]: `.curry/Assertion.acy' is up to date.
+make[4]: `.curry/CategorizedHtmlList.acy' is up to date.
+make[4]: `.curry/Char.acy' is up to date.
+make[4]: `.curry/Combinatorial.acy' is up to date.
+make[4]: `.curry/Constraint.acy' is up to date.
+make[4]: `.curry/CPNS.acy' is up to date.
+make[4]: `.curry/CSV.acy' is up to date.
+make[4]: `.curry/Dequeue.acy' is up to date.
+make[4]: `.curry/Directory.acy' is up to date.
+make[4]: `.curry/Distribution.acy' is up to date.
+make[4]: `.curry/FileGoodies.acy' is up to date.
+make[4]: `.curry/FilePath.acy' is up to date.
+make[4]: `.curry/FiniteMap.acy' is up to date.
+make[4]: `.curry/Float.acy' is up to date.
+make[4]: `.curry/GetOpt.acy' is up to date.
+make[4]: `.curry/Global.acy' is up to date.
+make[4]: `.curry/GraphInductive.acy' is up to date.
+make[4]: `.curry/GUI.acy' is up to date.
+make[4]: `.curry/HtmlCgi.acy' is up to date.
+make[4]: `.curry/HTML.acy' is up to date.
+make[4]: `.curry/HtmlParser.acy' is up to date.
+make[4]: `.curry/Integer.acy' is up to date.
+make[4]: `.curry/IO.acy' is up to date.
+make[4]: `.curry/IOExts.acy' is up to date.
+make[4]: `.curry/JavaScript.acy' is up to date.
+make[4]: `.curry/KeyDatabaseSQLite.acy' is up to date.
+make[4]: `.curry/List.acy' is up to date.
+make[4]: `.curry/Mail.acy' is up to date.
+make[4]: `.curry/Markdown.acy' is up to date.
+make[4]: `.curry/Maybe.acy' is up to date.
+make[4]: `.curry/NamedSocket.acy' is up to date.
+make[4]: `.curry/Parser.acy' is up to date.
+make[4]: `.curry/Prelude.acy' is up to date.
+make[4]: `.curry/Pretty.acy' is up to date.
+make[4]: `.curry/Profile.acy' is up to date.
+make[4]: `.curry/PropertyFile.acy' is up to date.
+make[4]: `.curry/Random.acy' is up to date.
+make[4]: `.curry/Read.acy' is up to date.
+make[4]: `.curry/ReadNumeric.acy' is up to date.
+make[4]: `.curry/ReadShowTerm.acy' is up to date.
+make[4]: `.curry/RedBlackTree.acy' is up to date.
+make[4]: `.curry/SearchTree.acy' is up to date.
+make[4]: `.curry/SetFunctions.acy' is up to date.
+make[4]: `.curry/SetRBT.acy' is up to date.
+make[4]: `.curry/Socket.acy' is up to date.
+make[4]: `.curry/Sort.acy' is up to date.
+make[4]: `.curry/System.acy' is up to date.
+make[4]: `.curry/TableRBT.acy' is up to date.
+make[4]: `.curry/Time.acy' is up to date.
+make[4]: `.curry/Traversal.acy' is up to date.
+make[4]: `.curry/Unsafe.acy' is up to date.
+make[4]: `.curry/URL.acy' is up to date.
+make[4]: `.curry/WUI.acy' is up to date.
+make[4]: `.curry/WUIjs.acy' is up to date.
+make[4]: `.curry/XmlConv.acy' is up to date.
+make[4]: `.curry/XML.acy' is up to date.
+make[4]: `meta/.curry/AbstractCurry.acy' is up to date.
+make[4]: `meta/.curry/AbstractCurryPrinter.acy' is up to date.
+make[4]: `meta/.curry/AnnotatedFlatCurry.acy' is up to date.
+make[4]: `meta/.curry/CompactFlatCurry.acy' is up to date.
+make[4]: `meta/.curry/CurryStringClassifier.acy' is up to date.
+make[4]: `meta/.curry/FlatCurry.acy' is up to date.
+make[4]: `meta/.curry/FlatCurryGoodies.acy' is up to date.
+make[4]: `meta/.curry/FlatCurryRead.acy' is up to date.
+make[4]: `meta/.curry/FlatCurryShow.acy' is up to date.
+make[4]: `meta/.curry/FlatCurryTools.acy' is up to date.
+make[4]: `meta/.curry/FlatCurryXML.acy' is up to date.
+make[4]: `meta/.curry/FlexRigid.acy' is up to date.
+make[4]: `meta/.curry/PrettyAbstract.acy' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/lib'
+cd cpns       && make # Curry Port Name Server demon
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/cpns'
+make[3]: `CPNSD' is up to date.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/cpns'
+cd currytools && make # various tools
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/addtypes'
+make[4]: `AddTypes' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/addtypes'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/browser'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/browser'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/CASS'
+make uninstall
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/CASS'
+rm -f /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/cass
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/CASS'
+ln -s /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/CASS/cass /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/cass
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/CASS'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currydoc'
+make uninstall
+make[5]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currydoc'
+rm -f /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/currydoc
+make[5]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currydoc'
+ln -s /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currydoc/CurryDoc /home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/bin/currydoc
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currydoc'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/curry2js'
+make[4]: `Curry2JS' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/curry2js'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/createmakefile'
+make[4]: `CreateMakefile' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/createmakefile'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currytest'
+make[4]: `CurryTest' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/currytest'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/genint'
+make[4]: `GenInt' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/genint'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/importcalls'
+make[4]: `ImportCalls' is up to date.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools/importcalls'
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/currytools'
+cd tools      && make # various tools
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/tools'
+make[4]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/tools/erd2curry'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/tools/erd2curry'
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/tools'
+cd www        && make # scripts for dynamic web pages
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/www'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4/www'
+make manual
+make[3]: Entering directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4'
+# generate manual, if necessary:
+make[3]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4'
+# make everything accessible:
+chmod -R go+rX .
+make[2]: Leaving directory `/home/spalac24/EAFIT/2013-1/PARADIGMAS-DE-PROGRAMACION/curry/kics2/kics2-0.2.4'
+Make finished at Wed May 15 09:45:27 COT 2013

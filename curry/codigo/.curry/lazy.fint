@@ -1,0 +1,1 @@
+Prog "lazy" ["Prelude"] [] [Func ("lazy","from") 1 Public (FuncType (TCons ("Prelude","Int") []) (TCons ("Prelude","[]") [TCons ("Prelude","Int") []])) (Rule [] (Var 0))] []

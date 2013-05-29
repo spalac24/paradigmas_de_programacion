@@ -1,0 +1,1 @@
+("(BranchFM (\"Curry_SCC\",\"C_scc\") D 1 EmptyFM EmptyFM)","(BranchFM (\"Curry_SCC\",\"C_scc\") HO 2 (BranchFM (\"Curry_SCC\",\"C_Node\") FO 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_Prelude\",\"C_Success\") FO 1 EmptyFM EmptyFM)","EmptyFM")

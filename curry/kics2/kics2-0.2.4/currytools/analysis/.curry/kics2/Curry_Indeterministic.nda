@@ -1,0 +1,1 @@
+("(BranchFM (\"Curry_Indeterministic\",\"C_showIndet\") D 2 (BranchFM (\"Curry_Indeterministic\",\"C_indetAnalysis\") D 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_Indeterministic\",\"C_showIndet\") FO 2 (BranchFM (\"Curry_Indeterministic\",\"C_indetAnalysis\") HO 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_Prelude\",\"C_Success\") FO 1 EmptyFM EmptyFM)","EmptyFM")

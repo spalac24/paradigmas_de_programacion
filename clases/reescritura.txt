@@ -1,0 +1,48 @@
+dado R = {
+	 f(X,X) -> X
+	 h(h(X)) -> h(X)
+	 h(a) -> a
+}
+
+y dados los terminos t = f(h(h(a)),h(X)) y s = f(h(h(a)), h(a)) obtener
+
+O(t) = eps, 1, 1.1, 1.1.1, 2, 2.1
+
+O(s) = O(t)
+
+terminos a los que se pueden reescribir t y s
+
+t ->* hacia:
+  + f(h(a),h(X))
+  + f(a, h(X))
+
+s ->* hacia:
+    + f(h(h(a)),a)
+ 	+ f(h(a), h(a))
+  	+ f(a,a)
+	+ f(h(a),a)
+	+ f(a,h(a))
+  	+ a
+
+
+todas las secuencias de reescritura a partir de t y s
+
+t:
+f(h(h(a)),h(X)) -> 
+				f(h(a),h(X)) ->
+								f(a,h(X))
+s:
+f(h(h(a)),h(a)) ->
+				f(h(h(a)),a) ->
+							 f(h(a),a) ->
+							 		   f(a,a) ->
+									   		  a
+f(h(a),h(a)) ->
+			 h(a) ->
+			 	  a
+			 f(a,h(a)) ->
+			 		   f(a,a) ->
+					   		  a
+			 f(h(a),a) ->
+			 		   f(a,a) ->
+					   		  a

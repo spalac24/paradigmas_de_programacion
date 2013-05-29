@@ -1,0 +1,10 @@
+[ForFunction "getCPUTime"
+,ForFunction "getElapsedTime"
+,ForFunction "getArgs"
+,ForFunction "prim_getEnviron"
+,ForFunction "getHostname"
+,ForFunction "getPID"
+,ForFunction "getProgName"
+,ForFunction "prim_system"
+,ForFunction "prim_sleep"
+,ForFunction "prim_exitWith"]

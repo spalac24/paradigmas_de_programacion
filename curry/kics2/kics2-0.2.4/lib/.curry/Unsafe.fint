@@ -1,0 +1,1 @@
+Prog "Unsafe" ["Prelude"] [] [Func ("Unsafe","unsafePerformIO") 1 Public (FuncType (TCons ("Prelude","IO") [TVar 0]) (TVar 0)) (External "Unsafe.unsafePerformIO"),Func ("Unsafe","trace") 2 Public (FuncType (TCons ("Prelude","[]") [TCons ("Prelude","Char") []]) (FuncType (TVar 0) (TVar 0))) (Rule [] (Var 0))] []

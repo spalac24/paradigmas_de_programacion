@@ -1,0 +1,1 @@
+data BinTree a = Leaf | Branch a (BinTree a) (BinTree a)

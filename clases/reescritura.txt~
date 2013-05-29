@@ -1,0 +1,11 @@
+dado R = {
+	 f(X,X) -> X
+	 h(h(X)) -> h(X)
+	 h(a) -> a
+}
+
+y dados los terminos t = f(h(h(a)),h(X)) y s = f(h(h(a)), h(a)) obtener
+
+O(t) = eps, 1, 1.1, 1.1.1, 2, 2.1
+
+O(s) = O(t)

@@ -1,0 +1,11 @@
+Version: 509
+This file is part of KiCS, the Kiel Curry System.
+KiCS compiles the language Curry to Haskell.
+KiCS was developed at the University of Kiel and
+is currently maintained by Bernd Brassel, 
+bbr@informatik.uni-kiel.de.
+
+For instruction about installing KiCS, read INSTALL.
+
+The user manual can be found in the doc directory: doc/userManual.pdf
+

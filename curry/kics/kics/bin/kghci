@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export KICS_LIB=`kicslib`
+
+ghci  -fglasgow-exts -i$KICS_LIB $@

@@ -1,0 +1,19 @@
+#!/bin/sh
+# script to execute tests for Curry
+../bin/cleancurry
+
+# load definition of SICSTUS, SWIPROLOG etc:
+#. ../bin/.pakcs_variables
+
+BACKEND=`echo "putStrLn (curryRuntime ++ show curryRuntimeMajorVersion)" | ../bin/pakcs -l Distribution -q 2> /dev/null`
+
+# test for basic language features
+TESTLANG="testFunctional testInfinite testHigher testNarr testNondet testCase testLetRec"
+
+# test for standard libraries
+TESTLIBS="testDirectory testFlatCurryGoodies testGlobal testInteger testIOExts testList testSort testSystem testTraversal testArray testDequeue testFiniteMap testRedBlackTree"
+
+ALLTESTS="$TESTLANG $TESTLIBS"
+
+# execute all unit tests:
+../bin/currytest $ALLTESTS

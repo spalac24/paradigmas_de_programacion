@@ -1,0 +1,1 @@
+Prog "EliminateCond" ["FlatCurry","FlatCurryGoodies","List","Prelude","State"] [] [Func ("EliminateCond","eliminateCond") 1 Public (FuncType (TCons ("FlatCurry","Prog") []) (TCons ("FlatCurry","Prog") [])) (Rule [] (Var 0))] []

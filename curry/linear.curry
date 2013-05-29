@@ -1,0 +1,2 @@
+sub x x = 0
+sub x _ = x

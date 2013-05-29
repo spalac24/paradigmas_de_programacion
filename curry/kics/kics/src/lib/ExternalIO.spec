@@ -1,0 +1,1 @@
+[ForType "Handle" Nothing,ForFunction "stdin",ForFunction "stdout",ForFunction "stderr",ForFunction "prim_openFile",ForFunction "prim_hClose",ForFunction "prim_hFlush",ForFunction "prim_hIsEOF",ForFunction "prim_hSeek",ForFunction "prim_hWaitForInput",ForFunction "prim_hGetChar",ForFunction "prim_hPutChar",ForFunction "prim_hIsReadable",ForFunction "prim_hIsWritable"]

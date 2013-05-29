@@ -1,0 +1,108 @@
+--------------------------------------
+full trusted erd2curry of ProofDB 
+--------------------------------------
+
+{-RUBBISH!!!!
+version in branch "logstrict" compiled in steps with -O4
+real    0m3.120s
+user    0m3.028s
+sys     0m0.016s
+-}
+
+version in master compiled in steps with -O4
+real    0m0.718s
+user    0m0.680s
+sys     0m0.004s
+
+logstrict with recomp
+real    0m0.578s
+user    0m0.568s
+sys     0m0.000s
+
+master with recomp
+real    0m0.721s
+user    0m0.700s
+sys     0m0.000s
+
+master without optimization
+real    0m5.527s
+user    0m5.332s
+sys     0m0.020s
+
+logstrict without optimization
+real    0m3.344s
+user    0m3.216s
+sys     0m0.012s
+
+---------------------
+full trusted Fib
+---------------------
+
+{-RUBBISH!!!!
+logstrict compiled in steps with -O4
+real    0m1.897s
+user    0m1.888s
+sys     0m0.004s
+-}
+
+master compiled in steps with -O4
+real    0m0.124s
+user    0m0.120s
+sys     0m0.004s
+
+logstrict with recomp
+real    0m0.113s
+user    0m0.112s
+sys     0m0.000s
+
+master with recomp
+real    0m0.098s
+user    0m0.100s
+sys     0m0.000s
+
+master without optimization
+real    0m2.458s
+user    0m2.452s
+sys     0m0.000s
+
+logstrict without optimization
+real    0m2.170s
+user    0m2.148s
+sys     0m0.004s
+
+-----------------------
+full trusted queens
+-----------------------
+
+{-RUBBISH!!!!
+logstrict compiled in steps with -O4
+real    0m39.204s
+user    0m38.974s
+sys     0m0.212s
+-}
+
+master compiled in steps with -O4
+real    0m6.373s
+user    0m6.308s
+sys     0m0.016s
+
+logstrict with force-recomp
+real    0m6.228s
+user    0m6.188s
+sys     0m0.036s
+
+master with force-recomp
+real    0m6.397s
+user    0m6.272s
+sys     0m0.076s
+
+
+master without optimization
+real    0m48.691s
+user    0m48.387s
+sys     0m0.216s
+
+logstrict without optimization
+real    0m40.850s
+user    0m40.527s
+sys     0m0.056s

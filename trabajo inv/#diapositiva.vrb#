@@ -1,0 +1,7 @@
+Sometimes, the result itself could not be important. For example take the function
+
+\begin{verbatim}
+idNil [] = []
+\end{verbatim}
+
+If we try to find the normal form of {\verb{idNil [1+2]}}
