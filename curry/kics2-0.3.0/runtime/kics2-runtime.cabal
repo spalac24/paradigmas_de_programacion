@@ -1,0 +1,19 @@
+Name:           kics2-runtime
+Version:        0.3.0
+Description:    The runtime environment for KiCS2
+License:        OtherLicense
+Author:         Fabian Reck
+Maintainer:     fre@informatik.uni-kiel.de
+Build-Type:     Simple
+Cabal-Version:  >= 1.9.2
+
+Library
+  Build-Depends: base, containers, ghc, mtl, parallel-tree-search, tree-monad
+  Exposed-modules:
+      Basics, CurryException, Debug, IDSupply
+    , Installation, MonadList, MonadSearch
+    , PrimTypes, SafeExec
+  Other-modules:
+      ConstStore, ID, Search, Solver
+    , Strategies, Types
+  hs-source-dirs: ., idsupplyioref

@@ -1,0 +1,1 @@
+Prog "SCC" ["Prelude","RedBlackTree","SetRBT"] [] [Func ("SCC","scc") 2 Public (FuncType (FuncType (TVar 0) (TCons ("Prelude","[]") [TVar 1])) (FuncType (FuncType (TVar 0) (TCons ("Prelude","[]") [TVar 1])) (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","[]") [TCons ("Prelude","[]") [TVar 0]])))) (Rule [] (Var 0))] []

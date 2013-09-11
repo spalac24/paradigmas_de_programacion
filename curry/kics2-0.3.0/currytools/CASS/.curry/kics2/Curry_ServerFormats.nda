@@ -1,0 +1,1 @@
+("(BranchFM (\"Curry_ServerFormats\",\"C_serverFormats\") D 2 (BranchFM (\"Curry_ServerFormats\",\"C_formatResult\") D 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_ServerFormats\",\"C_serverFormats\") FO 2 (BranchFM (\"Curry_ServerFormats\",\"C_formatResult\") HO 1 EmptyFM EmptyFM) EmptyFM)","(BranchFM (\"Curry_Prelude\",\"C_Success\") FO 1 EmptyFM EmptyFM)","EmptyFM")

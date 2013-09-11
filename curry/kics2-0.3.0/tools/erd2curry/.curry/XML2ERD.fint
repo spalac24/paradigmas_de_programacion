@@ -1,0 +1,1 @@
+Prog "XML2ERD" ["Char","ERD","List","Maybe","Prelude","Read","ReadShowTerm","Time","XML"] [] [Func ("XML2ERD","convert") 1 Public (FuncType (TCons ("XML","XmlExp") []) (TCons ("ERD","ERD") [])) (Rule [] (Var 0))] []

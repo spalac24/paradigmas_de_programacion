@@ -1,0 +1,1 @@
+Prog "choose" ["Prelude"] [] [Func ("choose","choose") 2 Public (FuncType (TVar 0) (FuncType (TVar 0) (TVar 0))) (Rule [] (Var 0))] []

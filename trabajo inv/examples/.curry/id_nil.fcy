@@ -1,0 +1,1 @@
+Prog "id_nil" ["Prelude"] [] [Func ("id_nil","idNil") 1 Public (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","[]") [TVar 0])) (Rule [1] (Case  Flex (Var 1) [Branch (Pattern ("Prelude","[]") []) (Comb ConsCall ("Prelude","[]") [])]))] []

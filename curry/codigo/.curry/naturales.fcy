@@ -1,1 +1,0 @@
-Prog "naturales" ["Prelude"] [Type ("naturales","Natural") Public [] [Cons ("naturales","Zero") 0 Public [],Cons ("naturales","Succ") 1 Public [TCons ("naturales","Natural") []]],Type ("naturales","Tree") Public [0] [Cons ("naturales","Leaf") 0 Public [],Cons ("naturales","Node") 3 Public [TVar 0,TCons ("naturales","Tree") [TVar 0],TCons ("naturales","Tree") [TVar 0]]]] [] []

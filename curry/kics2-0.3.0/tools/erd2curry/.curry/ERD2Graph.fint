@@ -1,0 +1,1 @@
+Prog "ERD2Graph" ["Char","ERD","IO","IOExts","List","Prelude","RCFile"] [] [Func ("ERD2Graph","viewERD") 0 Public (FuncType (TCons ("ERD","ERD") []) (TCons ("Prelude","IO") [TCons ("Prelude","()") []])) (Rule [] (Var 0))] []

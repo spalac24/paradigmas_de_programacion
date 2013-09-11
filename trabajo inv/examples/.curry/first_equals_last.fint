@@ -1,0 +1,1 @@
+Prog "first_equals_last" ["Prelude"] [] [Func ("first_equals_last","firsteqlast") 1 Public (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","Bool") [])) (Rule [] (Var 0))] []

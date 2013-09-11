@@ -1,7 +1,7 @@
 \documentclass{beamer}
 \mode<presentation>{}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{verbatim}
 \usepackage{listings}
@@ -12,16 +12,17 @@
 \usepackage{graphicx}
 
 \setbeamercovered{invisible}
-\usetheme{Warsaw}
+\usetheme{Frankfurt}
 \usefonttheme{serif}
 
 \newcommand{\q}[1]{\texttt{#1}}
 
-\title{Curry\\ A truly integrated functional logic language}
+\title{Curry\\ Integrating Logic and Functional Paradigms}
 \author{Santiago Palacio Gómez}
 
-\institute{Universidad EAFIT}
+\institute{Universidad EAFIT\\Seminario de L\'ogica y Computaci\'on}
 \date{\today}
+
 
 \AtBeginSection[]
 {
@@ -30,12 +31,15 @@
   \end{frame}
 }
 
+
 \begin{document}
 
 \SaveVerb{succ}=Success=
 \begin{frame}
   \titlepage
 \end{frame}
+
+
 
 \begin{frame}
   I do not take credit for the content here. All the research on this matter was made by Michael Hanus and partners. I only intend to make a summary, of what i think are the most important aspects of the language; all with educational purposes.
@@ -49,12 +53,7 @@
   
   \begin{frame}
     Curry is a programming language designed to join the most important
-    concepts
-    from declarative programming paradigms. It combines features from
-    functional
-    programming (nested expressions, lazy evaluation, high-order
-    functions,...) and
-    logic programming (logic variables, built-in search,...).
+    concepts from declarative programming paradigms. It combines features from functional programming (nested expressions, lazy evaluation, high-order functions,...) and logic programming (logic variables, built-in search,...).
   \end{frame}
 \end{section}
 
@@ -63,6 +62,7 @@
 
   \begin{subsection}{Expressions}
     \begin{frame}
+      \frametitle{\subsecname}
       An expression is either an \textit{atom} (literal or symbol) or
       an        application
       of an expression to another expression. For example, the
@@ -70,22 +70,20 @@
       ``\q{2}'' or ``\q{True}'' are considered \textit{atoms}, while
       ``\q{2+3}'' or ``\q{not True}'' are complex expressions; those
       combinations are referred to as \textit{function application}.
-      In curry,        like in
+      In Curry,        like in
       many other functional languages, function application is written
-      simply        by
-      juxtaposition of terms with spaces in between. The result of
-      evaluating        an
-      expression is a value, e.g. \q{2+3} has a value of \q{5}.
+      simplyby juxtaposition of terms with spaces in between. The result of evaluating an expression is a value, e.g. \q{2+3} has a value of \q{5}.
     \end{frame}
   \end{subsection}
 
 
   \begin{subsection}{Functions}
     \begin{frame}
+      \frametitle{\subsecname}
       Curry provides functions as a \textit{procedural abstraction}.
       Functions can be viewed as a parametrized expression, possibly
       with a name.
-      Unlike with pure functional languages, in curry functions are
+      Unlike with pure functional languages, in Curry functions are
       non deterministic. This is, same parameters may result in different
       return        values.
       This is due to the integration with the logic paradigm.
@@ -93,13 +91,13 @@
     \begin{frame}
       In the previous examples, \q{+} and \q{not} were
       functions, both        defined        in
-      the \textit{prelude}. We see that curry provides infix
+      the \textit{prelude}. We see that Curry provides infix
       operators                (functions) so
-      we can write normal aritmethic expressions like
+      we can write common aritmethic expressions like
       \q{2+5*6}, and        also        provides
       operator precedence and asociativiry so \q{1+2+5*6} is
       interpreted like
-      \q{(1+2)+(5*6)}. For example, in curry, some arithmetic
+      \q{(1+2)+(5*6)}. For example, in Curry, some arithmetic
       operators can be
       defined like:\\
       \begin{tabular}[c]{l}
@@ -113,6 +111,7 @@
   \begin{subsection}{Data types}
     
     \begin{frame}
+      \frametitle{Types}
       Curry provides some basic types, referred as \textit{builtin types}.
       Here
       are some examples
@@ -123,7 +122,7 @@
       \item[\lbrack$\tau$\rbrack ] Lists that are either empty \q{[]} or a
         concatenation of an element of type $\tau$ with another list
         \q{x:list}.
-      \item[String] Strings are seen in curry as a list of characters.
+      \item[String] Strings are seen in Curry as a list of characters.
       \item[()] Unit, used when the return value of a function is not
         relevant.
       \end{itemize}
@@ -135,7 +134,8 @@
 \begin{section}{High-Order Functions}
     \begin{subsection}{Functions as values}
       \begin{frame}
-        In curry, functions are values themselves. This is, the parameter of a
+        \frametitle{\subsecname}
+        In Curry, functions are values themselves. This is, the parameter of a
         function, the result of a function, the result of an expression can be a
         function itself.
     
@@ -157,6 +157,7 @@
      \end{subsection}
      \begin{subsection}{Function types}
      \begin{frame}
+       \frametitle{\subsecname}
         Functions, being values, have types too. In mathematics we define a
         function like this:
         $$ f : A \mapsto B$$
@@ -178,7 +179,7 @@
       \end{frame}
       \begin{frame}
         The operator \q{->}  is right associative, i.e. \q{a -> b -> c = a -> (b
-        -> c)}. This is because Curry uses currying. So every function in curry
+        -> c)}. This is because Curry uses Currying (surprise!). So every function in Curry
         actually takes just one parameter and returns another function that
         takes the rest of the parameters.
 
@@ -202,6 +203,7 @@
 
 \begin{section}{Scope}
   \begin{frame}
+\frametitle{\secname}
   The scope of an identifier of a function, variable, type, etc. is where it can be referenced in the program.
   For example, in a function definition, the identifiers of the parameters are available at the whole expression, so in the expressions
 
@@ -219,6 +221,7 @@
 \begin{subsection}{where clauses}
 \begin{frame}
 [fragile]
+\frametitle{\subsecname}
     A \q{where} creates a scope inside an expression.
 \begin{verbatim}
 zipp1 l = zip l (map f l)
@@ -239,6 +242,7 @@ e1 where
 \begin{subsection}{let clauses}
   \begin{frame}
 [fragile]
+\frametitle{\subsecname}
 
 Let clauses are a way to define identifiers \textit{before} the scope.
 
@@ -264,6 +268,7 @@ in
 \begin{section}{Narrowing}
   \begin{subsection}{Basic definitions}
 \begin{frame}
+\frametitle{\subsecname}
   From the definitions in pure functional programming, we borrow the definitions of functions, constructors, patterns and TRS (\textit{term rewiriting system}). It's worth remebering the definition of a TRS as a set of rewriting rules of the form $l \rightarrow r$ with linear pattern $l$ as $lhs$ and a term r as $rhs$.
 
   We must notice that we have changed the traditional definition of the TRS by not requiring that $var(l) \subseteq var(r)$.
@@ -279,6 +284,7 @@ in
 \begin{subsection}{Rewrite Strategy}
 
   \begin{frame}
+\frametitle{\subsecname}
   The goal of a sequence of rewrite steps is to compute a normal form. A \textit{rewrite strategy} determines for each step a rule and a position to apply the next step. A \textit{normalizing strategy} is one that terminates a rewrite sequence in a normal form, when it exists.
 \end{frame}
 
@@ -295,7 +301,7 @@ So, the interesting results of functional computations are \textit{constructor t
 \end{frame}
 
 \begin{frame}
-Functional logic languages are able to do more than pure functional languages since they instantiate variables in a term (free variables) in order to apply the rewrite step. The combination of variable instantiation and rewriting is called \textbf{narrowing}.
+Functional logic languages are more flexible than pure functional languages since they instantiate variables in a term (free variables), in order to apply the rewrite step. The combination of variable instantiation and rewriting is called \textbf{narrowing}.
 \end{frame}
 
 \end{subsection}
@@ -310,8 +316,10 @@ Functional logic languages are able to do more than pure functional languages si
 
 \begin{subsection}{Example}
   
-\begin{frame}[fragile]
-  
+\begin{frame}
+[fragile]
+
+\frametitle{\subsecname}
   Consider the following program, containing the definition of naturals, the add operation and a ``less than or equal'' test.\\[0.5cm]
 
 
@@ -357,7 +365,8 @@ But this would not be optimal since it computes the same value as the first deri
 \begin{section}{Needed Narrowing}
   \begin{subsection}{Definition}
     \begin{frame}
-      Needed Narrowing is based on the idea to perform only narrowing steps that are necessary to compute a result. This kind of strrategies are also called \textit{lazy} or \textit{demand-driven}.
+\frametitle{\subsecname}
+      Needed Narrowing is based on the idea to perform only narrowing steps that are necessary to compute a result. This kind of strategies are also called \textit{lazy} or \textit{demand-driven}.
 
       If there is an argument position that is constructor rooted, then the corresponding actual argument must also be evaluated (or non-deterministically instantiated if it's a variabe) to be constructor rooted.
     \end{frame}
@@ -365,13 +374,14 @@ But this would not be optimal since it computes the same value as the first deri
 \begin{subsection}{Example}
 
 \begin{frame}[fragile]
-
+\frametitle{\subsecname}
 Consider again the program of Natural numbers. Needed narrowing instantiates the variable \verb|v| in \verb|leq v (add w 0)| to either \verb|0| or \verb|S z| (where z is a fresh variable). In the first case, only rule $leq_1$become applicable. In the scond case, only rules $leq_2$ or $leq_3$ become applicable. Since the latter rules have a constructor-rooted term as second argument, the corresponding subterm \verb|add w 0| is recursively evaluated to a constructor-rooted term.  
   
 \end{frame}
 \end{subsection}
 \begin{subsection}{Inductively Sequential TRS}
   \begin{frame}[allowpagebreaks]
+\frametitle{\subsecname}
 Since not every TRS allows such reasoning, needed narrowing is defined on the subclass of \textit{inductively sequential TRS}. We will consider only the lhs of the rules, since they are the  only important part for the applicability of needed narrowing. We will characterize a \textit{definitional tree} $T$ (using the \textit{subsumption ordering}: $t \leq \sigma (t)$) of an operation $f$ with the following properties:
 \begin{itemize}
   \setlength{\itemindent}{2cm}
@@ -383,9 +393,9 @@ Since not every TRS allows such reasoning, needed narrowing is defined on the su
 \begin{frame}
   \begin{itemize}
     \setlength{\itemindent}{2cm}
-    \item[Parent property] For every pattern $\pi$ different from the root, there exists a unique $\pi'$ such that $\pi' < \pi$ and there isn't any $\pi''$ such that $\pi' < \pi'' < \pi$.
-    \item[Induction property] Every child of $\pi$ differs from each other only at a common position, called the \textit{inductive position}, which is the position of a variable in $\pi$.
-    \end{itemize}
+  \item[Parent property] For every pattern $\pi$ different from the root, there exists a unique $\pi'$ such that $\pi' < \pi$ and there isn't any $\pi''$ such that $\pi' < \pi'' < \pi$.
+  \item[Induction property] Every child of $\pi$ differs from each other only at a common position, called the \textit{inductive position}, which is the position of a variable in $\pi$.
+  \end{itemize}
     An operation is called inductively sequential if it has a definitional tree and its rules do not contain extra variables. A TRS is inductively sequential if every define operation is inductively sequential. Needed narrowing is applicable to most operations in logic functional languages (and every operation in pure functional languages), however extensions may be useful for particular operations.
 \end{frame}
 
@@ -409,11 +419,11 @@ Since not every TRS allows such reasoning, needed narrowing is defined on the su
 \item[If $\pi$ is a leaf] we apply the corresponding rule
 \item[If $\pi$ is a branch] let p be it's inductive position, we consider the corresponding subterm$t|_p$
   \begin{itemize}
-    \item If $t|_p$ is rooted by a constructor $c$, if there is a child  with $c$ at the inductive position, we examine the child, else we fail.
+  \item If $t|_p$ is rooted by a constructor $c$, if there is a child  with $c$ at the inductive position, we examine the child, else we fail.
 
-    \item If $t|_p$ is a variable, we nondeterministaclly instantiate this variable by the constructor term at the inductive position of a child, and proceed to examine the child.
+  \item If $t|_p$ is a variable, we nondeterministaclly instantiate this variable by the constructor term at the inductive position of a child, and proceed to examine the child.
 
-    \item If $t|_p$ is operation rooted, we recusively apply the computation of a needed narrowing step to $\sigma(t|_p)$, where $\sigma$ is the substution, result of previous case distinctions.
+  \item If $t|_p$ is operation rooted, we recusively apply the computation of a needed narrowing step to $\sigma(t|_p)$, where $\sigma$ is the substution, result of previous case distinctions.
   \end{itemize}
 \end{itemize}
 
@@ -421,6 +431,7 @@ Since not every TRS allows such reasoning, needed narrowing is defined on the su
 \end{subsection}
 \begin{subsection}{Strict Equality}
 \begin{frame}[fragile]
+\frametitle{\subsecname}
     The equality symbol \verb|=:=| is called \textit{strict equality}, i.e. te equation $t_1 =:= t_2$ is satisfied iff $t_1$ and $t_2$ are reducible to the same \textit{ground} constructor or term. (Note that when $t_1$ is not reducible, $t_1 =:= t_1$ does not succeed).
 
     We can define $=:=$ as follows:
@@ -439,7 +450,7 @@ Since not every TRS allows such reasoning, needed narrowing is defined on the su
 
 A solution for an equation $t_1 =:= t_2$ is a substitution $\sigma$, if $\sigma(t_1) =:= \sigma(t_2) \leadsto^* \UseVerb{succ}$.
 
-We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of al possible narrowing derivations.x
+We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of al possible narrowing derivations.
 
 \end{frame}
 \end{subsection}
@@ -447,7 +458,7 @@ We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (i
 \begin{subsection}{Weakly Needed Narrowing}
 
 \begin{frame}[fragile]
-
+\frametitle{\subsecname}
   If we take the code:
 \begin{verbatim}
 
@@ -473,6 +484,7 @@ or False False = False
 
 \begin{subsection}{Non-determinism}
 \begin{frame}[fragile]
+\frametitle{\subsecname}
   This same principe may also be extended to handle non-deterministic operations and extra variables, by simply examining every possible or branch, and not requiring that all the rules are confluent to the same normal form. For example, the rule
 
 \begin{verbatim}
@@ -489,7 +501,7 @@ _ ? y = y
 \begin{section}{Bibliography}
   \begin{frame}
     \begin{itemize}
-    \item Curry: A tutorial Introduction. Draft of December 2007. Antoy Sergio, Hanus Michael, Taken from http://www.informatik.uni-kiel.de/~curry/tutorial/ the 15th of April, 2013.
+    \item Curry: A tutorial Introduction. Draft of December 2007. Antoy Sergio, Hanus Michael, Taken from http://www.informatik.uni-kiel.de/~Curry/tutorial/ the 15th of April, 2013.
 
 
     \item Functional Logic Programming: From Theory to Curry. Hanus Michale. Institut f\"ur Informatik, CAU Kiel, Germany. As sent May the 13th of 2013.

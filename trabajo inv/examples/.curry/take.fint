@@ -1,0 +1,1 @@
+Prog "take" ["Prelude"] [] [Func ("take","myTake") 2 Public (FuncType (TCons ("Prelude","Int") []) (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","[]") [TVar 0]))) (Rule [] (Var 0))] []

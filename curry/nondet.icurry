@@ -1,0 +1,7 @@
+interface nondet where {
+import Prelude;
+hiding data Prelude.Int;
+choose :: a -> a -> a;
+last :: [a] -> a;
+one23 :: Prelude.Int
+}

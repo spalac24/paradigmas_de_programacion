@@ -1,0 +1,12 @@
+\frametitle{{\subsecname} Examples II}
+\begin{example}
+\begin{verbatim}
+sorted :: [Integer] -> [Integer]
+sorted [] = []
+sorted [x] = [x]
+sorted (x:y:xs) | ((x < y)::Bool) =:= True
+                  = x : (sorted (y:xs))
+
+mySort x = sorted (perm x)
+\end{verbatim}
+\end{example}

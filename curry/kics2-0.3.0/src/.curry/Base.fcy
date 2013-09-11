@@ -1,0 +1,1 @@
+Prog "Base" ["Prelude"] [Type ("Base","NDClass") Public [] [Cons ("Base","D") 0 Public [],Cons ("Base","ND") 0 Public []],Type ("Base","HOClass") Public [] [Cons ("Base","FO") 0 Public [],Cons ("Base","HO") 0 Public []]] [] []

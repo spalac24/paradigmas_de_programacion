@@ -1,0 +1,6 @@
+CurryProg "Unsafe"
+ ["Prelude"]
+ []
+ [CFunc ("Unsafe","unsafePerformIO") 1 Public (CFuncType (CTCons ("Prelude","IO") [CTVar (0,"a")]) (CTVar (0,"a"))) (CExternal "unsafePerformIO"),
+  CFunc ("Unsafe","trace") 2 Public (CFuncType (CTCons ("Prelude","[]") [CTCons ("Prelude","Char") []]) (CFuncType (CTVar (0,"a")) (CTVar (0,"a")))) (CRules CFlex [CRule [CPVar (0,"s"),CPVar (1,"x")] [(CSymbol ("Prelude","success"),CApply (CSymbol ("Unsafe","unsafePerformIO")) (CApply (CApply (CSymbol ("Prelude",">>")) (CApply (CSymbol ("Prelude","putStr")) (CVar (0,"s")))) (CApply (CSymbol ("Prelude","return")) (CVar (1,"x")))))] []])]
+ []

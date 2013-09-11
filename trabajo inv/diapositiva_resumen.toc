@@ -1,0 +1,18 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {2}{Main Elements}{6}{0}{2}
+\beamer@sectionintoc {3}{Narrowing}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Basic Definitions}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Rewrite Strategy}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{Formal Definition}{15}{0}{3}
+\beamer@sectionintoc {4}{Needed Narrowing}{18}{0}{4}
+\beamer@subsectionintoc {4}{1}{Definition}{19}{0}{4}
+\beamer@subsectionintoc {4}{2}{Example}{20}{0}{4}
+\beamer@subsectionintoc {4}{3}{Inductively Sequential TRS}{21}{0}{4}
+\beamer@subsectionintoc {4}{4}{Strict Equality}{31}{0}{4}
+\beamer@subsectionintoc {4}{5}{Weakly Needed Narrowing}{33}{0}{4}
+\beamer@sectionintoc {5}{Non-Determinism}{35}{0}{5}
+\beamer@subsectionintoc {5}{1}{Handling Non-Determinism}{36}{0}{5}
+\beamer@subsectionintoc {5}{2}{Lazy vs Strict Evaluation}{37}{0}{5}
+\beamer@sectionintoc {6}{Bibliography}{40}{0}{6}

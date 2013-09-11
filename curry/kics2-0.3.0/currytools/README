@@ -1,0 +1,50 @@
+Curry Tools
+===========
+
+This directory contains various tools for Curry
+that are used by different Curry systems, like PAKCS or KiCS2.
+
+Currently it contains:
+
+`addtypes`:
+A tool that adds type signatures to a given Curry program.
+
+`analysis`:
+A directory containing various analyses for Curry programs.
+These are used in the `CASS` and `currydoc` tools.
+
+`browser`:
+A tool to browse through the modules and functions of a Curry program,
+show them in various formats, and analyze their properties.
+
+`CASS`:
+This directory contains the implementation of the
+Curry Analysis Server System, a generic and distributed analysis system
+for Curry programs.
+
+`createmakefile`:
+A tool to create a simple makefile for a Curry application.
+
+`curry2js`:
+A compiler for Curry into JavaScript programs used in the
+generation of web user interfaces (WUIs).
+
+`currydoc`:
+A documentation generator for Curry programs.
+
+`currytest`:
+A test tool for Curry programs.
+
+`genint`:
+A program for generating module interfaces and source code
+of a Curry module (used by the commands ":interface" and ":show"
+of some Curry systems).
+
+`importcalls`:
+A tool to show all calls to imported functions in a module.
+
+`typeinference`:
+This directory contains the implementation of a type
+inferencer for FlatCurry programs which annotates
+each expression occurring in a FlatCurry program with its
+actual type.

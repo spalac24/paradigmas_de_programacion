@@ -1,0 +1,1 @@
+Prog "sublists" ["Prelude"] [] [Func ("sublists","sublists") 1 Public (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","[]") [TVar 0])) (Rule [] (Var 0))] []

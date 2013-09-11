@@ -1,1 +1,0 @@
-Prog "outermost" ["Prelude"] [] [Func ("outermost","loop") 0 Public (TCons ("Prelude","Int") []) (Rule [] (Comb FuncCall ("Prelude","+") [Lit (Intc  1),Comb FuncCall ("outermost","loop") []]))] []

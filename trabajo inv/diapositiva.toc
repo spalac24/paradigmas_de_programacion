@@ -1,5 +1,5 @@
-\beamer@endinputifotherversion {3.10pt}
-\select@language {spanish}
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
 \beamer@sectionintoc {1}{Introduction}{5}{0}{1}
 \beamer@sectionintoc {2}{Major Elements}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Expressions}{10}{0}{2}

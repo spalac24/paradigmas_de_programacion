@@ -1,0 +1,19 @@
+Name:           kics2-libraries
+Version:        0.3.0
+Description:    The standard libraries for KiCS2
+License:        OtherLicense
+Author:         Fabian Reck
+Maintainer:     fre@informatik.uni-kiel.de
+Build-Type:     Simple
+Cabal-Version:  >= 1.9.2
+
+Library
+  Build-Depends:
+      kics2-runtime == 0.3.0
+    , base, directory, network, old-time, parallel-tree-search, process, time
+  if os(windows)
+    Build-Depends: Win32
+  else
+    Build-Depends: unix
+  Exposed-modules: Curry_Read, Curry_XML, Curry_FilePath, Curry_HtmlParser, Curry_Pretty, Curry_Global, Curry_URL, Curry_FiniteMap, Curry_Parser, Curry_Random, Curry_Traversal, Curry_RedBlackTree, Curry_IO, Curry_GetOpt, Curry_KeyDatabaseSQLite, Curry_Combinatorial, Curry_Distribution, Curry_Directory, Curry_Unsafe, Curry_GUI, Curry_Function, Curry_SearchTree, Curry_SetRBT, Curry_HtmlCgi, Curry_Profile, Curry_SetFunctions, Curry_WUI, Curry_CategorizedHtmlList, Curry_Assertion, Curry_CSV, Curry_ReadNumeric, Curry_JavaScript, Curry_Char, Curry_XmlConv, Curry_List, Curry_Prelude, Curry_Mail, Curry_Dequeue, Curry_Maybe, Curry_AllSolutions, Curry_System, Curry_ReadShowTerm, Curry_IOExts, Curry_TableRBT, Curry_FileGoodies, Curry_WUIjs, Curry_Markdown, Curry_Constraint, Curry_CPNS, Curry_HTML, Curry_Integer, Curry_Array, Curry_GraphInductive, Curry_ValueSequence, Curry_NamedSocket, Curry_Socket, Curry_Sort, Curry_PropertyFile, Curry_Time, Curry_UnsafeSearchTree, Curry_Float, Curry_FlatCurryGoodies, Curry_CompactFlatCurry, Curry_FlatCurry, Curry_FlatCurryRead, Curry_AbstractCurryPrinter, Curry_AnnotatedFlatCurryGoodies, Curry_FlexRigid, Curry_CurryStringClassifier, Curry_FlatCurryXML, Curry_AbstractCurry, Curry_AnnotatedFlatCurry, Curry_FlatCurryShow, Curry_PrettyAbstract, Curry_FlatCurryTools
+  hs-source-dirs: ./.curry/kics2, ./meta/.curry/kics2

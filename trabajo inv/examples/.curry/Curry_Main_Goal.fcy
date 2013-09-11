@@ -1,0 +1,1 @@
+Prog "Curry_Main_Goal" ["Prelude","nondet"] [] [Func ("Curry_Main_Goal","kics2MainGoal") 0 Public (TCons ("Prelude","Int") []) (Rule [] (Comb FuncCall ("nondet","coin") []))] []

@@ -1,0 +1,16 @@
+\BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Main Elements}{}% 2
+\BOOKMARK [2][]{Outline0.3}{Narrowing}{}% 3
+\BOOKMARK [3][]{Outline0.3.1.9}{Basic Definitions}{Outline0.3}% 4
+\BOOKMARK [3][]{Outline0.3.2.12}{Rewrite Strategy}{Outline0.3}% 5
+\BOOKMARK [3][]{Outline0.3.3.15}{Formal Definition}{Outline0.3}% 6
+\BOOKMARK [2][]{Outline0.4}{Needed Narrowing}{}% 7
+\BOOKMARK [3][]{Outline0.4.1.19}{Definition}{Outline0.4}% 8
+\BOOKMARK [3][]{Outline0.4.2.20}{Example}{Outline0.4}% 9
+\BOOKMARK [3][]{Outline0.4.3.21}{Inductively Sequential TRS}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.4.31}{Strict Equality}{Outline0.4}% 11
+\BOOKMARK [3][]{Outline0.4.5.33}{Weakly Needed Narrowing}{Outline0.4}% 12
+\BOOKMARK [2][]{Outline0.5}{Non-Determinism}{}% 13
+\BOOKMARK [3][]{Outline0.5.1.36}{Handling Non-Determinism}{Outline0.5}% 14
+\BOOKMARK [3][]{Outline0.5.2.37}{Lazy vs Strict Evaluation}{Outline0.5}% 15
+\BOOKMARK [2][]{Outline0.6}{Bibliography}{}% 16

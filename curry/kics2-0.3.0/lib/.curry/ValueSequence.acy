@@ -1,0 +1,9 @@
+CurryProg "ValueSequence"
+ ["Prelude"]
+ [CType ("ValueSequence","ValueSequence") Public [(0,"_")] []]
+ [CFunc ("ValueSequence","emptyVS") 0 Public (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]) (CExternal "emptyVS"),
+  CFunc ("ValueSequence","addVS") 2 Public (CFuncType (CTVar (0,"a")) (CFuncType (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]) (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]))) (CExternal "addVS"),
+  CFunc ("ValueSequence","failVS") 1 Public (CFuncType (CTCons ("Prelude","Int") []) (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")])) (CExternal "failVS"),
+  CFunc ("ValueSequence","vsToList") 1 Public (CFuncType (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]) (CTCons ("Prelude","[]") [CTVar (0,"a")])) (CExternal "vsToList"),
+  CFunc ("ValueSequence","|++|") 2 Public (CFuncType (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]) (CFuncType (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]) (CTCons ("ValueSequence","ValueSequence") [CTVar (0,"a")]))) (CExternal "|++|")]
+ []
