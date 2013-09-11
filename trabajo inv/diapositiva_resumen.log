@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.5)  11 SEP 2013 16:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.5)  11 SEP 2013 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,19 +1482,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 (./diapositiva_resumen.vrb) [14
 
-]
-! Undefined control sequence.
-\beamer@doifinframe ...R} t'$. \par \par \Bigskip 
-                                                  Since in functional logic ...
-l.164   \end{frame}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[15
+] [15
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
@@ -1504,49 +1492,49 @@ and I'll forget about whatever was undefined.
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
- (./diapositiva_resumen.vrb) [17
 
-]
-(./diapositiva_resumen.toc) [18
+(./diapositiva_resumen.vrb) [17
+
+] (./diapositiva_resumen.toc) [18
 
 ] [19
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
- (./diapositiva_resumen.vrb) [20
+
+(./diapositiva_resumen.vrb) [20
 
 ] [21
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
-
-(./diapositiva_resumen.vrb) [22
-
-]
-\openout4 = `diapositiva_resumen.vrb'.
-
- (./diapositiva_resumen.vrb) [23
+ (./diapositiva_resumen.vrb) [22
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
 
-(./diapositiva_resumen.vrb) [24
+(./diapositiva_resumen.vrb) [23
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
- (./diapositiva_resumen.vrb) [25
+ (./diapositiva_resumen.vrb) [24
+
+]
+\openout4 = `diapositiva_resumen.vrb'.
+
+
+(./diapositiva_resumen.vrb) [25
 
 ] [26
 
 ]
 \openout4 = `diapositiva_resumen.vrb'.
 
-
-(./diapositiva_resumen.vrb) [27
+ (./diapositiva_resumen.vrb) [27
 
 ]
 <pictures/def_trees.png, id=1882, 664.4825pt x 272.01625pt>
@@ -1646,10 +1634,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 483.
  ) 
 Here is how much of TeX's memory you used:
- 18771 strings out of 493349
- 338817 string characters out of 6141472
+ 18770 strings out of 493349
+ 338810 string characters out of 6141472
  440181 words of memory out of 5000000
- 21601 multiletter control sequences out of 15000+600000
+ 21600 multiletter control sequences out of 15000+600000
  18325 words of font info for 69 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  49i,20n,66p,436b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1666,7 +1654,7 @@ m/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfon
 t/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/ma
 tha10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha
 8.pfb>
-Output written on diapositiva_resumen.pdf (41 pages, 305721 bytes).
+Output written on diapositiva_resumen.pdf (41 pages, 305708 bytes).
 PDF statistics:
  2822 PDF objects out of 2984 (max. 8388607)
  2685 compressed objects within 27 object streams

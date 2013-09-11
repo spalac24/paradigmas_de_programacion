@@ -159,7 +159,7 @@ last x
   Formally, $t \leadsto _{p,R,\sigma} t'$ is a \textit{narrowing step} if $t|_p$ is not a variable, and $\sigma(t) \rightarrow_{p,R} t'$.
 
 
-\Bigskip
+\bigskip
  Since in functional logic languages we are interested in computing values, as well as answers, we say that $t \leadsto ^ * _ \sigma c$ computes the value $c$ with answer $\sigma$, if $c$ is a value.
   \end{frame}
 \end{subsection}
@@ -362,7 +362,7 @@ or False False = False
 \frametitle{Strict Equality Solutions}
 A solution for an equation $t_1 =:= t_2$ is a substitution $\sigma$, if $\sigma(t_1) =:= \sigma(t_2) \leadsto^* \UseVerb{succ}$.
 
-We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of all possible narrowing derivations.
+We have then, that \textit{needed narrowing} is correct, complete and minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of all possible narrowing derivations.
 
 \end{frame}
 \end{subsection}
@@ -388,7 +388,7 @@ or False False = False
 \frametitle{{\subsecname} II}
   Then, we can also extend the definition of \textit{definitional trees} by adding or-branches, which are conceptually the union of two definitional trees.
 
-  In the previous example, we could create a tree for the rules {$or_2,or_3$} and the rule {$or_1$}, then we could join those trees by an or-branch.
+  In the previous example, we could create a tree for the rules {$or_2,or_3$} and the rule {$or_1$}, then, we could join those trees by an or-branch.
 
   This new way of resolving operations is also confluent, for the condition we required.
 
@@ -400,7 +400,7 @@ or False False = False
 \begin{subsection}{Handling Non-Determinism}
 \begin{frame}[fragile]
 \frametitle{\subsecname}
-  This same principle may also be extended to handle non-deterministic operations and extra variables, by simply examining every possible or branch, and not requiring that all the rules are confluent to the same normal form. For example, the rule
+  This same principle may also be extended to handle non-deterministic operations and extra variables, by simply examining every possible or branch, and not requiring that all the rules are confluent to the same normal form. For example, the rule:
 
 \begin{verbatim}
 x ? _ = x
@@ -416,7 +416,7 @@ _ ? y = y
 \begin{frame}
 [fragile]
 \frametitle{\subsecname}
-  Consider the following functions
+  Consider the following functions:
 \begin{verbatim}
 choose x _ = x
 choose _ y = y
@@ -425,7 +425,7 @@ coin = choose 0 1
 
 double x = x+x
 \end{verbatim}
-What would happen if we call \verb|double coin|?.
+What would happen if we call \verb|double coin|?
 \end{frame}
 \begin{frame}
 [fragile]
