@@ -62,7 +62,7 @@
 \begin{section}{Main Elements}
 \begin{frame}
 \frametitle{\secname}
-  From functional languages, curry takes elements such as:
+  From functional languages, Curry takes elements such as:
 \begin{itemize}
   \item Expressions.
   \item Functions, high order functions.
@@ -76,7 +76,7 @@
   \begin{subsection}{Basic Definitions}
 \begin{frame}
 \frametitle{\subsecname}
-  From the definitions in pure functional programming, we borrow
+  From the definitions in pure functional programming, we borrow:
   \begin{itemize}
     \item Function definition.
     \item Constructors.
@@ -92,7 +92,7 @@
 \frametitle{TRS}
  It's worth remembering the definition of a TRS as a set of rewriting rules of the form $l \rightarrow r$ with linear pattern $l$ as $lhs$ and a term r as $rhs$.
 
-  It must also be noticed that the traditional definition of the TRS was changed, by not requiring that $var(l) \subseteq var(r)$.
+  It must also be noticed, that the traditional definition of the TRS was changed, by not requiring that $var(l) \subseteq var(r)$.
 
 \begin{example}
 \begin{verbatim}
@@ -124,14 +124,14 @@ add (S x) y = S (add x y)
 \begin{frame}[fragile]
 
 \frametitle{Constructor Rooted Normalized Form}
-Sometimes, the result itself could not be important. For example take the function
+Sometimes, the result itself could not be important. For example take the function:
 
 \begin{example}
 \begin{verbatim}
 idNil [] = []
 \end{verbatim}
 \end{example}
-If we try to find the normal form of \verb|idNil[1+2]| we would get \verb|idNil[3]| as normal form.
+If we try to find the normal form of \verb|idNil[1+2]|, we would get \verb|idNil[3]| as normal form.
 
 So, the interesting results of functional computations are \textit{constructor terms} or \textit{values}.
 \end{frame}
@@ -141,7 +141,7 @@ So, the interesting results of functional computations are \textit{constructor t
 
 \frametitle{Narrowing}
 
-Functional logic languages are more flexible than pure functional languages since they instantiate variables in a term (free variables), in order to apply the rewrite step. The combination of variable instantiation and rewriting is called \textbf{narrowing}.
+Functional logic languages are more flexible than pure functional languages since they instantiate variables in a term (free variables), in order to apply the rewrite step. The combination of variable instantiation and rewriting is called \textbf{Narrowing}.
 \begin{example}
 \begin{verbatim}
 last :: [a] -> a
@@ -159,7 +159,7 @@ last x
   Formally, $t \leadsto _{p,R,\sigma} t'$ is a \textit{narrowing step} if $t|_p$ is not a variable, and $\sigma(t) \rightarrow_{p,R} t'$.
 
 
-\bigskip
+\Bigskip
  Since in functional logic languages we are interested in computing values, as well as answers, we say that $t \leadsto ^ * _ \sigma c$ computes the value $c$ with answer $\sigma$, if $c$ is a value.
   \end{frame}
 \end{subsection}
@@ -169,7 +169,7 @@ last x
 [fragile]
 
 \frametitle{Example}
-  Consider the following program, containing the definition of naturals, the add operation and a ``less than or equal'' test.
+  Consider the following program, containing the definition of Naturals, the add operation and a ``less than or equal'' test.
 
 \begin{example}
 
@@ -253,7 +253,7 @@ To simplify the computational process of needed narrowing, Inductively Sequentia
 \end{frame}
 \begin{frame}
 [fragile]
-\frametitle{Leaves property} The maximal elements of $T$, called the \textit{leaves}, are the lhs of the rules defining $f$.
+\frametitle{Leaves Property} The maximal elements of $T$, called the \textit{leaves}, are the lhs of the rules defining $f$.
 
 \begin{example}
   The leaves of \verb|add| are \verb|add Z y| and \verb|add (S x) y|.
@@ -261,7 +261,7 @@ To simplify the computational process of needed narrowing, Inductively Sequentia
 \end{frame}
 \begin{frame}
 [fragile]
-\frametitle{Root property}
+\frametitle{Root Property}
 Has a minimum element, called the \textit{root}, of the form $f(x_1,x_2,\ldots,x_n)$ where $x_1,\ldots\,x_n$ are pairwise distinct variables.
 
 \begin{example}
@@ -271,7 +271,7 @@ The root of \verb|add| is \verb|add x y|.
 \end{frame}
 \begin{frame}
 [fragile]
-  \frametitle{Parent property} For every pattern $\pi$ different from the root, there exists a unique $\pi'$, the parent, such that $\pi' < \pi$ and there isn't any $\pi''$ such that $\pi' < \pi'' < \pi$.
+  \frametitle{Parent Property} For every pattern $\pi$ different from the root, there exists a unique $\pi'$, the parent, such that $\pi' < \pi$ and there isn't any $\pi''$ such that $\pi' < \pi'' < \pi$.
 
 \begin{example}
   \verb|leq x y| could* be parent of \verb|leq (S x') y| and \verb|leq x (S x')|; however, it is not the parent of \verb|leq (S x') (S y')|.
@@ -279,7 +279,7 @@ The root of \verb|add| is \verb|add x y|.
 \end{frame}
 \begin{frame}
 [fragile]
-\frametitle{Induction property} Every child of $\pi$ differs from each other only at a common position, called the \textit{inductive position}, which is the position of a variable in $\pi$.
+\frametitle{Induction Property} Every child of $\pi$ differs from each other only at a common position, called the \textit{inductive position}, which is the position of a variable in $\pi$.
 
 \begin{example}
 \verb|leq (S x) y| and \verb|leq Z y| could be siblings; however \verb|leq (S x) y| and \verb|leq x (S y)|, differ in two positions, thus could not be siblings.
@@ -287,10 +287,10 @@ The root of \verb|add| is \verb|add x y|.
 
 \end{frame}
 \begin{frame}
-\frametitle{Inductively sequential TRS II}
+\frametitle{Inductively Sequential TRS II}
 \begin{itemize}
-\item An operation is called inductively sequential if it has a definitional tree and its rules do not contain extra variables.
-\item A TRS is inductively sequential if every define operation is inductively sequential. 
+\item An operation is called inductively sequential, if it has a definitional tree and its rules do not contain extra variables.
+\item A TRS is inductively sequential, if every define operation is inductively sequential. 
 \end{itemize}
 \end{frame}
 

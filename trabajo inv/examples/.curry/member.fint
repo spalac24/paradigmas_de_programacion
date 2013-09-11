@@ -1,0 +1,1 @@
+Prog "member" ["Prelude"] [] [Func ("member","myMember") 2 Public (FuncType (TVar 0) (FuncType (TCons ("Prelude","[]") [TVar 0]) (TCons ("Prelude","Bool") []))) (Rule [] (Var 0))] []
