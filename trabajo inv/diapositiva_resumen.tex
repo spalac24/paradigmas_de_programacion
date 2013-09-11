@@ -123,7 +123,7 @@ add (S x) y = S (add x y)
 
 \begin{frame}[fragile]
 
-\frametitle{Constructr Rooted Normalized Form}
+\frametitle{Constructor Rooted Normalized Form}
 Sometimes, the result itself could not be important. For example take the function
 
 \begin{example}
@@ -318,7 +318,7 @@ or False False = False
 \begin{frame}
 \frametitle{Use of Definitional Trees in Narrowing}
 
-  Definitional Trees can be computed at compile time and they contain all infromation for the decisions to the steps in the rewriting process.
+  Definitional Trees can be computed at compile time and they contain all information for the decisions to the steps in the rewriting process.
 
   We could define a needed narrowing step as an application to an operation-rooted term $t$ by considering it's definitional tree. First, we find the \textit{maximal} node $pi$ that unifies with $t$, and applies the following algorithm.
 
@@ -333,9 +333,9 @@ or False False = False
   \begin{itemize}
   \item If $t|_p$ is rooted by a constructor $c$, if there is a child  with $c$ at the inductive position, we examine the child, else we fail.
 
-  \item If $t|_p$ is a variable, we nondeterministaclly instantiate this variable by the constructor term at the inductive position of a child, and proceed to examine the child.
+  \item If $t|_p$ is a variable, we non-deterministaclly instantiate this variable by the constructor term at the inductive position of a child, and proceed to examine the child.
 
-  \item If $t|_p$ is operation rooted, we recusively apply the computation of a needed narrowing step to $\sigma(t|_p)$, where $\sigma$ is the substution, result of previous case distinctions.
+  \item If $t|_p$ is operation rooted, we recusively apply the computation of a needed narrowing step to $\sigma(t|_p)$, where $\sigma$ is the substitution, result of previous case distinctions.
   \end{itemize}
 \end{itemize}
 
@@ -344,7 +344,7 @@ or False False = False
 \begin{subsection}{Strict Equality}
 \begin{frame}[fragile]
 \frametitle{\subsecname}
-    The equality symbol \verb|=:=| is called \textit{strict equality}, i.e. te equation $t_1 =:= t_2$ is satisfied iff $t_1$ and $t_2$ are reducible to the same \textit{ground} constructor or term. (Note that when $t_1$ is not reducible, $t_1 =:= t_1$ does not succeed).
+    The equality symbol \verb|=:=| is called \textit{strict equality}, i.e. the equation $t_1 =:= t_2$ is satisfied iff $t_1$ and $t_2$ are reducible to the same \textit{ground} constructor or term. (Note that when $t_1$ is not reducible, $t_1 =:= t_1$ does not succeed).
 
     We can define $=:=$ as follows:
 
@@ -362,7 +362,7 @@ or False False = False
 \frametitle{Strict Equality Solutions}
 A solution for an equation $t_1 =:= t_2$ is a substitution $\sigma$, if $\sigma(t_1) =:= \sigma(t_2) \leadsto^* \UseVerb{succ}$.
 
-We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of al possible narrowing derivations.
+We have then, that \textit{needed narrowing} is Correct, Complete and Minimal (if there are two derivations, then their substitutions are independent). And, in successful derivations, needed narrowing computes the \textit{shortest} of all possible narrowing derivations.
 
 \end{frame}
 \end{subsection}
@@ -380,7 +380,7 @@ or False False = False
 
 \end{verbatim}
 
- We must extend the definition of \textit{inductivel sequential TRS} to a \textit{weakly orthogonal TRS} by requiring only that, for all variants of rules $\l_1 \rightarrow r_1$, $l_2 \rightarrow r_2$, if $\sigma(l_1) = \sigma(l_2)$ then $\sigma(r_1) = \sigma(r_2)$.
+ We must extend the definition of \textit{inductively sequential TRS} to a \textit{weakly orthogonal TRS} by requiring only that, for all variants of rules $\l_1 \rightarrow r_1$, $l_2 \rightarrow r_2$, if $\sigma(l_1) = \sigma(l_2)$ then $\sigma(r_1) = \sigma(r_2)$.
 
 \end{frame}
 
@@ -400,7 +400,7 @@ or False False = False
 \begin{subsection}{Handling Non-Determinism}
 \begin{frame}[fragile]
 \frametitle{\subsecname}
-  This same principe may also be extended to handle non-deterministic operations and extra variables, by simply examining every possible or branch, and not requiring that all the rules are confluent to the same normal form. For example, the rule
+  This same principle may also be extended to handle non-deterministic operations and extra variables, by simply examining every possible or branch, and not requiring that all the rules are confluent to the same normal form. For example, the rule
 
 \begin{verbatim}
 x ? _ = x
@@ -469,7 +469,7 @@ mySort x = sorted (perm x)
     \item Curry: A tutorial Introduction. Draft of December 2007. Antoy Sergio, Hanus Michael, Taken from http://www.informatik.uni-kiel.de/~Curry/tutorial/ the 15th of April, 2013.
 
 
-    \item Functional Logic Programming: From Theory to Curry. Hanus Michale. Institut f\"ur Informatik, CAU Kiel, Germany. As sent May the 13th of 2013.
+    \item Functional Logic Programming: From Theory to Curry. Hanus Michael. Institut f\"ur Informatik, CAU Kiel, Germany. As sent May the 13th of 2013.
 
     \item Curry An integrated functional language. September 11,2012. Hanus Michael, retrieved the 15th of April 2013.
 
