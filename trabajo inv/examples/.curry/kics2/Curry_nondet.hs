@@ -1,7 +1,7 @@
 {-# LANGUAGE MagicHash #-}
 {-# OPTIONS_GHC -fno-warn-overlapping-patterns #-}
 
-module Curry_nondet (nd_C_coin, d_C_double, nd_C_insert, nd_C_perm, d_C_sorted, nd_C_mySort) where
+module Curry_nondet (nd_C_coin, d_C_double, nd_C_double_coin, nd_C_insert, nd_C_perm, d_C_sorted, nd_C_mySort) where
 
 import Basics
 import qualified Curry_Prelude
@@ -12,6 +12,14 @@ nd_C_coin x3000 x3250 x3500 = let
 
 d_C_double :: Curry_Prelude.C_Int -> Cover -> ConstStore -> Curry_Prelude.C_Int
 d_C_double x1 x3250 x3500 = Curry_Prelude.d_OP_plus x1 x1 x3250 x3500
+
+nd_C_double_coin :: IDSupply -> Cover -> ConstStore -> Curry_Prelude.C_Int
+nd_C_double_coin x3000 x3250 x3500 = let
+     x2002 = x3000
+      in (seq x2002 (let
+          x2000 = leftSupply x2002
+          x2001 = rightSupply x2002
+           in (seq x2000 (seq x2001 (Curry_Prelude.d_OP_plus (nd_C_coin x2000 x3250 x3500) (nd_C_coin x2001 x3250 x3500) x3250 x3500)))))
 
 nd_C_insert :: Curry_Prelude.Curry t0 => t0 -> Curry_Prelude.OP_List t0 -> IDSupply -> Cover -> ConstStore -> Curry_Prelude.OP_List t0
 nd_C_insert x1 x2 x3000 x3250 x3500 = case x2 of

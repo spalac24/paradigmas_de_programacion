@@ -1,6 +1,9 @@
 coin = 0 ? 1
 
-double x = x+x
+double d  = d+d
+
+double_coin = coin+coin
+
 
 
 insert e [] = [e]
